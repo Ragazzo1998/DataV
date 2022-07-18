@@ -1,6 +1,6 @@
 {
-  "name": "@jiaminghi/data-view",
-  "version": "2.10.0",
+  "name": "csg-data-view",
+  "version": "1.0.0",
   "author": "JiaMing <743192023@qq.com>",
   "description": "Vue Large screen data display component library",
   "main": "lib/index.js",
@@ -25,8 +25,8 @@
     "datavisual"
   ],
   "dependencies": {
-    "@jiaminghi/charts": "*",
-    "@babel/runtime": "^7.5.5"
+    "@babel/runtime": "^7.5.5",
+    "@jiaminghi/charts": "*"
   },
   "homepage": "https://github.com/DataV-Team/DataV#readme",
   "devDependencies": {

@@ -15,7 +15,7 @@
       <div class="ranking-column">
         <div
           class="inside-column"
-          :style="`width: ${item.percent}%;`"
+          :style="`width: ${item.percent}%; background-color: ${item.color};`"
         >
           <div class="shine" />
         </div>
@@ -171,7 +171,7 @@ export default {
 
       const total = max + minAbs
 
-      data = data.map((row, i) => ({ ...row, ranking: i + 1, percent: (row.value + minAbs) / total * 100 }))
+      data = data.map((row, i) => ({ ...row, ranking: i + 1, percent: (row.value + minAbs) / total * 100, color: row.color ? row.color : '#1370fb' }))
 
       const rowLength = data.length
 

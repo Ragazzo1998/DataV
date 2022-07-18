@@ -1,10 +1,12 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('vue')) :
   typeof define === 'function' && define.amd ? define(['vue'], factory) :
-  (global = global || self, factory(global.Vue));
-}(this, (function (Vue) { 'use strict';
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.Vue));
+})(this, (function (Vue) { 'use strict';
 
-  Vue = Vue && Object.prototype.hasOwnProperty.call(Vue, 'default') ? Vue['default'] : Vue;
+  function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
+
+  var Vue__default = /*#__PURE__*/_interopDefaultLegacy(Vue);
 
   function randomExtend(minNum, maxNum) {
     if (arguments.length === 1) {
@@ -143,7 +145,7 @@
   };
 
   //
-  var script = {
+  var script$B = {
     name: 'DvFullScreenContainer',
     mixins: [autoResize],
 
@@ -329,10 +331,10 @@
   }
 
   /* script */
-  const __vue_script__ = script;
+  const __vue_script__$B = script$B;
 
   /* template */
-  var __vue_render__ = function() {
+  var __vue_render__$B = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -343,34 +345,34 @@
       2
     )
   };
-  var __vue_staticRenderFns__ = [];
-  __vue_render__._withStripped = true;
+  var __vue_staticRenderFns__$B = [];
+  __vue_render__$B._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__ = function (inject) {
+    const __vue_inject_styles__$B = function (inject) {
       if (!inject) return
-      inject("data-v-2da16e2c_0", { source: "#dv-full-screen-container {\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  overflow: hidden;\n  transform-origin: left top;\n  z-index: 999;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,eAAe;EACf,QAAQ;EACR,SAAS;EACT,gBAAgB;EAChB,0BAA0B;EAC1B,YAAY;AACd","file":"main.vue","sourcesContent":["#dv-full-screen-container {\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  overflow: hidden;\n  transform-origin: left top;\n  z-index: 999;\n}\n"]}, media: undefined });
+      inject("data-v-09606dd0_0", { source: "#dv-full-screen-container {\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  overflow: hidden;\n  transform-origin: left top;\n  z-index: 999;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,eAAe;EACf,QAAQ;EACR,SAAS;EACT,gBAAgB;EAChB,0BAA0B;EAC1B,YAAY;AACd","file":"main.vue","sourcesContent":["#dv-full-screen-container {\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  overflow: hidden;\n  transform-origin: left top;\n  z-index: 999;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__ = undefined;
+    const __vue_scope_id__$B = undefined;
     /* module identifier */
-    const __vue_module_identifier__ = undefined;
+    const __vue_module_identifier__$B = undefined;
     /* functional template */
-    const __vue_is_functional_template__ = false;
+    const __vue_is_functional_template__$B = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__ = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__, staticRenderFns: __vue_staticRenderFns__ },
-      __vue_inject_styles__,
-      __vue_script__,
-      __vue_scope_id__,
-      __vue_is_functional_template__,
-      __vue_module_identifier__,
+    const __vue_component__$B = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$B, staticRenderFns: __vue_staticRenderFns__$B },
+      __vue_inject_styles__$B,
+      __vue_script__$B,
+      __vue_scope_id__$B,
+      __vue_is_functional_template__$B,
+      __vue_module_identifier__$B,
       false,
       createInjector,
       undefined,
@@ -378,7 +380,7 @@
     );
 
   function fullScreenContainer (Vue) {
-    Vue.component(__vue_component__.name, __vue_component__);
+    Vue.component(__vue_component__$B.name, __vue_component__$B);
   }
 
   //
@@ -440,15 +442,15 @@
   //
   //
   //
-  var script$1 = {
+  var script$A = {
     name: 'DvLoading'
   };
 
   /* script */
-  const __vue_script__$1 = script$1;
+  const __vue_script__$A = script$A;
 
   /* template */
-  var __vue_render__$1 = function() {
+  var __vue_render__$A = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -465,8 +467,8 @@
               "stroke-width": "3",
               "stroke-dasharray": "31.415, 31.415",
               stroke: "#02bcfe",
-              "stroke-linecap": "round"
-            }
+              "stroke-linecap": "round",
+            },
           },
           [
             _c("animateTransform", {
@@ -475,8 +477,8 @@
                 type: "rotate",
                 values: "0, 25 25;360, 25 25",
                 dur: "1.5s",
-                repeatCount: "indefinite"
-              }
+                repeatCount: "indefinite",
+              },
             }),
             _vm._v(" "),
             _c("animate", {
@@ -484,9 +486,9 @@
                 attributeName: "stroke",
                 values: "#02bcfe;#3be6cb;#02bcfe",
                 dur: "3s",
-                repeatCount: "indefinite"
-              }
-            })
+                repeatCount: "indefinite",
+              },
+            }),
           ],
           1
         ),
@@ -502,8 +504,8 @@
               "stroke-width": "3",
               "stroke-dasharray": "15.7, 15.7",
               stroke: "#3be6cb",
-              "stroke-linecap": "round"
-            }
+              "stroke-linecap": "round",
+            },
           },
           [
             _c("animateTransform", {
@@ -512,8 +514,8 @@
                 type: "rotate",
                 values: "360, 25 25;0, 25 25",
                 dur: "1.5s",
-                repeatCount: "indefinite"
-              }
+                repeatCount: "indefinite",
+              },
             }),
             _vm._v(" "),
             _c("animate", {
@@ -521,45 +523,45 @@
                 attributeName: "stroke",
                 values: "#3be6cb;#02bcfe;#3be6cb",
                 dur: "3s",
-                repeatCount: "indefinite"
-              }
-            })
+                repeatCount: "indefinite",
+              },
+            }),
           ],
           1
-        )
+        ),
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "loading-tip" }, [_vm._t("default")], 2)
+      _c("div", { staticClass: "loading-tip" }, [_vm._t("default")], 2),
     ])
   };
-  var __vue_staticRenderFns__$1 = [];
-  __vue_render__$1._withStripped = true;
+  var __vue_staticRenderFns__$A = [];
+  __vue_render__$A._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$1 = function (inject) {
+    const __vue_inject_styles__$A = function (inject) {
       if (!inject) return
-      inject("data-v-c8b3d976_0", { source: ".dv-loading {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n.dv-loading .loading-tip {\n  font-size: 15px;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;EACZ,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;AACrB;AACA;EACE,eAAe;AACjB","file":"main.vue","sourcesContent":[".dv-loading {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n.dv-loading .loading-tip {\n  font-size: 15px;\n}\n"]}, media: undefined });
+      inject("data-v-1283eca6_0", { source: ".dv-loading {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n.dv-loading .loading-tip {\n  font-size: 15px;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;EACZ,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;AACrB;AACA;EACE,eAAe;AACjB","file":"main.vue","sourcesContent":[".dv-loading {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n.dv-loading .loading-tip {\n  font-size: 15px;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$1 = undefined;
+    const __vue_scope_id__$A = undefined;
     /* module identifier */
-    const __vue_module_identifier__$1 = undefined;
+    const __vue_module_identifier__$A = undefined;
     /* functional template */
-    const __vue_is_functional_template__$1 = false;
+    const __vue_is_functional_template__$A = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$1 = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$1, staticRenderFns: __vue_staticRenderFns__$1 },
-      __vue_inject_styles__$1,
-      __vue_script__$1,
-      __vue_scope_id__$1,
-      __vue_is_functional_template__$1,
-      __vue_module_identifier__$1,
+    const __vue_component__$A = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$A, staticRenderFns: __vue_staticRenderFns__$A },
+      __vue_inject_styles__$A,
+      __vue_script__$A,
+      __vue_scope_id__$A,
+      __vue_is_functional_template__$A,
+      __vue_module_identifier__$A,
       false,
       createInjector,
       undefined,
@@ -567,7 +569,7 @@
     );
 
   function loading (Vue) {
-    Vue.component(__vue_component__$1.name, __vue_component__$1);
+    Vue.component(__vue_component__$A.name, __vue_component__$A);
   }
 
   function unwrapExports (x) {
@@ -585,11 +587,12 @@
     };
   }
 
-  module.exports = _interopRequireDefault;
+  module.exports = _interopRequireDefault, module.exports.__esModule = true, module.exports["default"] = module.exports;
   });
 
   unwrapExports(interopRequireDefault);
 
+  var arrayLikeToArray = createCommonjsModule(function (module) {
   function _arrayLikeToArray(arr, len) {
     if (len == null || len > arr.length) len = arr.length;
 
@@ -600,20 +603,32 @@
     return arr2;
   }
 
-  var arrayLikeToArray = _arrayLikeToArray;
+  module.exports = _arrayLikeToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  });
 
+  unwrapExports(arrayLikeToArray);
+
+  var arrayWithoutHoles = createCommonjsModule(function (module) {
   function _arrayWithoutHoles(arr) {
     if (Array.isArray(arr)) return arrayLikeToArray(arr);
   }
 
-  var arrayWithoutHoles = _arrayWithoutHoles;
+  module.exports = _arrayWithoutHoles, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  });
 
+  unwrapExports(arrayWithoutHoles);
+
+  var iterableToArray = createCommonjsModule(function (module) {
   function _iterableToArray(iter) {
-    if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
+    if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
   }
 
-  var iterableToArray = _iterableToArray;
+  module.exports = _iterableToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  });
 
+  unwrapExports(iterableToArray);
+
+  var unsupportedIterableToArray = createCommonjsModule(function (module) {
   function _unsupportedIterableToArray(o, minLen) {
     if (!o) return;
     if (typeof o === "string") return arrayLikeToArray(o, minLen);
@@ -623,55 +638,70 @@
     if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return arrayLikeToArray(o, minLen);
   }
 
-  var unsupportedIterableToArray = _unsupportedIterableToArray;
+  module.exports = _unsupportedIterableToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  });
 
+  unwrapExports(unsupportedIterableToArray);
+
+  var nonIterableSpread = createCommonjsModule(function (module) {
   function _nonIterableSpread() {
     throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
   }
 
-  var nonIterableSpread = _nonIterableSpread;
+  module.exports = _nonIterableSpread, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  });
 
+  unwrapExports(nonIterableSpread);
+
+  var toConsumableArray = createCommonjsModule(function (module) {
   function _toConsumableArray(arr) {
     return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();
   }
 
-  var toConsumableArray = _toConsumableArray;
+  module.exports = _toConsumableArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  });
+
+  unwrapExports(toConsumableArray);
 
   var _typeof_1 = createCommonjsModule(function (module) {
   function _typeof(obj) {
     "@babel/helpers - typeof";
 
-    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-      module.exports = _typeof = function _typeof(obj) {
-        return typeof obj;
-      };
-    } else {
-      module.exports = _typeof = function _typeof(obj) {
-        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-      };
-    }
-
-    return _typeof(obj);
+    return (module.exports = _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
+      return typeof obj;
+    } : function (obj) {
+      return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    }, module.exports.__esModule = true, module.exports["default"] = module.exports), _typeof(obj);
   }
 
-  module.exports = _typeof;
+  module.exports = _typeof, module.exports.__esModule = true, module.exports["default"] = module.exports;
   });
 
+  unwrapExports(_typeof_1);
+
+  var arrayWithHoles = createCommonjsModule(function (module) {
   function _arrayWithHoles(arr) {
     if (Array.isArray(arr)) return arr;
   }
 
-  var arrayWithHoles = _arrayWithHoles;
+  module.exports = _arrayWithHoles, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  });
 
+  unwrapExports(arrayWithHoles);
+
+  var iterableToArrayLimit = createCommonjsModule(function (module) {
   function _iterableToArrayLimit(arr, i) {
-    if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
+    var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"];
+
+    if (_i == null) return;
     var _arr = [];
     var _n = true;
     var _d = false;
-    var _e = undefined;
+
+    var _s, _e;
 
     try {
-      for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+      for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) {
         _arr.push(_s.value);
 
         if (i && _arr.length === i) break;
@@ -690,21 +720,32 @@
     return _arr;
   }
 
-  var iterableToArrayLimit = _iterableToArrayLimit;
+  module.exports = _iterableToArrayLimit, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  });
 
+  unwrapExports(iterableToArrayLimit);
+
+  var nonIterableRest = createCommonjsModule(function (module) {
   function _nonIterableRest() {
     throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
   }
 
-  var nonIterableRest = _nonIterableRest;
+  module.exports = _nonIterableRest, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  });
 
+  unwrapExports(nonIterableRest);
+
+  var slicedToArray = createCommonjsModule(function (module) {
   function _slicedToArray(arr, i) {
     return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || unsupportedIterableToArray(arr, i) || nonIterableRest();
   }
 
-  var slicedToArray = _slicedToArray;
+  module.exports = _slicedToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  });
 
-  var util = createCommonjsModule(function (module, exports) {
+  unwrapExports(slicedToArray);
+
+  var util$1 = createCommonjsModule(function (module, exports) {
 
 
 
@@ -1160,23 +1201,23 @@
   exports["default"] = _default;
   });
 
-  unwrapExports(util);
-  var util_1 = util.deepClone;
-  var util_2 = util.eliminateBlur;
-  var util_3 = util.checkPointIsInCircle;
-  var util_4 = util.getTwoPointDistance;
-  var util_5 = util.checkPointIsInPolygon;
-  var util_6 = util.checkPointIsInSector;
-  var util_7 = util.checkPointIsNearPolyline;
-  var util_8 = util.checkPointIsInRect;
-  var util_9 = util.getRotatePointPos;
-  var util_10 = util.getScalePointPos;
-  var util_11 = util.getTranslatePointPos;
-  var util_12 = util.getDistanceBetweenPointAndLine;
-  var util_13 = util.getCircleRadianPoint;
-  var util_14 = util.getRegularPolygonPoints;
+  unwrapExports(util$1);
+  var util_1 = util$1.deepClone;
+  util$1.eliminateBlur;
+  util$1.checkPointIsInCircle;
+  util$1.getTwoPointDistance;
+  util$1.checkPointIsInPolygon;
+  util$1.checkPointIsInSector;
+  util$1.checkPointIsNearPolyline;
+  util$1.checkPointIsInRect;
+  util$1.getRotatePointPos;
+  util$1.getScalePointPos;
+  util$1.getTranslatePointPos;
+  util$1.getDistanceBetweenPointAndLine;
+  var util_13 = util$1.getCircleRadianPoint;
+  util$1.getRegularPolygonPoints;
 
-  var util$1 = createCommonjsModule(function (module, exports) {
+  var util = createCommonjsModule(function (module, exports) {
 
 
 
@@ -1214,7 +1255,7 @@
       }
 
       if ((0, _typeof2["default"])(merged[key]) === 'object') {
-        target[key] = (0, util.deepClone)(merged[key], true);
+        target[key] = (0, util$1.deepClone)(merged[key], true);
         continue;
       }
 
@@ -1295,7 +1336,7 @@
       return st === type;
     });
     series = series.map(function (item) {
-      return deepMerge((0, util.deepClone)(config, true), item);
+      return deepMerge((0, util$1.deepClone)(config, true), item);
     });
     return series.filter(function (_ref5) {
       var show = _ref5.show;
@@ -1308,20 +1349,20 @@
   }
   });
 
-  unwrapExports(util$1);
-  var util_1$1 = util$1.filterNonNumber;
-  var util_2$1 = util$1.deepMerge;
-  var util_3$1 = util$1.mulAdd;
-  var util_4$1 = util$1.mergeSameStackData;
-  var util_5$1 = util$1.getTwoPointDistance;
-  var util_6$1 = util$1.getLinearGradientColor;
-  var util_7$1 = util$1.getPolylineLength;
-  var util_8$1 = util$1.getPointToLineDistance;
-  var util_9$1 = util$1.initNeedSeries;
-  var util_10$1 = util$1.radianToAngle;
+  unwrapExports(util);
+  util.filterNonNumber;
+  var util_2 = util.deepMerge;
+  util.mulAdd;
+  util.mergeSameStackData;
+  util.getTwoPointDistance;
+  util.getLinearGradientColor;
+  var util_7 = util.getPolylineLength;
+  util.getPointToLineDistance;
+  util.initNeedSeries;
+  util.radianToAngle;
 
   //
-  var script$2 = {
+  var script$z = {
     name: 'DvBorderBox1',
     mixins: [autoResize],
     props: {
@@ -1359,7 +1400,7 @@
           color,
           defaultColor
         } = this;
-        this.mergedColor = util_2$1(util_1(defaultColor, true), color || []);
+        this.mergedColor = util_2(util_1(defaultColor, true), color || []);
       }
 
     },
@@ -1374,10 +1415,10 @@
   };
 
   /* script */
-  const __vue_script__$2 = script$2;
+  const __vue_script__$z = script$z;
 
   /* template */
-  var __vue_render__$2 = function() {
+  var __vue_render__$z = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -1389,7 +1430,7 @@
           "svg",
           {
             staticClass: "border",
-            attrs: { width: _vm.width, height: _vm.height }
+            attrs: { width: _vm.width, height: _vm.height },
           },
           [
             _c("polygon", {
@@ -1476,19 +1517,19 @@
                   (_vm.width - 81) +
                   ", 10 " +
                   (_vm.width - 85) +
-                  ", 6 85, 6 81, 10 75, 10 73, 8 41, 8 38, 11 24, 11 13, 21 13, 24"
-              }
-            })
+                  ", 6 85, 6 81, 10 75, 10 73, 8 41, 8 38, 11 24, 11 13, 21 13, 24",
+              },
+            }),
           ]
         ),
         _vm._v(" "),
-        _vm._l(_vm.border, function(item) {
+        _vm._l(_vm.border, function (item) {
           return _c(
             "svg",
             {
               key: item,
               class: item + " border",
-              attrs: { width: "150px", height: "150px" }
+              attrs: { width: "150px", height: "150px" },
             },
             [
               _c(
@@ -1497,8 +1538,8 @@
                   attrs: {
                     fill: _vm.mergedColor[0],
                     points:
-                      "6,66 6,18 12,12 18,12 24,6 27,6 30,9 36,9 39,6 84,6 81,9 75,9 73.2,7 40.8,7 37.8,10.2 24,10.2 12,21 12,24 9,27 9,51 7.8,54 7.8,63"
-                  }
+                      "6,66 6,18 12,12 18,12 24,6 27,6 30,9 36,9 39,6 84,6 81,9 75,9 73.2,7 40.8,7 37.8,10.2 24,10.2 12,21 12,24 9,27 9,51 7.8,54 7.8,63",
+                  },
                 },
                 [
                   _c("animate", {
@@ -1512,9 +1553,9 @@
                         _vm.mergedColor[0],
                       dur: "0.5s",
                       begin: "0s",
-                      repeatCount: "indefinite"
-                    }
-                  })
+                      repeatCount: "indefinite",
+                    },
+                  }),
                 ]
               ),
               _vm._v(" "),
@@ -1524,8 +1565,8 @@
                   attrs: {
                     fill: _vm.mergedColor[1],
                     points:
-                      "27.599999999999998,4.8 38.4,4.8 35.4,7.8 30.599999999999998,7.8"
-                  }
+                      "27.599999999999998,4.8 38.4,4.8 35.4,7.8 30.599999999999998,7.8",
+                  },
                 },
                 [
                   _c("animate", {
@@ -1539,9 +1580,9 @@
                         _vm.mergedColor[1],
                       dur: "0.5s",
                       begin: "0s",
-                      repeatCount: "indefinite"
-                    }
-                  })
+                      repeatCount: "indefinite",
+                    },
+                  }),
                 ]
               ),
               _vm._v(" "),
@@ -1551,8 +1592,8 @@
                   attrs: {
                     fill: _vm.mergedColor[0],
                     points:
-                      "9,54 9,63 7.199999999999999,66 7.199999999999999,75 7.8,78 7.8,110 8.4,110 8.4,66 9.6,66 9.6,54"
-                  }
+                      "9,54 9,63 7.199999999999999,66 7.199999999999999,75 7.8,78 7.8,110 8.4,110 8.4,66 9.6,66 9.6,54",
+                  },
                 },
                 [
                   _c("animate", {
@@ -1565,48 +1606,48 @@
                         ";transparent",
                       dur: "1s",
                       begin: "0s",
-                      repeatCount: "indefinite"
-                    }
-                  })
+                      repeatCount: "indefinite",
+                    },
+                  }),
                 ]
-              )
+              ),
             ]
           )
         }),
         _vm._v(" "),
-        _c("div", { staticClass: "border-box-content" }, [_vm._t("default")], 2)
+        _c("div", { staticClass: "border-box-content" }, [_vm._t("default")], 2),
       ],
       2
     )
   };
-  var __vue_staticRenderFns__$2 = [];
-  __vue_render__$2._withStripped = true;
+  var __vue_staticRenderFns__$z = [];
+  __vue_render__$z._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$2 = function (inject) {
+    const __vue_inject_styles__$z = function (inject) {
       if (!inject) return
-      inject("data-v-5d85361d_0", { source: ".dv-border-box-1 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-1 .border {\n  position: absolute;\n  display: block;\n}\n.dv-border-box-1 .right-top {\n  right: 0px;\n  transform: rotateY(180deg);\n}\n.dv-border-box-1 .left-bottom {\n  bottom: 0px;\n  transform: rotateX(180deg);\n}\n.dv-border-box-1 .right-bottom {\n  right: 0px;\n  bottom: 0px;\n  transform: rotateX(180deg) rotateY(180deg);\n}\n.dv-border-box-1 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,kBAAkB;EAClB,cAAc;AAChB;AACA;EACE,UAAU;EACV,0BAA0B;AAC5B;AACA;EACE,WAAW;EACX,0BAA0B;AAC5B;AACA;EACE,UAAU;EACV,WAAW;EACX,0CAA0C;AAC5C;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-border-box-1 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-1 .border {\n  position: absolute;\n  display: block;\n}\n.dv-border-box-1 .right-top {\n  right: 0px;\n  transform: rotateY(180deg);\n}\n.dv-border-box-1 .left-bottom {\n  bottom: 0px;\n  transform: rotateX(180deg);\n}\n.dv-border-box-1 .right-bottom {\n  right: 0px;\n  bottom: 0px;\n  transform: rotateX(180deg) rotateY(180deg);\n}\n.dv-border-box-1 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
+      inject("data-v-77b995e0_0", { source: ".dv-border-box-1 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-1 .border {\n  position: absolute;\n  display: block;\n}\n.dv-border-box-1 .right-top {\n  right: 0px;\n  transform: rotateY(180deg);\n}\n.dv-border-box-1 .left-bottom {\n  bottom: 0px;\n  transform: rotateX(180deg);\n}\n.dv-border-box-1 .right-bottom {\n  right: 0px;\n  bottom: 0px;\n  transform: rotateX(180deg) rotateY(180deg);\n}\n.dv-border-box-1 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,kBAAkB;EAClB,cAAc;AAChB;AACA;EACE,UAAU;EACV,0BAA0B;AAC5B;AACA;EACE,WAAW;EACX,0BAA0B;AAC5B;AACA;EACE,UAAU;EACV,WAAW;EACX,0CAA0C;AAC5C;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-border-box-1 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-1 .border {\n  position: absolute;\n  display: block;\n}\n.dv-border-box-1 .right-top {\n  right: 0px;\n  transform: rotateY(180deg);\n}\n.dv-border-box-1 .left-bottom {\n  bottom: 0px;\n  transform: rotateX(180deg);\n}\n.dv-border-box-1 .right-bottom {\n  right: 0px;\n  bottom: 0px;\n  transform: rotateX(180deg) rotateY(180deg);\n}\n.dv-border-box-1 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$2 = undefined;
+    const __vue_scope_id__$z = undefined;
     /* module identifier */
-    const __vue_module_identifier__$2 = undefined;
+    const __vue_module_identifier__$z = undefined;
     /* functional template */
-    const __vue_is_functional_template__$2 = false;
+    const __vue_is_functional_template__$z = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$2 = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$2, staticRenderFns: __vue_staticRenderFns__$2 },
-      __vue_inject_styles__$2,
-      __vue_script__$2,
-      __vue_scope_id__$2,
-      __vue_is_functional_template__$2,
-      __vue_module_identifier__$2,
+    const __vue_component__$z = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$z, staticRenderFns: __vue_staticRenderFns__$z },
+      __vue_inject_styles__$z,
+      __vue_script__$z,
+      __vue_scope_id__$z,
+      __vue_is_functional_template__$z,
+      __vue_module_identifier__$z,
       false,
       createInjector,
       undefined,
@@ -1614,11 +1655,11 @@
     );
 
   function borderBox1 (Vue) {
-    Vue.component(__vue_component__$2.name, __vue_component__$2);
+    Vue.component(__vue_component__$z.name, __vue_component__$z);
   }
 
   //
-  var script$3 = {
+  var script$y = {
     name: 'DvBorderBox2',
     mixins: [autoResize],
     props: {
@@ -1655,7 +1696,7 @@
           color,
           defaultColor
         } = this;
-        this.mergedColor = util_2$1(util_1(defaultColor, true), color || []);
+        this.mergedColor = util_2(util_1(defaultColor, true), color || []);
       }
 
     },
@@ -1670,10 +1711,10 @@
   };
 
   /* script */
-  const __vue_script__$3 = script$3;
+  const __vue_script__$y = script$y;
 
   /* template */
-  var __vue_render__$3 = function() {
+  var __vue_render__$y = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -1682,7 +1723,7 @@
         "svg",
         {
           staticClass: "dv-border-svg-container",
-          attrs: { width: _vm.width, height: _vm.height }
+          attrs: { width: _vm.width, height: _vm.height },
         },
         [
           _c("polygon", {
@@ -1697,8 +1738,8 @@
                 (_vm.height - 7) +
                 " 7, " +
                 (_vm.height - 7) +
-                "\n    "
-            }
+                "\n    ",
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
@@ -1713,8 +1754,8 @@
                 (_vm.height - 2) +
                 " 2, " +
                 (_vm.height - 2) +
-                " 2, 2"
-            }
+                " 2, 2",
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
@@ -1729,12 +1770,12 @@
                 (_vm.height - 6) +
                 " 6, " +
                 (_vm.height - 6) +
-                " 6, 6"
-            }
+                " 6, 6",
+            },
           }),
           _vm._v(" "),
           _c("circle", {
-            attrs: { fill: _vm.mergedColor[0], cx: "11", cy: "11", r: "1" }
+            attrs: { fill: _vm.mergedColor[0], cx: "11", cy: "11", r: "1" },
           }),
           _vm._v(" "),
           _c("circle", {
@@ -1742,8 +1783,8 @@
               fill: _vm.mergedColor[0],
               cx: _vm.width - 11,
               cy: "11",
-              r: "1"
-            }
+              r: "1",
+            },
           }),
           _vm._v(" "),
           _c("circle", {
@@ -1751,8 +1792,8 @@
               fill: _vm.mergedColor[0],
               cx: _vm.width - 11,
               cy: _vm.height - 11,
-              r: "1"
-            }
+              r: "1",
+            },
           }),
           _vm._v(" "),
           _c("circle", {
@@ -1760,43 +1801,43 @@
               fill: _vm.mergedColor[0],
               cx: "11",
               cy: _vm.height - 11,
-              r: "1"
-            }
-          })
+              r: "1",
+            },
+          }),
         ]
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "border-box-content" }, [_vm._t("default")], 2)
+      _c("div", { staticClass: "border-box-content" }, [_vm._t("default")], 2),
     ])
   };
-  var __vue_staticRenderFns__$3 = [];
-  __vue_render__$3._withStripped = true;
+  var __vue_staticRenderFns__$y = [];
+  __vue_render__$y._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$3 = function (inject) {
+    const __vue_inject_styles__$y = function (inject) {
       if (!inject) return
-      inject("data-v-d5c64680_0", { source: ".dv-border-box-2 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-2 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-border-box-2 .dv-border-svg-container > polyline {\n  fill: none;\n  stroke-width: 1;\n}\n.dv-border-box-2 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,QAAQ;EACR,SAAS;AACX;AACA;EACE,UAAU;EACV,eAAe;AACjB;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-border-box-2 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-2 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-border-box-2 .dv-border-svg-container > polyline {\n  fill: none;\n  stroke-width: 1;\n}\n.dv-border-box-2 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
+      inject("data-v-6aedba60_0", { source: ".dv-border-box-2 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-2 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-border-box-2 .dv-border-svg-container > polyline {\n  fill: none;\n  stroke-width: 1;\n}\n.dv-border-box-2 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,QAAQ;EACR,SAAS;AACX;AACA;EACE,UAAU;EACV,eAAe;AACjB;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-border-box-2 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-2 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-border-box-2 .dv-border-svg-container > polyline {\n  fill: none;\n  stroke-width: 1;\n}\n.dv-border-box-2 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$3 = undefined;
+    const __vue_scope_id__$y = undefined;
     /* module identifier */
-    const __vue_module_identifier__$3 = undefined;
+    const __vue_module_identifier__$y = undefined;
     /* functional template */
-    const __vue_is_functional_template__$3 = false;
+    const __vue_is_functional_template__$y = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$3 = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$3, staticRenderFns: __vue_staticRenderFns__$3 },
-      __vue_inject_styles__$3,
-      __vue_script__$3,
-      __vue_scope_id__$3,
-      __vue_is_functional_template__$3,
-      __vue_module_identifier__$3,
+    const __vue_component__$y = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$y, staticRenderFns: __vue_staticRenderFns__$y },
+      __vue_inject_styles__$y,
+      __vue_script__$y,
+      __vue_scope_id__$y,
+      __vue_is_functional_template__$y,
+      __vue_module_identifier__$y,
       false,
       createInjector,
       undefined,
@@ -1804,11 +1845,11 @@
     );
 
   function borderBox2 (Vue) {
-    Vue.component(__vue_component__$3.name, __vue_component__$3);
+    Vue.component(__vue_component__$y.name, __vue_component__$y);
   }
 
   //
-  var script$4 = {
+  var script$x = {
     name: 'DvBorderBox3',
     mixins: [autoResize],
     props: {
@@ -1845,7 +1886,7 @@
           color,
           defaultColor
         } = this;
-        this.mergedColor = util_2$1(util_1(defaultColor, true), color || []);
+        this.mergedColor = util_2(util_1(defaultColor, true), color || []);
       }
 
     },
@@ -1860,10 +1901,10 @@
   };
 
   /* script */
-  const __vue_script__$4 = script$4;
+  const __vue_script__$x = script$x;
 
   /* template */
-  var __vue_render__$4 = function() {
+  var __vue_render__$x = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -1872,7 +1913,7 @@
         "svg",
         {
           staticClass: "dv-border-svg-container",
-          attrs: { width: _vm.width, height: _vm.height }
+          attrs: { width: _vm.width, height: _vm.height },
         },
         [
           _c("polygon", {
@@ -1887,8 +1928,8 @@
                 (_vm.height - 24) +
                 " 23, " +
                 (_vm.height - 24) +
-                "\n    "
-            }
+                "\n    ",
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
@@ -1904,8 +1945,8 @@
                 (_vm.height - 22) +
                 " 4, " +
                 (_vm.height - 22) +
-                " 4, 4"
-            }
+                " 4, 4",
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
@@ -1921,8 +1962,8 @@
                 (_vm.height - 16) +
                 " 10, " +
                 (_vm.height - 16) +
-                " 10, 10"
-            }
+                " 10, 10",
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
@@ -1938,8 +1979,8 @@
                 (_vm.height - 10) +
                 " 16, " +
                 (_vm.height - 10) +
-                " 16, 16"
-            }
+                " 16, 16",
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
@@ -1955,43 +1996,43 @@
                 (_vm.height - 4) +
                 " 22, " +
                 (_vm.height - 4) +
-                " 22, 22"
-            }
-          })
+                " 22, 22",
+            },
+          }),
         ]
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "border-box-content" }, [_vm._t("default")], 2)
+      _c("div", { staticClass: "border-box-content" }, [_vm._t("default")], 2),
     ])
   };
-  var __vue_staticRenderFns__$4 = [];
-  __vue_render__$4._withStripped = true;
+  var __vue_staticRenderFns__$x = [];
+  __vue_render__$x._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$4 = function (inject) {
+    const __vue_inject_styles__$x = function (inject) {
       if (!inject) return
-      inject("data-v-8dbfb74c_0", { source: ".dv-border-box-3 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-3 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-border-box-3 .dv-border-svg-container > polyline {\n  fill: none;\n}\n.dv-border-box-3 .dv-bb3-line1 {\n  stroke-width: 3;\n}\n.dv-border-box-3 .dv-bb3-line2 {\n  stroke-width: 1;\n}\n.dv-border-box-3 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,QAAQ;EACR,SAAS;AACX;AACA;EACE,UAAU;AACZ;AACA;EACE,eAAe;AACjB;AACA;EACE,eAAe;AACjB;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-border-box-3 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-3 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-border-box-3 .dv-border-svg-container > polyline {\n  fill: none;\n}\n.dv-border-box-3 .dv-bb3-line1 {\n  stroke-width: 3;\n}\n.dv-border-box-3 .dv-bb3-line2 {\n  stroke-width: 1;\n}\n.dv-border-box-3 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
+      inject("data-v-7c73a906_0", { source: ".dv-border-box-3 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-3 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-border-box-3 .dv-border-svg-container > polyline {\n  fill: none;\n}\n.dv-border-box-3 .dv-bb3-line1 {\n  stroke-width: 3;\n}\n.dv-border-box-3 .dv-bb3-line2 {\n  stroke-width: 1;\n}\n.dv-border-box-3 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,QAAQ;EACR,SAAS;AACX;AACA;EACE,UAAU;AACZ;AACA;EACE,eAAe;AACjB;AACA;EACE,eAAe;AACjB;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-border-box-3 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-3 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-border-box-3 .dv-border-svg-container > polyline {\n  fill: none;\n}\n.dv-border-box-3 .dv-bb3-line1 {\n  stroke-width: 3;\n}\n.dv-border-box-3 .dv-bb3-line2 {\n  stroke-width: 1;\n}\n.dv-border-box-3 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$4 = undefined;
+    const __vue_scope_id__$x = undefined;
     /* module identifier */
-    const __vue_module_identifier__$4 = undefined;
+    const __vue_module_identifier__$x = undefined;
     /* functional template */
-    const __vue_is_functional_template__$4 = false;
+    const __vue_is_functional_template__$x = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$4 = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$4, staticRenderFns: __vue_staticRenderFns__$4 },
-      __vue_inject_styles__$4,
-      __vue_script__$4,
-      __vue_scope_id__$4,
-      __vue_is_functional_template__$4,
-      __vue_module_identifier__$4,
+    const __vue_component__$x = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$x, staticRenderFns: __vue_staticRenderFns__$x },
+      __vue_inject_styles__$x,
+      __vue_script__$x,
+      __vue_scope_id__$x,
+      __vue_is_functional_template__$x,
+      __vue_module_identifier__$x,
       false,
       createInjector,
       undefined,
@@ -1999,11 +2040,11 @@
     );
 
   function borderBox3 (Vue) {
-    Vue.component(__vue_component__$4.name, __vue_component__$4);
+    Vue.component(__vue_component__$x.name, __vue_component__$x);
   }
 
   //
-  var script$5 = {
+  var script$w = {
     name: 'DvBorderBox4',
     mixins: [autoResize],
     props: {
@@ -2044,7 +2085,7 @@
           color,
           defaultColor
         } = this;
-        this.mergedColor = util_2$1(util_1(defaultColor, true), color || []);
+        this.mergedColor = util_2(util_1(defaultColor, true), color || []);
       }
 
     },
@@ -2059,10 +2100,10 @@
   };
 
   /* script */
-  const __vue_script__$5 = script$5;
+  const __vue_script__$w = script$w;
 
   /* template */
-  var __vue_render__$5 = function() {
+  var __vue_render__$w = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -2071,7 +2112,7 @@
         "svg",
         {
           class: "dv-border-svg-container " + (_vm.reverse && "dv-reverse"),
-          attrs: { width: _vm.width, height: _vm.height }
+          attrs: { width: _vm.width, height: _vm.height },
         },
         [
           _c("polygon", {
@@ -2088,8 +2129,8 @@
                 (_vm.width - 15) +
                 ", " +
                 (_vm.height - 7) +
-                "\n    "
-            }
+                "\n    ",
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
@@ -2105,8 +2146,8 @@
                 (_vm.height - 35) +
                 "\n        10, 40 40, 5 150, 5 170, 20 " +
                 (_vm.width - 15) +
-                ", 20"
-            }
+                ", 20",
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
@@ -2121,95 +2162,95 @@
                 " 14, " +
                 (_vm.height - 23) +
                 "\n        14, " +
-                (_vm.height - 100)
-            }
+                (_vm.height - 100),
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
             staticClass: "dv-bb4-line-3",
             attrs: {
               stroke: _vm.mergedColor[0],
-              points: "7, " + (_vm.height - 40) + " 7, " + (_vm.height - 75)
-            }
+              points: "7, " + (_vm.height - 40) + " 7, " + (_vm.height - 75),
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
             staticClass: "dv-bb4-line-4",
-            attrs: { stroke: _vm.mergedColor[0], points: "28, 24 13, 41 13, 64" }
+            attrs: { stroke: _vm.mergedColor[0], points: "28, 24 13, 41 13, 64" },
           }),
           _vm._v(" "),
           _c("polyline", {
             staticClass: "dv-bb4-line-5",
-            attrs: { stroke: _vm.mergedColor[0], points: "5, 45 5, 140" }
+            attrs: { stroke: _vm.mergedColor[0], points: "5, 45 5, 140" },
           }),
           _vm._v(" "),
           _c("polyline", {
             staticClass: "dv-bb4-line-6",
-            attrs: { stroke: _vm.mergedColor[1], points: "14, 75 14, 180" }
+            attrs: { stroke: _vm.mergedColor[1], points: "14, 75 14, 180" },
           }),
           _vm._v(" "),
           _c("polyline", {
             staticClass: "dv-bb4-line-7",
             attrs: {
               stroke: _vm.mergedColor[1],
-              points: "55, 11 147, 11 167, 26 250, 26"
-            }
+              points: "55, 11 147, 11 167, 26 250, 26",
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
             staticClass: "dv-bb4-line-8",
-            attrs: { stroke: _vm.mergedColor[1], points: "158, 5 173, 16" }
+            attrs: { stroke: _vm.mergedColor[1], points: "158, 5 173, 16" },
           }),
           _vm._v(" "),
           _c("polyline", {
             staticClass: "dv-bb4-line-9",
             attrs: {
               stroke: _vm.mergedColor[0],
-              points: "200, 17 " + (_vm.width - 10) + ", 17"
-            }
+              points: "200, 17 " + (_vm.width - 10) + ", 17",
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
             staticClass: "dv-bb4-line-10",
             attrs: {
               stroke: _vm.mergedColor[1],
-              points: "385, 17 " + (_vm.width - 10) + ", 17"
-            }
-          })
+              points: "385, 17 " + (_vm.width - 10) + ", 17",
+            },
+          }),
         ]
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "border-box-content" }, [_vm._t("default")], 2)
+      _c("div", { staticClass: "border-box-content" }, [_vm._t("default")], 2),
     ])
   };
-  var __vue_staticRenderFns__$5 = [];
-  __vue_render__$5._withStripped = true;
+  var __vue_staticRenderFns__$w = [];
+  __vue_render__$w._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$5 = function (inject) {
+    const __vue_inject_styles__$w = function (inject) {
       if (!inject) return
-      inject("data-v-229480d1_0", { source: ".dv-border-box-4 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-4 .dv-reverse {\n  transform: rotate(180deg);\n}\n.dv-border-box-4 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-border-box-4 .dv-border-svg-container > polyline {\n  fill: none;\n}\n.dv-border-box-4 .sw1 {\n  stroke-width: 1;\n}\n.dv-border-box-4 .sw3 {\n  stroke-width: 3px;\n  stroke-linecap: round;\n}\n.dv-border-box-4 .dv-bb4-line-1 {\n  stroke-width: 1;\n}\n.dv-border-box-4 .dv-bb4-line-2 {\n  stroke-width: 1;\n}\n.dv-border-box-4 .dv-bb4-line-3 {\n  stroke-width: 3px;\n  stroke-linecap: round;\n}\n.dv-border-box-4 .dv-bb4-line-4 {\n  stroke-width: 3px;\n  stroke-linecap: round;\n}\n.dv-border-box-4 .dv-bb4-line-5 {\n  stroke-width: 1;\n}\n.dv-border-box-4 .dv-bb4-line-6 {\n  stroke-width: 1;\n}\n.dv-border-box-4 .dv-bb4-line-7 {\n  stroke-width: 1;\n}\n.dv-border-box-4 .dv-bb4-line-8 {\n  stroke-width: 3px;\n  stroke-linecap: round;\n}\n.dv-border-box-4 .dv-bb4-line-9 {\n  stroke-width: 3px;\n  stroke-linecap: round;\n  stroke-dasharray: 100 250;\n}\n.dv-border-box-4 .dv-bb4-line-10 {\n  stroke-width: 1;\n  stroke-dasharray: 80 270;\n}\n.dv-border-box-4 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,yBAAyB;AAC3B;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,QAAQ;EACR,SAAS;AACX;AACA;EACE,UAAU;AACZ;AACA;EACE,eAAe;AACjB;AACA;EACE,iBAAiB;EACjB,qBAAqB;AACvB;AACA;EACE,eAAe;AACjB;AACA;EACE,eAAe;AACjB;AACA;EACE,iBAAiB;EACjB,qBAAqB;AACvB;AACA;EACE,iBAAiB;EACjB,qBAAqB;AACvB;AACA;EACE,eAAe;AACjB;AACA;EACE,eAAe;AACjB;AACA;EACE,eAAe;AACjB;AACA;EACE,iBAAiB;EACjB,qBAAqB;AACvB;AACA;EACE,iBAAiB;EACjB,qBAAqB;EACrB,yBAAyB;AAC3B;AACA;EACE,eAAe;EACf,wBAAwB;AAC1B;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-border-box-4 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-4 .dv-reverse {\n  transform: rotate(180deg);\n}\n.dv-border-box-4 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-border-box-4 .dv-border-svg-container > polyline {\n  fill: none;\n}\n.dv-border-box-4 .sw1 {\n  stroke-width: 1;\n}\n.dv-border-box-4 .sw3 {\n  stroke-width: 3px;\n  stroke-linecap: round;\n}\n.dv-border-box-4 .dv-bb4-line-1 {\n  stroke-width: 1;\n}\n.dv-border-box-4 .dv-bb4-line-2 {\n  stroke-width: 1;\n}\n.dv-border-box-4 .dv-bb4-line-3 {\n  stroke-width: 3px;\n  stroke-linecap: round;\n}\n.dv-border-box-4 .dv-bb4-line-4 {\n  stroke-width: 3px;\n  stroke-linecap: round;\n}\n.dv-border-box-4 .dv-bb4-line-5 {\n  stroke-width: 1;\n}\n.dv-border-box-4 .dv-bb4-line-6 {\n  stroke-width: 1;\n}\n.dv-border-box-4 .dv-bb4-line-7 {\n  stroke-width: 1;\n}\n.dv-border-box-4 .dv-bb4-line-8 {\n  stroke-width: 3px;\n  stroke-linecap: round;\n}\n.dv-border-box-4 .dv-bb4-line-9 {\n  stroke-width: 3px;\n  stroke-linecap: round;\n  stroke-dasharray: 100 250;\n}\n.dv-border-box-4 .dv-bb4-line-10 {\n  stroke-width: 1;\n  stroke-dasharray: 80 270;\n}\n.dv-border-box-4 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
+      inject("data-v-79963212_0", { source: ".dv-border-box-4 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-4 .dv-reverse {\n  transform: rotate(180deg);\n}\n.dv-border-box-4 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-border-box-4 .dv-border-svg-container > polyline {\n  fill: none;\n}\n.dv-border-box-4 .sw1 {\n  stroke-width: 1;\n}\n.dv-border-box-4 .sw3 {\n  stroke-width: 3px;\n  stroke-linecap: round;\n}\n.dv-border-box-4 .dv-bb4-line-1 {\n  stroke-width: 1;\n}\n.dv-border-box-4 .dv-bb4-line-2 {\n  stroke-width: 1;\n}\n.dv-border-box-4 .dv-bb4-line-3 {\n  stroke-width: 3px;\n  stroke-linecap: round;\n}\n.dv-border-box-4 .dv-bb4-line-4 {\n  stroke-width: 3px;\n  stroke-linecap: round;\n}\n.dv-border-box-4 .dv-bb4-line-5 {\n  stroke-width: 1;\n}\n.dv-border-box-4 .dv-bb4-line-6 {\n  stroke-width: 1;\n}\n.dv-border-box-4 .dv-bb4-line-7 {\n  stroke-width: 1;\n}\n.dv-border-box-4 .dv-bb4-line-8 {\n  stroke-width: 3px;\n  stroke-linecap: round;\n}\n.dv-border-box-4 .dv-bb4-line-9 {\n  stroke-width: 3px;\n  stroke-linecap: round;\n  stroke-dasharray: 100 250;\n}\n.dv-border-box-4 .dv-bb4-line-10 {\n  stroke-width: 1;\n  stroke-dasharray: 80 270;\n}\n.dv-border-box-4 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,yBAAyB;AAC3B;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,QAAQ;EACR,SAAS;AACX;AACA;EACE,UAAU;AACZ;AACA;EACE,eAAe;AACjB;AACA;EACE,iBAAiB;EACjB,qBAAqB;AACvB;AACA;EACE,eAAe;AACjB;AACA;EACE,eAAe;AACjB;AACA;EACE,iBAAiB;EACjB,qBAAqB;AACvB;AACA;EACE,iBAAiB;EACjB,qBAAqB;AACvB;AACA;EACE,eAAe;AACjB;AACA;EACE,eAAe;AACjB;AACA;EACE,eAAe;AACjB;AACA;EACE,iBAAiB;EACjB,qBAAqB;AACvB;AACA;EACE,iBAAiB;EACjB,qBAAqB;EACrB,yBAAyB;AAC3B;AACA;EACE,eAAe;EACf,wBAAwB;AAC1B;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-border-box-4 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-4 .dv-reverse {\n  transform: rotate(180deg);\n}\n.dv-border-box-4 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-border-box-4 .dv-border-svg-container > polyline {\n  fill: none;\n}\n.dv-border-box-4 .sw1 {\n  stroke-width: 1;\n}\n.dv-border-box-4 .sw3 {\n  stroke-width: 3px;\n  stroke-linecap: round;\n}\n.dv-border-box-4 .dv-bb4-line-1 {\n  stroke-width: 1;\n}\n.dv-border-box-4 .dv-bb4-line-2 {\n  stroke-width: 1;\n}\n.dv-border-box-4 .dv-bb4-line-3 {\n  stroke-width: 3px;\n  stroke-linecap: round;\n}\n.dv-border-box-4 .dv-bb4-line-4 {\n  stroke-width: 3px;\n  stroke-linecap: round;\n}\n.dv-border-box-4 .dv-bb4-line-5 {\n  stroke-width: 1;\n}\n.dv-border-box-4 .dv-bb4-line-6 {\n  stroke-width: 1;\n}\n.dv-border-box-4 .dv-bb4-line-7 {\n  stroke-width: 1;\n}\n.dv-border-box-4 .dv-bb4-line-8 {\n  stroke-width: 3px;\n  stroke-linecap: round;\n}\n.dv-border-box-4 .dv-bb4-line-9 {\n  stroke-width: 3px;\n  stroke-linecap: round;\n  stroke-dasharray: 100 250;\n}\n.dv-border-box-4 .dv-bb4-line-10 {\n  stroke-width: 1;\n  stroke-dasharray: 80 270;\n}\n.dv-border-box-4 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$5 = undefined;
+    const __vue_scope_id__$w = undefined;
     /* module identifier */
-    const __vue_module_identifier__$5 = undefined;
+    const __vue_module_identifier__$w = undefined;
     /* functional template */
-    const __vue_is_functional_template__$5 = false;
+    const __vue_is_functional_template__$w = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$5 = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$5, staticRenderFns: __vue_staticRenderFns__$5 },
-      __vue_inject_styles__$5,
-      __vue_script__$5,
-      __vue_scope_id__$5,
-      __vue_is_functional_template__$5,
-      __vue_module_identifier__$5,
+    const __vue_component__$w = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$w, staticRenderFns: __vue_staticRenderFns__$w },
+      __vue_inject_styles__$w,
+      __vue_script__$w,
+      __vue_scope_id__$w,
+      __vue_is_functional_template__$w,
+      __vue_module_identifier__$w,
       false,
       createInjector,
       undefined,
@@ -2217,11 +2258,11 @@
     );
 
   function borderBox4 (Vue) {
-    Vue.component(__vue_component__$5.name, __vue_component__$5);
+    Vue.component(__vue_component__$w.name, __vue_component__$w);
   }
 
   //
-  var script$6 = {
+  var script$v = {
     name: 'DvBorderBox5',
     mixins: [autoResize],
     props: {
@@ -2262,7 +2303,7 @@
           color,
           defaultColor
         } = this;
-        this.mergedColor = util_2$1(util_1(defaultColor, true), color || []);
+        this.mergedColor = util_2(util_1(defaultColor, true), color || []);
       }
 
     },
@@ -2277,10 +2318,10 @@
   };
 
   /* script */
-  const __vue_script__$6 = script$6;
+  const __vue_script__$v = script$v;
 
   /* template */
-  var __vue_render__$6 = function() {
+  var __vue_render__$v = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -2289,7 +2330,7 @@
         "svg",
         {
           class: "dv-border-svg-container  " + (_vm.reverse && "dv-reverse"),
-          attrs: { width: _vm.width, height: _vm.height }
+          attrs: { width: _vm.width, height: _vm.height },
         },
         [
           _c("polygon", {
@@ -2308,8 +2349,8 @@
                 (_vm.height - 24) +
                 " 10, " +
                 (_vm.height - 24) +
-                "\n    "
-            }
+                "\n    ",
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
@@ -2329,8 +2370,8 @@
                 (_vm.height - 5) +
                 " 8, " +
                 (_vm.height - 5) +
-                " 8, 5"
-            }
+                " 8, 5",
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
@@ -2350,24 +2391,24 @@
                 (_vm.height - 5) +
                 " 3, " +
                 (_vm.height - 5) +
-                " 3, 5"
-            }
+                " 3, 5",
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
             staticClass: "dv-bb5-line-3",
             attrs: {
               stroke: _vm.mergedColor[1],
-              points: "50, 13 " + (_vm.width - 35) + ", 13"
-            }
+              points: "50, 13 " + (_vm.width - 35) + ", 13",
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
             staticClass: "dv-bb5-line-4",
             attrs: {
               stroke: _vm.mergedColor[1],
-              points: "15, 20 " + (_vm.width - 35) + ", 20"
-            }
+              points: "15, 20 " + (_vm.width - 35) + ", 20",
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
@@ -2380,8 +2421,8 @@
                 " " +
                 (_vm.width - 110) +
                 ", " +
-                (_vm.height - 20)
-            }
+                (_vm.height - 20),
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
@@ -2394,43 +2435,43 @@
                 " " +
                 (_vm.width - 110) +
                 ", " +
-                (_vm.height - 13)
-            }
-          })
+                (_vm.height - 13),
+            },
+          }),
         ]
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "border-box-content" }, [_vm._t("default")], 2)
+      _c("div", { staticClass: "border-box-content" }, [_vm._t("default")], 2),
     ])
   };
-  var __vue_staticRenderFns__$6 = [];
-  __vue_render__$6._withStripped = true;
+  var __vue_staticRenderFns__$v = [];
+  __vue_render__$v._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$6 = function (inject) {
+    const __vue_inject_styles__$v = function (inject) {
       if (!inject) return
-      inject("data-v-5e711d00_0", { source: ".dv-border-box-5 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-5 .dv-reverse {\n  transform: rotate(180deg);\n}\n.dv-border-box-5 .dv-border-svg-container {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-5 .dv-border-svg-container > polyline {\n  fill: none;\n}\n.dv-border-box-5 .dv-bb5-line-1,\n.dv-border-box-5 .dv-bb5-line-2 {\n  stroke-width: 1;\n}\n.dv-border-box-5 .dv-bb5-line-3,\n.dv-border-box-5 .dv-bb5-line-6 {\n  stroke-width: 5;\n}\n.dv-border-box-5 .dv-bb5-line-4,\n.dv-border-box-5 .dv-bb5-line-5 {\n  stroke-width: 2;\n}\n.dv-border-box-5 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,yBAAyB;AAC3B;AACA;EACE,kBAAkB;EAClB,QAAQ;EACR,SAAS;EACT,WAAW;EACX,YAAY;AACd;AACA;EACE,UAAU;AACZ;AACA;;EAEE,eAAe;AACjB;AACA;;EAEE,eAAe;AACjB;AACA;;EAEE,eAAe;AACjB;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-border-box-5 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-5 .dv-reverse {\n  transform: rotate(180deg);\n}\n.dv-border-box-5 .dv-border-svg-container {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-5 .dv-border-svg-container > polyline {\n  fill: none;\n}\n.dv-border-box-5 .dv-bb5-line-1,\n.dv-border-box-5 .dv-bb5-line-2 {\n  stroke-width: 1;\n}\n.dv-border-box-5 .dv-bb5-line-3,\n.dv-border-box-5 .dv-bb5-line-6 {\n  stroke-width: 5;\n}\n.dv-border-box-5 .dv-bb5-line-4,\n.dv-border-box-5 .dv-bb5-line-5 {\n  stroke-width: 2;\n}\n.dv-border-box-5 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
+      inject("data-v-3a087ed2_0", { source: ".dv-border-box-5 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-5 .dv-reverse {\n  transform: rotate(180deg);\n}\n.dv-border-box-5 .dv-border-svg-container {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-5 .dv-border-svg-container > polyline {\n  fill: none;\n}\n.dv-border-box-5 .dv-bb5-line-1,\n.dv-border-box-5 .dv-bb5-line-2 {\n  stroke-width: 1;\n}\n.dv-border-box-5 .dv-bb5-line-3,\n.dv-border-box-5 .dv-bb5-line-6 {\n  stroke-width: 5;\n}\n.dv-border-box-5 .dv-bb5-line-4,\n.dv-border-box-5 .dv-bb5-line-5 {\n  stroke-width: 2;\n}\n.dv-border-box-5 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,yBAAyB;AAC3B;AACA;EACE,kBAAkB;EAClB,QAAQ;EACR,SAAS;EACT,WAAW;EACX,YAAY;AACd;AACA;EACE,UAAU;AACZ;AACA;;EAEE,eAAe;AACjB;AACA;;EAEE,eAAe;AACjB;AACA;;EAEE,eAAe;AACjB;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-border-box-5 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-5 .dv-reverse {\n  transform: rotate(180deg);\n}\n.dv-border-box-5 .dv-border-svg-container {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-5 .dv-border-svg-container > polyline {\n  fill: none;\n}\n.dv-border-box-5 .dv-bb5-line-1,\n.dv-border-box-5 .dv-bb5-line-2 {\n  stroke-width: 1;\n}\n.dv-border-box-5 .dv-bb5-line-3,\n.dv-border-box-5 .dv-bb5-line-6 {\n  stroke-width: 5;\n}\n.dv-border-box-5 .dv-bb5-line-4,\n.dv-border-box-5 .dv-bb5-line-5 {\n  stroke-width: 2;\n}\n.dv-border-box-5 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$6 = undefined;
+    const __vue_scope_id__$v = undefined;
     /* module identifier */
-    const __vue_module_identifier__$6 = undefined;
+    const __vue_module_identifier__$v = undefined;
     /* functional template */
-    const __vue_is_functional_template__$6 = false;
+    const __vue_is_functional_template__$v = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$6 = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$6, staticRenderFns: __vue_staticRenderFns__$6 },
-      __vue_inject_styles__$6,
-      __vue_script__$6,
-      __vue_scope_id__$6,
-      __vue_is_functional_template__$6,
-      __vue_module_identifier__$6,
+    const __vue_component__$v = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$v, staticRenderFns: __vue_staticRenderFns__$v },
+      __vue_inject_styles__$v,
+      __vue_script__$v,
+      __vue_scope_id__$v,
+      __vue_is_functional_template__$v,
+      __vue_module_identifier__$v,
       false,
       createInjector,
       undefined,
@@ -2438,11 +2479,11 @@
     );
 
   function borderBox5 (Vue) {
-    Vue.component(__vue_component__$6.name, __vue_component__$6);
+    Vue.component(__vue_component__$v.name, __vue_component__$v);
   }
 
   //
-  var script$7 = {
+  var script$u = {
     name: 'DvBorderBox6',
     mixins: [autoResize],
     props: {
@@ -2479,7 +2520,7 @@
           color,
           defaultColor
         } = this;
-        this.mergedColor = util_2$1(util_1(defaultColor, true), color || []);
+        this.mergedColor = util_2(util_1(defaultColor, true), color || []);
       }
 
     },
@@ -2494,10 +2535,10 @@
   };
 
   /* script */
-  const __vue_script__$7 = script$7;
+  const __vue_script__$u = script$u;
 
   /* template */
-  var __vue_render__$7 = function() {
+  var __vue_render__$u = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -2506,7 +2547,7 @@
         "svg",
         {
           staticClass: "dv-border-svg-container",
-          attrs: { width: _vm.width, height: _vm.height }
+          attrs: { width: _vm.width, height: _vm.height },
         },
         [
           _c("polygon", {
@@ -2521,12 +2562,12 @@
                 (_vm.height - 7) +
                 " 9, " +
                 (_vm.height - 7) +
-                "\n    "
-            }
+                "\n    ",
+            },
           }),
           _vm._v(" "),
           _c("circle", {
-            attrs: { fill: _vm.mergedColor[1], cx: "5", cy: "5", r: "2" }
+            attrs: { fill: _vm.mergedColor[1], cx: "5", cy: "5", r: "2" },
           }),
           _vm._v(" "),
           _c("circle", {
@@ -2534,8 +2575,8 @@
               fill: _vm.mergedColor[1],
               cx: _vm.width - 5,
               cy: "5",
-              r: "2"
-            }
+              r: "2",
+            },
           }),
           _vm._v(" "),
           _c("circle", {
@@ -2543,8 +2584,8 @@
               fill: _vm.mergedColor[1],
               cx: _vm.width - 5,
               cy: _vm.height - 5,
-              r: "2"
-            }
+              r: "2",
+            },
           }),
           _vm._v(" "),
           _c("circle", {
@@ -2552,15 +2593,15 @@
               fill: _vm.mergedColor[1],
               cx: "5",
               cy: _vm.height - 5,
-              r: "2"
-            }
+              r: "2",
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
             attrs: {
               stroke: _vm.mergedColor[0],
-              points: "10, 4 " + (_vm.width - 10) + ", 4"
-            }
+              points: "10, 4 " + (_vm.width - 10) + ", 4",
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
@@ -2572,15 +2613,15 @@
                 " " +
                 (_vm.width - 10) +
                 ", " +
-                (_vm.height - 4)
-            }
+                (_vm.height - 4),
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
             attrs: {
               stroke: _vm.mergedColor[0],
-              points: "5, 70 5, " + (_vm.height - 70)
-            }
+              points: "5, 70 5, " + (_vm.height - 70),
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
@@ -2592,44 +2633,44 @@
                 ", 70 " +
                 (_vm.width - 5) +
                 ", " +
-                (_vm.height - 70)
-            }
+                (_vm.height - 70),
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
-            attrs: { stroke: _vm.mergedColor[0], points: "3, 10, 3, 50" }
+            attrs: { stroke: _vm.mergedColor[0], points: "3, 10, 3, 50" },
           }),
           _vm._v(" "),
           _c("polyline", {
-            attrs: { stroke: _vm.mergedColor[0], points: "7, 30 7, 80" }
-          }),
-          _vm._v(" "),
-          _c("polyline", {
-            attrs: {
-              stroke: _vm.mergedColor[0],
-              points: _vm.width - 3 + ", 10 " + (_vm.width - 3) + ", 50"
-            }
+            attrs: { stroke: _vm.mergedColor[0], points: "7, 30 7, 80" },
           }),
           _vm._v(" "),
           _c("polyline", {
             attrs: {
               stroke: _vm.mergedColor[0],
-              points: _vm.width - 7 + ", 30 " + (_vm.width - 7) + ", 80"
-            }
+              points: _vm.width - 3 + ", 10 " + (_vm.width - 3) + ", 50",
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
             attrs: {
               stroke: _vm.mergedColor[0],
-              points: "3, " + (_vm.height - 10) + " 3, " + (_vm.height - 50)
-            }
+              points: _vm.width - 7 + ", 30 " + (_vm.width - 7) + ", 80",
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
             attrs: {
               stroke: _vm.mergedColor[0],
-              points: "7, " + (_vm.height - 30) + " 7, " + (_vm.height - 80)
-            }
+              points: "3, " + (_vm.height - 10) + " 3, " + (_vm.height - 50),
+            },
+          }),
+          _vm._v(" "),
+          _c("polyline", {
+            attrs: {
+              stroke: _vm.mergedColor[0],
+              points: "7, " + (_vm.height - 30) + " 7, " + (_vm.height - 80),
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
@@ -2643,8 +2684,8 @@
                 " " +
                 (_vm.width - 3) +
                 ", " +
-                (_vm.height - 50)
-            }
+                (_vm.height - 50),
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
@@ -2658,43 +2699,43 @@
                 " " +
                 (_vm.width - 7) +
                 ", " +
-                (_vm.height - 80)
-            }
-          })
+                (_vm.height - 80),
+            },
+          }),
         ]
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "border-box-content" }, [_vm._t("default")], 2)
+      _c("div", { staticClass: "border-box-content" }, [_vm._t("default")], 2),
     ])
   };
-  var __vue_staticRenderFns__$7 = [];
-  __vue_render__$7._withStripped = true;
+  var __vue_staticRenderFns__$u = [];
+  __vue_render__$u._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$7 = function (inject) {
+    const __vue_inject_styles__$u = function (inject) {
       if (!inject) return
-      inject("data-v-715598fc_0", { source: ".dv-border-box-6 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-6 .dv-border-svg-container {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-6 .dv-border-svg-container > polyline {\n  fill: none;\n  stroke-width: 1;\n}\n.dv-border-box-6 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,kBAAkB;EAClB,QAAQ;EACR,SAAS;EACT,WAAW;EACX,YAAY;AACd;AACA;EACE,UAAU;EACV,eAAe;AACjB;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-border-box-6 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-6 .dv-border-svg-container {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-6 .dv-border-svg-container > polyline {\n  fill: none;\n  stroke-width: 1;\n}\n.dv-border-box-6 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
+      inject("data-v-73b140da_0", { source: ".dv-border-box-6 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-6 .dv-border-svg-container {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-6 .dv-border-svg-container > polyline {\n  fill: none;\n  stroke-width: 1;\n}\n.dv-border-box-6 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,kBAAkB;EAClB,QAAQ;EACR,SAAS;EACT,WAAW;EACX,YAAY;AACd;AACA;EACE,UAAU;EACV,eAAe;AACjB;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-border-box-6 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-6 .dv-border-svg-container {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-6 .dv-border-svg-container > polyline {\n  fill: none;\n  stroke-width: 1;\n}\n.dv-border-box-6 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$7 = undefined;
+    const __vue_scope_id__$u = undefined;
     /* module identifier */
-    const __vue_module_identifier__$7 = undefined;
+    const __vue_module_identifier__$u = undefined;
     /* functional template */
-    const __vue_is_functional_template__$7 = false;
+    const __vue_is_functional_template__$u = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$7 = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$7, staticRenderFns: __vue_staticRenderFns__$7 },
-      __vue_inject_styles__$7,
-      __vue_script__$7,
-      __vue_scope_id__$7,
-      __vue_is_functional_template__$7,
-      __vue_module_identifier__$7,
+    const __vue_component__$u = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$u, staticRenderFns: __vue_staticRenderFns__$u },
+      __vue_inject_styles__$u,
+      __vue_script__$u,
+      __vue_scope_id__$u,
+      __vue_is_functional_template__$u,
+      __vue_module_identifier__$u,
       false,
       createInjector,
       undefined,
@@ -2702,11 +2743,11 @@
     );
 
   function borderBox6 (Vue) {
-    Vue.component(__vue_component__$7.name, __vue_component__$7);
+    Vue.component(__vue_component__$u.name, __vue_component__$u);
   }
 
   //
-  var script$8 = {
+  var script$t = {
     name: 'DvBorderBox7',
     mixins: [autoResize],
     props: {
@@ -2743,7 +2784,7 @@
           color,
           defaultColor
         } = this;
-        this.mergedColor = util_2$1(util_1(defaultColor, true), color || []);
+        this.mergedColor = util_2(util_1(defaultColor, true), color || []);
       }
 
     },
@@ -2758,10 +2799,10 @@
   };
 
   /* script */
-  const __vue_script__$8 = script$8;
+  const __vue_script__$t = script$t;
 
   /* template */
-  var __vue_render__$8 = function() {
+  var __vue_render__$t = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -2776,19 +2817,19 @@
           "; border: 1px solid " +
           _vm.mergedColor[0] +
           "; background-color: " +
-          _vm.backgroundColor
+          _vm.backgroundColor,
       },
       [
         _c(
           "svg",
           {
             staticClass: "dv-border-svg-container",
-            attrs: { width: _vm.width, height: _vm.height }
+            attrs: { width: _vm.width, height: _vm.height },
           },
           [
             _c("polyline", {
               staticClass: "dv-bb7-line-width-2",
-              attrs: { stroke: _vm.mergedColor[0], points: "0, 25 0, 0 25, 0" }
+              attrs: { stroke: _vm.mergedColor[0], points: "0, 25 0, 0 25, 0" },
             }),
             _vm._v(" "),
             _c("polyline", {
@@ -2802,8 +2843,8 @@
                   _vm.width +
                   ", 0 " +
                   _vm.width +
-                  ", 25"
-              }
+                  ", 25",
+              },
             }),
             _vm._v(" "),
             _c("polyline", {
@@ -2822,8 +2863,8 @@
                   " " +
                   _vm.width +
                   ", " +
-                  (_vm.height - 25)
-              }
+                  (_vm.height - 25),
+              },
             }),
             _vm._v(" "),
             _c("polyline", {
@@ -2836,13 +2877,13 @@
                   " 0, " +
                   _vm.height +
                   " 25, " +
-                  _vm.height
-              }
+                  _vm.height,
+              },
             }),
             _vm._v(" "),
             _c("polyline", {
               staticClass: "dv-bb7-line-width-5",
-              attrs: { stroke: _vm.mergedColor[1], points: "0, 10 0, 0 10, 0" }
+              attrs: { stroke: _vm.mergedColor[1], points: "0, 10 0, 0 10, 0" },
             }),
             _vm._v(" "),
             _c("polyline", {
@@ -2856,8 +2897,8 @@
                   _vm.width +
                   ", 0 " +
                   _vm.width +
-                  ", 10"
-              }
+                  ", 10",
+              },
             }),
             _vm._v(" "),
             _c("polyline", {
@@ -2876,8 +2917,8 @@
                   " " +
                   _vm.width +
                   ", " +
-                  (_vm.height - 10)
-              }
+                  (_vm.height - 10),
+              },
             }),
             _vm._v(" "),
             _c("polyline", {
@@ -2890,44 +2931,44 @@
                   " 0, " +
                   _vm.height +
                   " 10, " +
-                  _vm.height
-              }
-            })
+                  _vm.height,
+              },
+            }),
           ]
         ),
         _vm._v(" "),
-        _c("div", { staticClass: "border-box-content" }, [_vm._t("default")], 2)
+        _c("div", { staticClass: "border-box-content" }, [_vm._t("default")], 2),
       ]
     )
   };
-  var __vue_staticRenderFns__$8 = [];
-  __vue_render__$8._withStripped = true;
+  var __vue_staticRenderFns__$t = [];
+  __vue_render__$t._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$8 = function (inject) {
+    const __vue_inject_styles__$t = function (inject) {
       if (!inject) return
-      inject("data-v-21156cd2_0", { source: ".dv-border-box-7 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-7 .dv-border-svg-container {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-7 .dv-border-svg-container > polyline {\n  fill: none;\n  stroke-linecap: round;\n}\n.dv-border-box-7 .dv-bb7-line-width-2 {\n  stroke-width: 2;\n}\n.dv-border-box-7 .dv-bb7-line-width-5 {\n  stroke-width: 5;\n}\n.dv-border-box-7 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,kBAAkB;EAClB,QAAQ;EACR,SAAS;EACT,WAAW;EACX,YAAY;AACd;AACA;EACE,UAAU;EACV,qBAAqB;AACvB;AACA;EACE,eAAe;AACjB;AACA;EACE,eAAe;AACjB;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-border-box-7 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-7 .dv-border-svg-container {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-7 .dv-border-svg-container > polyline {\n  fill: none;\n  stroke-linecap: round;\n}\n.dv-border-box-7 .dv-bb7-line-width-2 {\n  stroke-width: 2;\n}\n.dv-border-box-7 .dv-bb7-line-width-5 {\n  stroke-width: 5;\n}\n.dv-border-box-7 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
+      inject("data-v-37454e2d_0", { source: ".dv-border-box-7 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-7 .dv-border-svg-container {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-7 .dv-border-svg-container > polyline {\n  fill: none;\n  stroke-linecap: round;\n}\n.dv-border-box-7 .dv-bb7-line-width-2 {\n  stroke-width: 2;\n}\n.dv-border-box-7 .dv-bb7-line-width-5 {\n  stroke-width: 5;\n}\n.dv-border-box-7 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,kBAAkB;EAClB,QAAQ;EACR,SAAS;EACT,WAAW;EACX,YAAY;AACd;AACA;EACE,UAAU;EACV,qBAAqB;AACvB;AACA;EACE,eAAe;AACjB;AACA;EACE,eAAe;AACjB;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-border-box-7 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-7 .dv-border-svg-container {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-7 .dv-border-svg-container > polyline {\n  fill: none;\n  stroke-linecap: round;\n}\n.dv-border-box-7 .dv-bb7-line-width-2 {\n  stroke-width: 2;\n}\n.dv-border-box-7 .dv-bb7-line-width-5 {\n  stroke-width: 5;\n}\n.dv-border-box-7 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$8 = undefined;
+    const __vue_scope_id__$t = undefined;
     /* module identifier */
-    const __vue_module_identifier__$8 = undefined;
+    const __vue_module_identifier__$t = undefined;
     /* functional template */
-    const __vue_is_functional_template__$8 = false;
+    const __vue_is_functional_template__$t = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$8 = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$8, staticRenderFns: __vue_staticRenderFns__$8 },
-      __vue_inject_styles__$8,
-      __vue_script__$8,
-      __vue_scope_id__$8,
-      __vue_is_functional_template__$8,
-      __vue_module_identifier__$8,
+    const __vue_component__$t = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$t, staticRenderFns: __vue_staticRenderFns__$t },
+      __vue_inject_styles__$t,
+      __vue_script__$t,
+      __vue_scope_id__$t,
+      __vue_is_functional_template__$t,
+      __vue_module_identifier__$t,
       false,
       createInjector,
       undefined,
@@ -2935,11 +2976,11 @@
     );
 
   function borderBox7 (Vue) {
-    Vue.component(__vue_component__$8.name, __vue_component__$8);
+    Vue.component(__vue_component__$t.name, __vue_component__$t);
   }
 
   //
-  var script$9 = {
+  var script$s = {
     name: 'DvBorderBox8',
     mixins: [autoResize],
     props: {
@@ -3008,7 +3049,7 @@
           color,
           defaultColor
         } = this;
-        this.mergedColor = util_2$1(util_1(defaultColor, true), color || []);
+        this.mergedColor = util_2(util_1(defaultColor, true), color || []);
       }
 
     },
@@ -3023,10 +3064,10 @@
   };
 
   /* script */
-  const __vue_script__$9 = script$9;
+  const __vue_script__$s = script$s;
 
   /* template */
-  var __vue_render__$9 = function() {
+  var __vue_render__$s = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -3035,14 +3076,14 @@
         "svg",
         {
           staticClass: "dv-border-svg-container",
-          attrs: { width: _vm.width, height: _vm.height }
+          attrs: { width: _vm.width, height: _vm.height },
         },
         [
           _c(
             "defs",
             [
               _c("path", {
-                attrs: { id: _vm.path, d: _vm.pathD, fill: "transparent" }
+                attrs: { id: _vm.path, d: _vm.pathD, fill: "transparent" },
               }),
               _vm._v(" "),
               _c(
@@ -3053,17 +3094,17 @@
                     attrs: {
                       offset: "0%",
                       "stop-color": "#fff",
-                      "stop-opacity": "1"
-                    }
+                      "stop-opacity": "1",
+                    },
                   }),
                   _vm._v(" "),
                   _c("stop", {
                     attrs: {
                       offset: "100%",
                       "stop-color": "#fff",
-                      "stop-opacity": "0"
-                    }
-                  })
+                      "stop-opacity": "0",
+                    },
+                  }),
                 ],
                 1
               ),
@@ -3076,8 +3117,8 @@
                       cx: "0",
                       cy: "0",
                       r: "150",
-                      fill: "url(#" + _vm.gradient + ")"
-                    }
+                      fill: "url(#" + _vm.gradient + ")",
+                    },
                   },
                   [
                     _c("animateMotion", {
@@ -3085,13 +3126,13 @@
                         dur: _vm.dur + "s",
                         path: _vm.pathD,
                         rotate: "auto",
-                        repeatCount: "indefinite"
-                      }
-                    })
+                        repeatCount: "indefinite",
+                      },
+                    }),
                   ],
                   1
-                )
-              ])
+                ),
+              ]),
             ],
             1
           ),
@@ -3107,16 +3148,16 @@
                 " " +
                 (_vm.height - 5) +
                 " 5, " +
-                (_vm.height - 5)
-            }
+                (_vm.height - 5),
+            },
           }),
           _vm._v(" "),
           _c("use", {
             attrs: {
               stroke: _vm.mergedColor[0],
               "stroke-width": "1",
-              "xlink:href": "#" + _vm.path
-            }
+              "xlink:href": "#" + _vm.path,
+            },
           }),
           _vm._v(" "),
           _c(
@@ -3126,8 +3167,8 @@
                 stroke: _vm.mergedColor[1],
                 "stroke-width": "3",
                 "xlink:href": "#" + _vm.path,
-                mask: "url(#" + _vm.mask + ")"
-              }
+                mask: "url(#" + _vm.mask + ")",
+              },
             },
             [
               _c("animate", {
@@ -3136,45 +3177,45 @@
                   from: "0, " + _vm.length,
                   to: _vm.length + ", 0",
                   dur: _vm.dur + "s",
-                  repeatCount: "indefinite"
-                }
-              })
+                  repeatCount: "indefinite",
+                },
+              }),
             ]
-          )
+          ),
         ]
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "border-box-content" }, [_vm._t("default")], 2)
+      _c("div", { staticClass: "border-box-content" }, [_vm._t("default")], 2),
     ])
   };
-  var __vue_staticRenderFns__$9 = [];
-  __vue_render__$9._withStripped = true;
+  var __vue_staticRenderFns__$s = [];
+  __vue_render__$s._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$9 = function (inject) {
+    const __vue_inject_styles__$s = function (inject) {
       if (!inject) return
-      inject("data-v-681e49b5_0", { source: ".dv-border-box-8 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-8 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0px;\n  top: 0px;\n}\n.dv-border-box-8 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,SAAS;EACT,QAAQ;AACV;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-border-box-8 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-8 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0px;\n  top: 0px;\n}\n.dv-border-box-8 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
+      inject("data-v-6152ff49_0", { source: ".dv-border-box-8 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-8 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0px;\n  top: 0px;\n}\n.dv-border-box-8 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,SAAS;EACT,QAAQ;AACV;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-border-box-8 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-8 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0px;\n  top: 0px;\n}\n.dv-border-box-8 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$9 = undefined;
+    const __vue_scope_id__$s = undefined;
     /* module identifier */
-    const __vue_module_identifier__$9 = undefined;
+    const __vue_module_identifier__$s = undefined;
     /* functional template */
-    const __vue_is_functional_template__$9 = false;
+    const __vue_is_functional_template__$s = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$9 = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$9, staticRenderFns: __vue_staticRenderFns__$9 },
-      __vue_inject_styles__$9,
-      __vue_script__$9,
-      __vue_scope_id__$9,
-      __vue_is_functional_template__$9,
-      __vue_module_identifier__$9,
+    const __vue_component__$s = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$s, staticRenderFns: __vue_staticRenderFns__$s },
+      __vue_inject_styles__$s,
+      __vue_script__$s,
+      __vue_scope_id__$s,
+      __vue_is_functional_template__$s,
+      __vue_module_identifier__$s,
       false,
       createInjector,
       undefined,
@@ -3182,11 +3223,11 @@
     );
 
   function borderBox8 (Vue) {
-    Vue.component(__vue_component__$9.name, __vue_component__$9);
+    Vue.component(__vue_component__$s.name, __vue_component__$s);
   }
 
   //
-  var script$a = {
+  var script$r = {
     name: 'DvBorderBox9',
     mixins: [autoResize],
     props: {
@@ -3226,7 +3267,7 @@
           color,
           defaultColor
         } = this;
-        this.mergedColor = util_2$1(util_1(defaultColor, true), color || []);
+        this.mergedColor = util_2(util_1(defaultColor, true), color || []);
       }
 
     },
@@ -3241,10 +3282,10 @@
   };
 
   /* script */
-  const __vue_script__$a = script$a;
+  const __vue_script__$r = script$r;
 
   /* template */
-  var __vue_render__$a = function() {
+  var __vue_render__$r = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -3253,7 +3294,7 @@
         "svg",
         {
           staticClass: "dv-border-svg-container",
-          attrs: { width: _vm.width, height: _vm.height }
+          attrs: { width: _vm.width, height: _vm.height },
         },
         [
           _c(
@@ -3267,8 +3308,8 @@
                     x1: "0%",
                     y1: "0%",
                     x2: "100%",
-                    y2: "100%"
-                  }
+                    y2: "100%",
+                  },
                 },
                 [
                   _c("animate", {
@@ -3277,8 +3318,8 @@
                       values: "0%;100%;0%",
                       dur: "10s",
                       begin: "0s",
-                      repeatCount: "indefinite"
-                    }
+                      repeatCount: "indefinite",
+                    },
                   }),
                   _vm._v(" "),
                   _c("animate", {
@@ -3287,8 +3328,8 @@
                       values: "100%;0%;100%",
                       dur: "10s",
                       begin: "0s",
-                      repeatCount: "indefinite"
-                    }
+                      repeatCount: "indefinite",
+                    },
                   }),
                   _vm._v(" "),
                   _c(
@@ -3306,16 +3347,16 @@
                             _vm.mergedColor[0],
                           dur: "10s",
                           begin: "0s",
-                          repeatCount: "indefinite"
-                        }
-                      })
+                          repeatCount: "indefinite",
+                        },
+                      }),
                     ]
                   ),
                   _vm._v(" "),
                   _c(
                     "stop",
                     {
-                      attrs: { offset: "100%", "stop-color": _vm.mergedColor[1] }
+                      attrs: { offset: "100%", "stop-color": _vm.mergedColor[1] },
                     },
                     [
                       _c("animate", {
@@ -3329,11 +3370,11 @@
                             _vm.mergedColor[1],
                           dur: "10s",
                           begin: "0s",
-                          repeatCount: "indefinite"
-                        }
-                      })
+                          repeatCount: "indefinite",
+                        },
+                      }),
                     ]
-                  )
+                  ),
                 ],
                 1
               ),
@@ -3349,8 +3390,8 @@
                       _vm.height * 0.4 +
                       " 8, 3, " +
                       (_vm.width * 0.4 + 7) +
-                      ", 3"
-                  }
+                      ", 3",
+                  },
                 }),
                 _vm._v(" "),
                 _c("polyline", {
@@ -3365,8 +3406,8 @@
                       _vm.width * 0.1 +
                       ", 8 14, 8 14, " +
                       (_vm.height * 0.15 - 7) +
-                      "\n          "
-                  }
+                      "\n          ",
+                  },
                 }),
                 _vm._v(" "),
                 _c("polyline", {
@@ -3381,8 +3422,8 @@
                       ", 3, " +
                       (_vm.width - 3) +
                       ", " +
-                      _vm.height * 0.25
-                  }
+                      _vm.height * 0.25,
+                  },
                 }),
                 _vm._v(" "),
                 _c("polyline", {
@@ -3397,8 +3438,8 @@
                       (_vm.width * 0.58 - 7) +
                       ", 9 " +
                       (_vm.width * 0.52 + 7) +
-                      ", 9\n          "
-                  }
+                      ", 9\n          ",
+                  },
                 }),
                 _vm._v(" "),
                 _c("polyline", {
@@ -3421,8 +3462,8 @@
                       (_vm.width - 9) +
                       ", 9 " +
                       (_vm.width * 0.9 + 7) +
-                      ", 9\n          "
-                  }
+                      ", 9\n          ",
+                  },
                 }),
                 _vm._v(" "),
                 _c("polyline", {
@@ -3438,8 +3479,8 @@
                       " " +
                       (_vm.width * 0.3 + 7) +
                       ", " +
-                      (_vm.height - 3)
-                  }
+                      (_vm.height - 3),
+                  },
                 }),
                 _vm._v(" "),
                 _c("polyline", {
@@ -3454,8 +3495,8 @@
                       (_vm.height * 0.7 - 7) +
                       " 2, " +
                       (_vm.height * 0.55 + 7) +
-                      "\n          "
-                  }
+                      "\n          ",
+                  },
                 }),
                 _vm._v(" "),
                 _c("polyline", {
@@ -3474,8 +3515,8 @@
                       " " +
                       (_vm.width - 3) +
                       ", " +
-                      _vm.height * 0.35
-                  }
+                      _vm.height * 0.35,
+                  },
                 }),
                 _vm._v(" "),
                 _c("polyline", {
@@ -3506,10 +3547,10 @@
                       (_vm.width * 0.92 + 7) +
                       ", " +
                       (_vm.height - 9) +
-                      "\n          "
-                  }
-                })
-              ])
+                      "\n          ",
+                  },
+                }),
+              ]),
             ],
             1
           ),
@@ -3570,8 +3611,8 @@
                 (_vm.height * 0.15 - 2) +
                 " 15, " +
                 (_vm.height * 0.15 - 7) +
-                "\n    "
-            }
+                "\n    ",
+            },
           }),
           _vm._v(" "),
           _c("rect", {
@@ -3581,43 +3622,43 @@
               width: _vm.width,
               height: _vm.height,
               fill: "url(#" + _vm.gradientId + ")",
-              mask: "url(#" + _vm.maskId + ")"
-            }
-          })
+              mask: "url(#" + _vm.maskId + ")",
+            },
+          }),
         ]
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "border-box-content" }, [_vm._t("default")], 2)
+      _c("div", { staticClass: "border-box-content" }, [_vm._t("default")], 2),
     ])
   };
-  var __vue_staticRenderFns__$a = [];
-  __vue_render__$a._withStripped = true;
+  var __vue_staticRenderFns__$r = [];
+  __vue_render__$r._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$a = function (inject) {
+    const __vue_inject_styles__$r = function (inject) {
       if (!inject) return
-      inject("data-v-db539808_0", { source: ".dv-border-box-9 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-9 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0px;\n  top: 0px;\n}\n.dv-border-box-9 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,SAAS;EACT,QAAQ;AACV;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-border-box-9 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-9 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0px;\n  top: 0px;\n}\n.dv-border-box-9 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
+      inject("data-v-cc216a04_0", { source: ".dv-border-box-9 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-9 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0px;\n  top: 0px;\n}\n.dv-border-box-9 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,SAAS;EACT,QAAQ;AACV;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-border-box-9 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-9 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0px;\n  top: 0px;\n}\n.dv-border-box-9 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$a = undefined;
+    const __vue_scope_id__$r = undefined;
     /* module identifier */
-    const __vue_module_identifier__$a = undefined;
+    const __vue_module_identifier__$r = undefined;
     /* functional template */
-    const __vue_is_functional_template__$a = false;
+    const __vue_is_functional_template__$r = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$a = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$a, staticRenderFns: __vue_staticRenderFns__$a },
-      __vue_inject_styles__$a,
-      __vue_script__$a,
-      __vue_scope_id__$a,
-      __vue_is_functional_template__$a,
-      __vue_module_identifier__$a,
+    const __vue_component__$r = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$r, staticRenderFns: __vue_staticRenderFns__$r },
+      __vue_inject_styles__$r,
+      __vue_script__$r,
+      __vue_scope_id__$r,
+      __vue_is_functional_template__$r,
+      __vue_module_identifier__$r,
       false,
       createInjector,
       undefined,
@@ -3625,11 +3666,11 @@
     );
 
   function borderBox9 (Vue) {
-    Vue.component(__vue_component__$a.name, __vue_component__$a);
+    Vue.component(__vue_component__$r.name, __vue_component__$r);
   }
 
   //
-  var script$b = {
+  var script$q = {
     name: 'DvBorderBox10',
     mixins: [autoResize],
     props: {
@@ -3667,7 +3708,7 @@
           color,
           defaultColor
         } = this;
-        this.mergedColor = util_2$1(util_1(defaultColor, true), color || []);
+        this.mergedColor = util_2(util_1(defaultColor, true), color || []);
       }
 
     },
@@ -3682,10 +3723,10 @@
   };
 
   /* script */
-  const __vue_script__$b = script$b;
+  const __vue_script__$q = script$q;
 
   /* template */
-  var __vue_render__$b = function() {
+  var __vue_render__$q = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -3694,14 +3735,14 @@
       {
         ref: _vm.ref,
         staticClass: "dv-border-box-10",
-        style: "box-shadow: inset 0 0 25px 3px " + _vm.mergedColor[0]
+        style: "box-shadow: inset 0 0 25px 3px " + _vm.mergedColor[0],
       },
       [
         _c(
           "svg",
           {
             staticClass: "dv-border-svg-container",
-            attrs: { width: _vm.width, height: _vm.height }
+            attrs: { width: _vm.width, height: _vm.height },
           },
           [
             _c("polygon", {
@@ -3724,64 +3765,64 @@
                   _vm.height +
                   " 0, " +
                   (_vm.height - 4) +
-                  " 0, 4\n    "
-              }
-            })
+                  " 0, 4\n    ",
+              },
+            }),
           ]
         ),
         _vm._v(" "),
-        _vm._l(_vm.border, function(item) {
+        _vm._l(_vm.border, function (item) {
           return _c(
             "svg",
             {
               key: item,
               class: item + " dv-border-svg-container",
-              attrs: { width: "150px", height: "150px" }
+              attrs: { width: "150px", height: "150px" },
             },
             [
               _c("polygon", {
                 attrs: {
                   fill: _vm.mergedColor[1],
-                  points: "40, 0 5, 0 0, 5 0, 16 3, 19 3, 7 7, 3 35, 3"
-                }
-              })
+                  points: "40, 0 5, 0 0, 5 0, 16 3, 19 3, 7 7, 3 35, 3",
+                },
+              }),
             ]
           )
         }),
         _vm._v(" "),
-        _c("div", { staticClass: "border-box-content" }, [_vm._t("default")], 2)
+        _c("div", { staticClass: "border-box-content" }, [_vm._t("default")], 2),
       ],
       2
     )
   };
-  var __vue_staticRenderFns__$b = [];
-  __vue_render__$b._withStripped = true;
+  var __vue_staticRenderFns__$q = [];
+  __vue_render__$q._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$b = function (inject) {
+    const __vue_inject_styles__$q = function (inject) {
       if (!inject) return
-      inject("data-v-746a9ff1_0", { source: ".dv-border-box-10 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  border-radius: 6px;\n}\n.dv-border-box-10 .dv-border-svg-container {\n  position: absolute;\n  display: block;\n}\n.dv-border-box-10 .right-top {\n  right: 0px;\n  transform: rotateY(180deg);\n}\n.dv-border-box-10 .left-bottom {\n  bottom: 0px;\n  transform: rotateX(180deg);\n}\n.dv-border-box-10 .right-bottom {\n  right: 0px;\n  bottom: 0px;\n  transform: rotateX(180deg) rotateY(180deg);\n}\n.dv-border-box-10 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,kBAAkB;AACpB;AACA;EACE,kBAAkB;EAClB,cAAc;AAChB;AACA;EACE,UAAU;EACV,0BAA0B;AAC5B;AACA;EACE,WAAW;EACX,0BAA0B;AAC5B;AACA;EACE,UAAU;EACV,WAAW;EACX,0CAA0C;AAC5C;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-border-box-10 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  border-radius: 6px;\n}\n.dv-border-box-10 .dv-border-svg-container {\n  position: absolute;\n  display: block;\n}\n.dv-border-box-10 .right-top {\n  right: 0px;\n  transform: rotateY(180deg);\n}\n.dv-border-box-10 .left-bottom {\n  bottom: 0px;\n  transform: rotateX(180deg);\n}\n.dv-border-box-10 .right-bottom {\n  right: 0px;\n  bottom: 0px;\n  transform: rotateX(180deg) rotateY(180deg);\n}\n.dv-border-box-10 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
+      inject("data-v-a942a8c6_0", { source: ".dv-border-box-10 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  border-radius: 6px;\n}\n.dv-border-box-10 .dv-border-svg-container {\n  position: absolute;\n  display: block;\n}\n.dv-border-box-10 .right-top {\n  right: 0px;\n  transform: rotateY(180deg);\n}\n.dv-border-box-10 .left-bottom {\n  bottom: 0px;\n  transform: rotateX(180deg);\n}\n.dv-border-box-10 .right-bottom {\n  right: 0px;\n  bottom: 0px;\n  transform: rotateX(180deg) rotateY(180deg);\n}\n.dv-border-box-10 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,kBAAkB;AACpB;AACA;EACE,kBAAkB;EAClB,cAAc;AAChB;AACA;EACE,UAAU;EACV,0BAA0B;AAC5B;AACA;EACE,WAAW;EACX,0BAA0B;AAC5B;AACA;EACE,UAAU;EACV,WAAW;EACX,0CAA0C;AAC5C;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-border-box-10 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  border-radius: 6px;\n}\n.dv-border-box-10 .dv-border-svg-container {\n  position: absolute;\n  display: block;\n}\n.dv-border-box-10 .right-top {\n  right: 0px;\n  transform: rotateY(180deg);\n}\n.dv-border-box-10 .left-bottom {\n  bottom: 0px;\n  transform: rotateX(180deg);\n}\n.dv-border-box-10 .right-bottom {\n  right: 0px;\n  bottom: 0px;\n  transform: rotateX(180deg) rotateY(180deg);\n}\n.dv-border-box-10 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$b = undefined;
+    const __vue_scope_id__$q = undefined;
     /* module identifier */
-    const __vue_module_identifier__$b = undefined;
+    const __vue_module_identifier__$q = undefined;
     /* functional template */
-    const __vue_is_functional_template__$b = false;
+    const __vue_is_functional_template__$q = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$b = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$b, staticRenderFns: __vue_staticRenderFns__$b },
-      __vue_inject_styles__$b,
-      __vue_script__$b,
-      __vue_scope_id__$b,
-      __vue_is_functional_template__$b,
-      __vue_module_identifier__$b,
+    const __vue_component__$q = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$q, staticRenderFns: __vue_staticRenderFns__$q },
+      __vue_inject_styles__$q,
+      __vue_script__$q,
+      __vue_scope_id__$q,
+      __vue_is_functional_template__$q,
+      __vue_module_identifier__$q,
       false,
       createInjector,
       undefined,
@@ -3789,7 +3830,7 @@
     );
 
   function borderBox10 (Vue) {
-    Vue.component(__vue_component__$b.name, __vue_component__$b);
+    Vue.component(__vue_component__$q.name, __vue_component__$q);
   }
 
   var keywords = createCommonjsModule(function (module, exports) {
@@ -3806,7 +3847,7 @@
 
   unwrapExports(keywords);
 
-  var lib = createCommonjsModule(function (module, exports) {
+  var lib$4 = createCommonjsModule(function (module, exports) {
 
 
 
@@ -4106,19 +4147,19 @@
   exports["default"] = _default;
   });
 
-  unwrapExports(lib);
-  var lib_1 = lib.getRgbValue;
-  var lib_2 = lib.getRgbaValue;
-  var lib_3 = lib.getOpacity;
-  var lib_4 = lib.toRgb;
-  var lib_5 = lib.toHex;
-  var lib_6 = lib.getColorFromRgbValue;
-  var lib_7 = lib.darken;
-  var lib_8 = lib.lighten;
-  var lib_9 = lib.fade;
+  unwrapExports(lib$4);
+  lib$4.getRgbValue;
+  lib$4.getRgbaValue;
+  lib$4.getOpacity;
+  lib$4.toRgb;
+  lib$4.toHex;
+  lib$4.getColorFromRgbValue;
+  lib$4.darken;
+  lib$4.lighten;
+  var lib_9 = lib$4.fade;
 
   //
-  var script$c = {
+  var script$p = {
     name: 'DvBorderBox11',
     mixins: [autoResize],
     props: {
@@ -4165,7 +4206,7 @@
           color,
           defaultColor
         } = this;
-        this.mergedColor = util_2$1(util_1(defaultColor, true), color || []);
+        this.mergedColor = util_2(util_1(defaultColor, true), color || []);
       },
 
       fade: lib_9
@@ -4181,10 +4222,10 @@
   };
 
   /* script */
-  const __vue_script__$c = script$c;
+  const __vue_script__$p = script$p;
 
   /* template */
-  var __vue_render__$c = function() {
+  var __vue_render__$p = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -4193,7 +4234,7 @@
         "svg",
         {
           staticClass: "dv-border-svg-container",
-          attrs: { width: _vm.width, height: _vm.height }
+          attrs: { width: _vm.width, height: _vm.height },
         },
         [
           _c("defs", [
@@ -4205,8 +4246,8 @@
                   height: "150%",
                   width: "150%",
                   x: "-25%",
-                  y: "-25%"
-                }
+                  y: "-25%",
+                },
               },
               [
                 _c("feMorphology", {
@@ -4214,19 +4255,19 @@
                     operator: "dilate",
                     radius: "2",
                     in: "SourceAlpha",
-                    result: "thicken"
-                  }
+                    result: "thicken",
+                  },
                 }),
                 _vm._v(" "),
                 _c("feGaussianBlur", {
-                  attrs: { in: "thicken", stdDeviation: "3", result: "blurred" }
+                  attrs: { in: "thicken", stdDeviation: "3", result: "blurred" },
                 }),
                 _vm._v(" "),
                 _c("feFlood", {
                   attrs: {
                     "flood-color": _vm.mergedColor[1],
-                    result: "glowColor"
-                  }
+                    result: "glowColor",
+                  },
                 }),
                 _vm._v(" "),
                 _c("feComposite", {
@@ -4234,8 +4275,8 @@
                     in: "glowColor",
                     in2: "blurred",
                     operator: "in",
-                    result: "softGlowColored"
-                  }
+                    result: "softGlowColored",
+                  },
                 }),
                 _vm._v(" "),
                 _c(
@@ -4243,13 +4284,13 @@
                   [
                     _c("feMergeNode", { attrs: { in: "softGlowColored" } }),
                     _vm._v(" "),
-                    _c("feMergeNode", { attrs: { in: "SourceGraphic" } })
+                    _c("feMergeNode", { attrs: { in: "SourceGraphic" } }),
                   ],
                   1
-                )
+                ),
               ],
               1
-            )
+            ),
           ]),
           _vm._v(" "),
           _c("polygon", {
@@ -4280,8 +4321,8 @@
                 (_vm.height - 8) +
                 " 8, " +
                 (_vm.height - 25) +
-                " 8, 50\n    "
-            }
+                " 8, 50\n    ",
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
@@ -4345,8 +4386,8 @@
                 ((_vm.width + _vm.titleWidth) / 2 - 20) +
                 ", 52 " +
                 (_vm.width + _vm.titleWidth) / 2 +
-                ", 30\n      "
-            }
+                ", 30\n      ",
+            },
           }),
           _vm._v(" "),
           _c("polygon", {
@@ -4362,8 +4403,8 @@
                 ((_vm.width + _vm.titleWidth) / 2 - 27) +
                 ", 11 " +
                 ((_vm.width + _vm.titleWidth) / 2 - 8) +
-                ", 34\n      "
-            }
+                ", 34\n      ",
+            },
           }),
           _vm._v(" "),
           _c("polygon", {
@@ -4379,8 +4420,8 @@
                 ((_vm.width - _vm.titleWidth) / 2 + 28) +
                 ", 49 " +
                 ((_vm.width - _vm.titleWidth) / 2 + 8) +
-                ", 26\n      "
-            }
+                ", 26\n      ",
+            },
           }),
           _vm._v(" "),
           _c("polygon", {
@@ -4401,8 +4442,8 @@
                 ((_vm.width - _vm.titleWidth) / 2 + 33) +
                 ", 49 " +
                 ((_vm.width + _vm.titleWidth) / 2 - 22) +
-                ", 49\n      "
-            }
+                ", 49\n      ",
+            },
           }),
           _vm._v(" "),
           _c(
@@ -4421,8 +4462,8 @@
                   ((_vm.width - _vm.titleWidth) / 2 - 25) +
                   ", 46 " +
                   ((_vm.width - _vm.titleWidth) / 2 - 4) +
-                  ", 46\n      "
-              }
+                  ", 46\n      ",
+              },
             },
             [
               _c("animate", {
@@ -4431,9 +4472,9 @@
                   values: "1;0.7;1",
                   dur: "2s",
                   begin: "0s",
-                  repeatCount: "indefinite"
-                }
-              })
+                  repeatCount: "indefinite",
+                },
+              }),
             ]
           ),
           _vm._v(" "),
@@ -4453,8 +4494,8 @@
                   ((_vm.width - _vm.titleWidth) / 2 - 55) +
                   ", 46 " +
                   ((_vm.width - _vm.titleWidth) / 2 - 34) +
-                  ", 46\n      "
-              }
+                  ", 46\n      ",
+              },
             },
             [
               _c("animate", {
@@ -4463,9 +4504,9 @@
                   values: "0.7;0.4;0.7",
                   dur: "2s",
                   begin: "0s",
-                  repeatCount: "indefinite"
-                }
-              })
+                  repeatCount: "indefinite",
+                },
+              }),
             ]
           ),
           _vm._v(" "),
@@ -4485,8 +4526,8 @@
                   ((_vm.width - _vm.titleWidth) / 2 - 85) +
                   ", 46 " +
                   ((_vm.width - _vm.titleWidth) / 2 - 64) +
-                  ", 46\n      "
-              }
+                  ", 46\n      ",
+              },
             },
             [
               _c("animate", {
@@ -4495,9 +4536,9 @@
                   values: "0.5;0.2;0.5",
                   dur: "2s",
                   begin: "0s",
-                  repeatCount: "indefinite"
-                }
-              })
+                  repeatCount: "indefinite",
+                },
+              }),
             ]
           ),
           _vm._v(" "),
@@ -4517,8 +4558,8 @@
                   ((_vm.width + _vm.titleWidth) / 2 + 3) +
                   ", 46 " +
                   ((_vm.width + _vm.titleWidth) / 2 + 24) +
-                  ", 46\n      "
-              }
+                  ", 46\n      ",
+              },
             },
             [
               _c("animate", {
@@ -4527,9 +4568,9 @@
                   values: "1;0.7;1",
                   dur: "2s",
                   begin: "0s",
-                  repeatCount: "indefinite"
-                }
-              })
+                  repeatCount: "indefinite",
+                },
+              }),
             ]
           ),
           _vm._v(" "),
@@ -4549,8 +4590,8 @@
                   ((_vm.width + _vm.titleWidth) / 2 + 33) +
                   ", 46 " +
                   ((_vm.width + _vm.titleWidth) / 2 + 54) +
-                  ", 46\n      "
-              }
+                  ", 46\n      ",
+              },
             },
             [
               _c("animate", {
@@ -4559,9 +4600,9 @@
                   values: "0.7;0.4;0.7",
                   dur: "2s",
                   begin: "0s",
-                  repeatCount: "indefinite"
-                }
-              })
+                  repeatCount: "indefinite",
+                },
+              }),
             ]
           ),
           _vm._v(" "),
@@ -4581,8 +4622,8 @@
                   ((_vm.width + _vm.titleWidth) / 2 + 63) +
                   ", 46 " +
                   ((_vm.width + _vm.titleWidth) / 2 + 84) +
-                  ", 46\n      "
-              }
+                  ", 46\n      ",
+              },
             },
             [
               _c("animate", {
@@ -4591,9 +4632,9 @@
                   values: "0.5;0.2;0.5",
                   dur: "2s",
                   begin: "0s",
-                  repeatCount: "indefinite"
-                }
-              })
+                  repeatCount: "indefinite",
+                },
+              }),
             ]
           ),
           _vm._v(" "),
@@ -4607,8 +4648,8 @@
                 fill: "#fff",
                 "font-size": "18",
                 "text-anchor": "middle",
-                "dominant-baseline": "middle"
-              }
+                "dominant-baseline": "middle",
+              },
             },
             [_vm._v("\n      " + _vm._s(_vm.title) + "\n    ")]
           ),
@@ -4626,8 +4667,8 @@
                 (133 + (_vm.height - 167) / 2) +
                 " 7, " +
                 (137 + (_vm.height - 167) / 2) +
-                "\n      "
-            }
+                "\n      ",
+            },
           }),
           _vm._v(" "),
           _c("polygon", {
@@ -4651,43 +4692,43 @@
                 (_vm.width - 7) +
                 ", " +
                 (137 + (_vm.height - 167) / 2) +
-                "\n      "
-            }
-          })
+                "\n      ",
+            },
+          }),
         ]
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "border-box-content" }, [_vm._t("default")], 2)
+      _c("div", { staticClass: "border-box-content" }, [_vm._t("default")], 2),
     ])
   };
-  var __vue_staticRenderFns__$c = [];
-  __vue_render__$c._withStripped = true;
+  var __vue_staticRenderFns__$p = [];
+  __vue_render__$p._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$c = function (inject) {
+    const __vue_inject_styles__$p = function (inject) {
       if (!inject) return
-      inject("data-v-10f995ec_0", { source: ".dv-border-box-11 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-11 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-border-box-11 .dv-border-svg-container > polyline {\n  fill: none;\n  stroke-width: 1;\n}\n.dv-border-box-11 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,QAAQ;EACR,SAAS;AACX;AACA;EACE,UAAU;EACV,eAAe;AACjB;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-border-box-11 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-11 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-border-box-11 .dv-border-svg-container > polyline {\n  fill: none;\n  stroke-width: 1;\n}\n.dv-border-box-11 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
+      inject("data-v-39f944d5_0", { source: ".dv-border-box-11 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-11 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-border-box-11 .dv-border-svg-container > polyline {\n  fill: none;\n  stroke-width: 1;\n}\n.dv-border-box-11 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,QAAQ;EACR,SAAS;AACX;AACA;EACE,UAAU;EACV,eAAe;AACjB;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-border-box-11 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-11 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-border-box-11 .dv-border-svg-container > polyline {\n  fill: none;\n  stroke-width: 1;\n}\n.dv-border-box-11 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$c = undefined;
+    const __vue_scope_id__$p = undefined;
     /* module identifier */
-    const __vue_module_identifier__$c = undefined;
+    const __vue_module_identifier__$p = undefined;
     /* functional template */
-    const __vue_is_functional_template__$c = false;
+    const __vue_is_functional_template__$p = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$c = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$c, staticRenderFns: __vue_staticRenderFns__$c },
-      __vue_inject_styles__$c,
-      __vue_script__$c,
-      __vue_scope_id__$c,
-      __vue_is_functional_template__$c,
-      __vue_module_identifier__$c,
+    const __vue_component__$p = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$p, staticRenderFns: __vue_staticRenderFns__$p },
+      __vue_inject_styles__$p,
+      __vue_script__$p,
+      __vue_scope_id__$p,
+      __vue_is_functional_template__$p,
+      __vue_module_identifier__$p,
       false,
       createInjector,
       undefined,
@@ -4695,11 +4736,11 @@
     );
 
   function borderBox11 (Vue) {
-    Vue.component(__vue_component__$c.name, __vue_component__$c);
+    Vue.component(__vue_component__$p.name, __vue_component__$p);
   }
 
   //
-  var script$d = {
+  var script$o = {
     name: 'DvBorderBox12',
     mixins: [autoResize],
     props: {
@@ -4738,7 +4779,7 @@
           color,
           defaultColor
         } = this;
-        this.mergedColor = util_2$1(util_1(defaultColor, true), color || []);
+        this.mergedColor = util_2(util_1(defaultColor, true), color || []);
       },
 
       fade: lib_9
@@ -4754,10 +4795,10 @@
   };
 
   /* script */
-  const __vue_script__$d = script$d;
+  const __vue_script__$o = script$o;
 
   /* template */
-  var __vue_render__$d = function() {
+  var __vue_render__$o = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -4766,7 +4807,7 @@
         "svg",
         {
           staticClass: "dv-border-svg-container",
-          attrs: { width: _vm.width, height: _vm.height }
+          attrs: { width: _vm.width, height: _vm.height },
         },
         [
           _c("defs", [
@@ -4778,8 +4819,8 @@
                   height: "150%",
                   width: "150%",
                   x: "-25%",
-                  y: "-25%"
-                }
+                  y: "-25%",
+                },
               },
               [
                 _c("feMorphology", {
@@ -4787,12 +4828,12 @@
                     operator: "dilate",
                     radius: "1",
                     in: "SourceAlpha",
-                    result: "thicken"
-                  }
+                    result: "thicken",
+                  },
                 }),
                 _vm._v(" "),
                 _c("feGaussianBlur", {
-                  attrs: { in: "thicken", stdDeviation: "2", result: "blurred" }
+                  attrs: { in: "thicken", stdDeviation: "2", result: "blurred" },
                 }),
                 _vm._v(" "),
                 _c(
@@ -4803,8 +4844,8 @@
                         _vm.mergedColor[1] || _vm.defaultColor[1],
                         70
                       ),
-                      result: "glowColor"
-                    }
+                      result: "glowColor",
+                    },
                   },
                   [
                     _c("animate", {
@@ -4829,9 +4870,9 @@
                           ";\n            ",
                         dur: "3s",
                         begin: "0s",
-                        repeatCount: "indefinite"
-                      }
-                    })
+                        repeatCount: "indefinite",
+                      },
+                    }),
                   ]
                 ),
                 _vm._v(" "),
@@ -4840,8 +4881,8 @@
                     in: "glowColor",
                     in2: "blurred",
                     operator: "in",
-                    result: "softGlowColored"
-                  }
+                    result: "softGlowColored",
+                  },
                 }),
                 _vm._v(" "),
                 _c(
@@ -4849,13 +4890,13 @@
                   [
                     _c("feMergeNode", { attrs: { in: "softGlowColored" } }),
                     _vm._v(" "),
-                    _c("feMergeNode", { attrs: { in: "SourceGraphic" } })
+                    _c("feMergeNode", { attrs: { in: "SourceGraphic" } }),
                   ],
                   1
-                )
+                ),
               ],
               1
-            )
+            ),
           ]),
           _vm._v(" "),
           _vm.width && _vm.height
@@ -4889,8 +4930,8 @@
                     (_vm.height - 5) +
                     " 5 " +
                     (_vm.height - 15) +
-                    " L 5 15\n        Q 5 5 15 5\n      "
-                }
+                    " L 5 15\n        Q 5 5 15 5\n      ",
+                },
               })
             : _vm._e(),
           _vm._v(" "),
@@ -4901,8 +4942,8 @@
               "stroke-linecap": "round",
               filter: "url(#" + _vm.filterId + ")",
               stroke: _vm.mergedColor[1],
-              d: "M 20 5 L 15 5 Q 5 5 5 15 L 5 20"
-            }
+              d: "M 20 5 L 15 5 Q 5 5 5 15 L 5 20",
+            },
           }),
           _vm._v(" "),
           _c("path", {
@@ -4923,8 +4964,8 @@
                 (_vm.width - 5) +
                 " 15 L " +
                 (_vm.width - 5) +
-                " 20"
-            }
+                " 20",
+            },
           }),
           _vm._v(" "),
           _c("path", {
@@ -4955,8 +4996,8 @@
                 (_vm.width - 5) +
                 " " +
                 (_vm.height - 20) +
-                "\n      "
-            }
+                "\n      ",
+            },
           }),
           _vm._v(" "),
           _c("path", {
@@ -4977,43 +5018,43 @@
                 (_vm.height - 15) +
                 "\n        L 5 " +
                 (_vm.height - 20) +
-                "\n      "
-            }
-          })
+                "\n      ",
+            },
+          }),
         ]
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "border-box-content" }, [_vm._t("default")], 2)
+      _c("div", { staticClass: "border-box-content" }, [_vm._t("default")], 2),
     ])
   };
-  var __vue_staticRenderFns__$d = [];
-  __vue_render__$d._withStripped = true;
+  var __vue_staticRenderFns__$o = [];
+  __vue_render__$o._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$d = function (inject) {
+    const __vue_inject_styles__$o = function (inject) {
       if (!inject) return
-      inject("data-v-40c58fd4_0", { source: ".dv-border-box-12 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-12 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-border-box-12 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,QAAQ;EACR,SAAS;AACX;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-border-box-12 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-12 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-border-box-12 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
+      inject("data-v-3085c594_0", { source: ".dv-border-box-12 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-12 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-border-box-12 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,QAAQ;EACR,SAAS;AACX;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-border-box-12 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-12 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-border-box-12 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$d = undefined;
+    const __vue_scope_id__$o = undefined;
     /* module identifier */
-    const __vue_module_identifier__$d = undefined;
+    const __vue_module_identifier__$o = undefined;
     /* functional template */
-    const __vue_is_functional_template__$d = false;
+    const __vue_is_functional_template__$o = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$d = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$d, staticRenderFns: __vue_staticRenderFns__$d },
-      __vue_inject_styles__$d,
-      __vue_script__$d,
-      __vue_scope_id__$d,
-      __vue_is_functional_template__$d,
-      __vue_module_identifier__$d,
+    const __vue_component__$o = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$o, staticRenderFns: __vue_staticRenderFns__$o },
+      __vue_inject_styles__$o,
+      __vue_script__$o,
+      __vue_scope_id__$o,
+      __vue_is_functional_template__$o,
+      __vue_module_identifier__$o,
       false,
       createInjector,
       undefined,
@@ -5021,11 +5062,11 @@
     );
 
   function borderBox12 (Vue) {
-    Vue.component(__vue_component__$d.name, __vue_component__$d);
+    Vue.component(__vue_component__$o.name, __vue_component__$o);
   }
 
   //
-  var script$e = {
+  var script$n = {
     name: 'DvBorderBox13',
     mixins: [autoResize],
     props: {
@@ -5062,7 +5103,7 @@
           color,
           defaultColor
         } = this;
-        this.mergedColor = util_2$1(util_1(defaultColor, true), color || []);
+        this.mergedColor = util_2(util_1(defaultColor, true), color || []);
       }
 
     },
@@ -5077,10 +5118,10 @@
   };
 
   /* script */
-  const __vue_script__$e = script$e;
+  const __vue_script__$n = script$n;
 
   /* template */
-  var __vue_render__$e = function() {
+  var __vue_render__$n = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -5089,7 +5130,7 @@
         "svg",
         {
           staticClass: "dv-border-svg-container",
-          attrs: { width: _vm.width, height: _vm.height }
+          attrs: { width: _vm.width, height: _vm.height },
         },
         [
           _c("path", {
@@ -5109,8 +5150,8 @@
                 (_vm.height - 5) +
                 "\n        L 5 " +
                 (_vm.height - 20) +
-                " L 5 20\n      "
-            }
+                " L 5 20\n      ",
+            },
           }),
           _vm._v(" "),
           _c("path", {
@@ -5120,16 +5161,16 @@
               "stroke-linecap": "round",
               "stroke-dasharray": "10, 5",
               stroke: _vm.mergedColor[0],
-              d: "M 16 9 L 61 9"
-            }
+              d: "M 16 9 L 61 9",
+            },
           }),
           _vm._v(" "),
           _c("path", {
             attrs: {
               fill: "transparent",
               stroke: _vm.mergedColor[1],
-              d: "M 5 20 L 5 10 L 12 3  L 60 3 L 68 10"
-            }
+              d: "M 5 20 L 5 10 L 12 3  L 60 3 L 68 10",
+            },
           }),
           _vm._v(" "),
           _c("path", {
@@ -5148,43 +5189,43 @@
                 " L " +
                 (_vm.width - 30) +
                 " " +
-                (_vm.height - 5)
-            }
-          })
+                (_vm.height - 5),
+            },
+          }),
         ]
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "border-box-content" }, [_vm._t("default")], 2)
+      _c("div", { staticClass: "border-box-content" }, [_vm._t("default")], 2),
     ])
   };
-  var __vue_staticRenderFns__$e = [];
-  __vue_render__$e._withStripped = true;
+  var __vue_staticRenderFns__$n = [];
+  __vue_render__$n._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$e = function (inject) {
+    const __vue_inject_styles__$n = function (inject) {
       if (!inject) return
-      inject("data-v-6c30a53b_0", { source: ".dv-border-box-13 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-13 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-border-box-13 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,QAAQ;EACR,SAAS;AACX;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-border-box-13 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-13 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-border-box-13 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
+      inject("data-v-76a389f9_0", { source: ".dv-border-box-13 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-13 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-border-box-13 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,QAAQ;EACR,SAAS;AACX;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-border-box-13 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-border-box-13 .dv-border-svg-container {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-border-box-13 .border-box-content {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$e = undefined;
+    const __vue_scope_id__$n = undefined;
     /* module identifier */
-    const __vue_module_identifier__$e = undefined;
+    const __vue_module_identifier__$n = undefined;
     /* functional template */
-    const __vue_is_functional_template__$e = false;
+    const __vue_is_functional_template__$n = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$e = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$e, staticRenderFns: __vue_staticRenderFns__$e },
-      __vue_inject_styles__$e,
-      __vue_script__$e,
-      __vue_scope_id__$e,
-      __vue_is_functional_template__$e,
-      __vue_module_identifier__$e,
+    const __vue_component__$n = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$n, staticRenderFns: __vue_staticRenderFns__$n },
+      __vue_inject_styles__$n,
+      __vue_script__$n,
+      __vue_scope_id__$n,
+      __vue_is_functional_template__$n,
+      __vue_module_identifier__$n,
       false,
       createInjector,
       undefined,
@@ -5192,11 +5233,11 @@
     );
 
   function borderBox13 (Vue) {
-    Vue.component(__vue_component__$e.name, __vue_component__$e);
+    Vue.component(__vue_component__$n.name, __vue_component__$n);
   }
 
   //
-  var script$f = {
+  var script$m = {
     name: 'DvDecoration1',
     mixins: [autoResize],
     props: {
@@ -5296,7 +5337,7 @@
           color,
           defaultColor
         } = this;
-        this.mergedColor = util_2$1(util_1(defaultColor, true), color || []);
+        this.mergedColor = util_2(util_1(defaultColor, true), color || []);
       }
 
     },
@@ -5311,10 +5352,10 @@
   };
 
   /* script */
-  const __vue_script__$f = script$f;
+  const __vue_script__$m = script$m;
 
   /* template */
-  var __vue_render__$f = function() {
+  var __vue_render__$m = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -5324,10 +5365,10 @@
         {
           style:
             "transform:scale(" + _vm.svgScale[0] + "," + _vm.svgScale[1] + ");",
-          attrs: { width: _vm.svgWH[0] + "px", height: _vm.svgWH[1] + "px" }
+          attrs: { width: _vm.svgWH[0] + "px", height: _vm.svgWH[1] + "px" },
         },
         [
-          _vm._l(_vm.points, function(point, i) {
+          _vm._l(_vm.points, function (point, i) {
             return [
               Math.random() > 0.6
                 ? _c(
@@ -5339,8 +5380,8 @@
                         x: point[0] - _vm.halfPointSideLength,
                         y: point[1] - _vm.halfPointSideLength,
                         width: _vm.pointSideLength,
-                        height: _vm.pointSideLength
-                      }
+                        height: _vm.pointSideLength,
+                      },
                     },
                     [
                       Math.random() > 0.6
@@ -5350,13 +5391,13 @@
                               values: _vm.mergedColor[0] + ";transparent",
                               dur: "1s",
                               begin: Math.random() * 2,
-                              repeatCount: "indefinite"
-                            }
+                              repeatCount: "indefinite",
+                            },
                           })
-                        : _vm._e()
+                        : _vm._e(),
                     ]
                   )
-                : _vm._e()
+                : _vm._e(),
             ]
           }),
           _vm._v(" "),
@@ -5369,8 +5410,8 @@
                     x: _vm.rects[0][0] - _vm.pointSideLength,
                     y: _vm.rects[0][1] - _vm.pointSideLength,
                     width: _vm.pointSideLength * 2,
-                    height: _vm.pointSideLength * 2
-                  }
+                    height: _vm.pointSideLength * 2,
+                  },
                 },
                 [
                   _c("animate", {
@@ -5378,8 +5419,8 @@
                       attributeName: "width",
                       values: "0;" + _vm.pointSideLength * 2,
                       dur: "2s",
-                      repeatCount: "indefinite"
-                    }
+                      repeatCount: "indefinite",
+                    },
                   }),
                   _vm._v(" "),
                   _c("animate", {
@@ -5387,8 +5428,8 @@
                       attributeName: "height",
                       values: "0;" + _vm.pointSideLength * 2,
                       dur: "2s",
-                      repeatCount: "indefinite"
-                    }
+                      repeatCount: "indefinite",
+                    },
                   }),
                   _vm._v(" "),
                   _c("animate", {
@@ -5399,8 +5440,8 @@
                         ";" +
                         (_vm.rects[0][0] - _vm.pointSideLength),
                       dur: "2s",
-                      repeatCount: "indefinite"
-                    }
+                      repeatCount: "indefinite",
+                    },
                   }),
                   _vm._v(" "),
                   _c("animate", {
@@ -5411,9 +5452,9 @@
                         ";" +
                         (_vm.rects[0][1] - _vm.pointSideLength),
                       dur: "2s",
-                      repeatCount: "indefinite"
-                    }
-                  })
+                      repeatCount: "indefinite",
+                    },
+                  }),
                 ]
               )
             : _vm._e(),
@@ -5427,8 +5468,8 @@
                     x: _vm.rects[1][0] - 40,
                     y: _vm.rects[1][1] - _vm.pointSideLength,
                     width: 40,
-                    height: _vm.pointSideLength * 2
-                  }
+                    height: _vm.pointSideLength * 2,
+                  },
                 },
                 [
                   _c("animate", {
@@ -5436,8 +5477,8 @@
                       attributeName: "width",
                       values: "0;40;0",
                       dur: "2s",
-                      repeatCount: "indefinite"
-                    }
+                      repeatCount: "indefinite",
+                    },
                   }),
                   _vm._v(" "),
                   _c("animate", {
@@ -5450,45 +5491,45 @@
                         ";" +
                         _vm.rects[1][0],
                       dur: "2s",
-                      repeatCount: "indefinite"
-                    }
-                  })
+                      repeatCount: "indefinite",
+                    },
+                  }),
                 ]
               )
-            : _vm._e()
+            : _vm._e(),
         ],
         2
-      )
+      ),
     ])
   };
-  var __vue_staticRenderFns__$f = [];
-  __vue_render__$f._withStripped = true;
+  var __vue_staticRenderFns__$m = [];
+  __vue_render__$m._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$f = function (inject) {
+    const __vue_inject_styles__$m = function (inject) {
       if (!inject) return
-      inject("data-v-69241e60_0", { source: ".dv-decoration-1 {\n  width: 100%;\n  height: 100%;\n}\n.dv-decoration-1 svg {\n  transform-origin: left top;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;AACd;AACA;EACE,0BAA0B;AAC5B","file":"main.vue","sourcesContent":[".dv-decoration-1 {\n  width: 100%;\n  height: 100%;\n}\n.dv-decoration-1 svg {\n  transform-origin: left top;\n}\n"]}, media: undefined });
+      inject("data-v-775eaa78_0", { source: ".dv-decoration-1 {\n  width: 100%;\n  height: 100%;\n}\n.dv-decoration-1 svg {\n  transform-origin: left top;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;AACd;AACA;EACE,0BAA0B;AAC5B","file":"main.vue","sourcesContent":[".dv-decoration-1 {\n  width: 100%;\n  height: 100%;\n}\n.dv-decoration-1 svg {\n  transform-origin: left top;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$f = undefined;
+    const __vue_scope_id__$m = undefined;
     /* module identifier */
-    const __vue_module_identifier__$f = undefined;
+    const __vue_module_identifier__$m = undefined;
     /* functional template */
-    const __vue_is_functional_template__$f = false;
+    const __vue_is_functional_template__$m = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$f = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$f, staticRenderFns: __vue_staticRenderFns__$f },
-      __vue_inject_styles__$f,
-      __vue_script__$f,
-      __vue_scope_id__$f,
-      __vue_is_functional_template__$f,
-      __vue_module_identifier__$f,
+    const __vue_component__$m = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$m, staticRenderFns: __vue_staticRenderFns__$m },
+      __vue_inject_styles__$m,
+      __vue_script__$m,
+      __vue_scope_id__$m,
+      __vue_is_functional_template__$m,
+      __vue_module_identifier__$m,
       false,
       createInjector,
       undefined,
@@ -5496,11 +5537,11 @@
     );
 
   function decoration1 (Vue) {
-    Vue.component(__vue_component__$f.name, __vue_component__$f);
+    Vue.component(__vue_component__$m.name, __vue_component__$m);
   }
 
   //
-  var script$g = {
+  var script$l = {
     name: 'DvDecoration2',
     mixins: [autoResize],
     props: {
@@ -5586,7 +5627,7 @@
           color,
           defaultColor
         } = this;
-        this.mergedColor = util_2$1(util_1(defaultColor, true), color || []);
+        this.mergedColor = util_2(util_1(defaultColor, true), color || []);
       }
 
     },
@@ -5601,10 +5642,10 @@
   };
 
   /* script */
-  const __vue_script__$g = script$g;
+  const __vue_script__$l = script$l;
 
   /* template */
-  var __vue_render__$g = function() {
+  var __vue_render__$l = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -5621,8 +5662,8 @@
                 y: _vm.y,
                 width: _vm.w,
                 height: _vm.h,
-                fill: _vm.mergedColor[0]
-              }
+                fill: _vm.mergedColor[0],
+              },
             },
             [
               _c("animate", {
@@ -5634,9 +5675,9 @@
                   calcMode: "spline",
                   keyTimes: "0;1",
                   keySplines: ".42,0,.58,1",
-                  repeatCount: "indefinite"
-                }
-              })
+                  repeatCount: "indefinite",
+                },
+              }),
             ]
           ),
           _vm._v(" "),
@@ -5648,8 +5689,8 @@
                 y: _vm.y,
                 width: "1",
                 height: "1",
-                fill: _vm.mergedColor[1]
-              }
+                fill: _vm.mergedColor[1],
+              },
             },
             [
               _c("animate", {
@@ -5661,43 +5702,43 @@
                   calcMode: "spline",
                   keyTimes: "0;1",
                   keySplines: "0.42,0,0.58,1",
-                  repeatCount: "indefinite"
-                }
-              })
+                  repeatCount: "indefinite",
+                },
+              }),
             ]
-          )
+          ),
         ]
-      )
+      ),
     ])
   };
-  var __vue_staticRenderFns__$g = [];
-  __vue_render__$g._withStripped = true;
+  var __vue_staticRenderFns__$l = [];
+  __vue_render__$l._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$g = function (inject) {
+    const __vue_inject_styles__$l = function (inject) {
       if (!inject) return
-      inject("data-v-355e4674_0", { source: ".dv-decoration-2 {\n  display: flex;\n  width: 100%;\n  height: 100%;\n  justify-content: center;\n  align-items: center;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,WAAW;EACX,YAAY;EACZ,uBAAuB;EACvB,mBAAmB;AACrB","file":"main.vue","sourcesContent":[".dv-decoration-2 {\n  display: flex;\n  width: 100%;\n  height: 100%;\n  justify-content: center;\n  align-items: center;\n}\n"]}, media: undefined });
+      inject("data-v-8ae3ac28_0", { source: ".dv-decoration-2 {\n  display: flex;\n  width: 100%;\n  height: 100%;\n  justify-content: center;\n  align-items: center;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,WAAW;EACX,YAAY;EACZ,uBAAuB;EACvB,mBAAmB;AACrB","file":"main.vue","sourcesContent":[".dv-decoration-2 {\n  display: flex;\n  width: 100%;\n  height: 100%;\n  justify-content: center;\n  align-items: center;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$g = undefined;
+    const __vue_scope_id__$l = undefined;
     /* module identifier */
-    const __vue_module_identifier__$g = undefined;
+    const __vue_module_identifier__$l = undefined;
     /* functional template */
-    const __vue_is_functional_template__$g = false;
+    const __vue_is_functional_template__$l = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$g = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$g, staticRenderFns: __vue_staticRenderFns__$g },
-      __vue_inject_styles__$g,
-      __vue_script__$g,
-      __vue_scope_id__$g,
-      __vue_is_functional_template__$g,
-      __vue_module_identifier__$g,
+    const __vue_component__$l = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$l, staticRenderFns: __vue_staticRenderFns__$l },
+      __vue_inject_styles__$l,
+      __vue_script__$l,
+      __vue_scope_id__$l,
+      __vue_is_functional_template__$l,
+      __vue_module_identifier__$l,
       false,
       createInjector,
       undefined,
@@ -5705,11 +5746,11 @@
     );
 
   function decoration2 (Vue) {
-    Vue.component(__vue_component__$g.name, __vue_component__$g);
+    Vue.component(__vue_component__$l.name, __vue_component__$l);
   }
 
   //
-  var script$h = {
+  var script$k = {
     name: 'DvDecoration3',
     mixins: [autoResize],
     props: {
@@ -5796,7 +5837,7 @@
           color,
           defaultColor
         } = this;
-        this.mergedColor = util_2$1(util_1(defaultColor, true), color || []);
+        this.mergedColor = util_2(util_1(defaultColor, true), color || []);
       }
 
     },
@@ -5811,10 +5852,10 @@
   };
 
   /* script */
-  const __vue_script__$h = script$h;
+  const __vue_script__$k = script$k;
 
   /* template */
-  var __vue_render__$h = function() {
+  var __vue_render__$k = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -5824,10 +5865,10 @@
         {
           style:
             "transform:scale(" + _vm.svgScale[0] + "," + _vm.svgScale[1] + ");",
-          attrs: { width: _vm.svgWH[0] + "px", height: _vm.svgWH[1] + "px" }
+          attrs: { width: _vm.svgWH[0] + "px", height: _vm.svgWH[1] + "px" },
         },
         [
-          _vm._l(_vm.points, function(point, i) {
+          _vm._l(_vm.points, function (point, i) {
             return [
               _c(
                 "rect",
@@ -5838,8 +5879,8 @@
                     x: point[0] - _vm.halfPointSideLength,
                     y: point[1] - _vm.halfPointSideLength,
                     width: _vm.pointSideLength,
-                    height: _vm.pointSideLength
-                  }
+                    height: _vm.pointSideLength,
+                  },
                 },
                 [
                   Math.random() > 0.6
@@ -5849,47 +5890,47 @@
                           values: "" + _vm.mergedColor.join(";"),
                           dur: Math.random() + 1 + "s",
                           begin: Math.random() * 2,
-                          repeatCount: "indefinite"
-                        }
+                          repeatCount: "indefinite",
+                        },
                       })
-                    : _vm._e()
+                    : _vm._e(),
                 ]
-              )
+              ),
             ]
-          })
+          }),
         ],
         2
-      )
+      ),
     ])
   };
-  var __vue_staticRenderFns__$h = [];
-  __vue_render__$h._withStripped = true;
+  var __vue_staticRenderFns__$k = [];
+  __vue_render__$k._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$h = function (inject) {
+    const __vue_inject_styles__$k = function (inject) {
       if (!inject) return
-      inject("data-v-2cd3ac93_0", { source: ".dv-decoration-3 {\n  width: 100%;\n  height: 100%;\n}\n.dv-decoration-3 svg {\n  transform-origin: left top;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;AACd;AACA;EACE,0BAA0B;AAC5B","file":"main.vue","sourcesContent":[".dv-decoration-3 {\n  width: 100%;\n  height: 100%;\n}\n.dv-decoration-3 svg {\n  transform-origin: left top;\n}\n"]}, media: undefined });
+      inject("data-v-55c3725c_0", { source: ".dv-decoration-3 {\n  width: 100%;\n  height: 100%;\n}\n.dv-decoration-3 svg {\n  transform-origin: left top;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;AACd;AACA;EACE,0BAA0B;AAC5B","file":"main.vue","sourcesContent":[".dv-decoration-3 {\n  width: 100%;\n  height: 100%;\n}\n.dv-decoration-3 svg {\n  transform-origin: left top;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$h = undefined;
+    const __vue_scope_id__$k = undefined;
     /* module identifier */
-    const __vue_module_identifier__$h = undefined;
+    const __vue_module_identifier__$k = undefined;
     /* functional template */
-    const __vue_is_functional_template__$h = false;
+    const __vue_is_functional_template__$k = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$h = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$h, staticRenderFns: __vue_staticRenderFns__$h },
-      __vue_inject_styles__$h,
-      __vue_script__$h,
-      __vue_scope_id__$h,
-      __vue_is_functional_template__$h,
-      __vue_module_identifier__$h,
+    const __vue_component__$k = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$k, staticRenderFns: __vue_staticRenderFns__$k },
+      __vue_inject_styles__$k,
+      __vue_script__$k,
+      __vue_scope_id__$k,
+      __vue_is_functional_template__$k,
+      __vue_module_identifier__$k,
       false,
       createInjector,
       undefined,
@@ -5897,11 +5938,11 @@
     );
 
   function decoration3 (Vue) {
-    Vue.component(__vue_component__$h.name, __vue_component__$h);
+    Vue.component(__vue_component__$k.name, __vue_component__$k);
   }
 
   //
-  var script$i = {
+  var script$j = {
     name: 'DvDecoration4',
     mixins: [autoResize],
     props: {
@@ -5942,7 +5983,7 @@
           color,
           defaultColor
         } = this;
-        this.mergedColor = util_2$1(util_1(defaultColor, true), color || []);
+        this.mergedColor = util_2(util_1(defaultColor, true), color || []);
       }
 
     },
@@ -5957,10 +5998,10 @@
   };
 
   /* script */
-  const __vue_script__$i = script$i;
+  const __vue_script__$j = script$j;
 
   /* template */
-  var __vue_render__$i = function() {
+  var __vue_render__$j = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -5979,7 +6020,7 @@
               _vm.height +
               "px;animation-duration:" +
               _vm.dur +
-              "s"
+              "s",
         },
         [
           _c(
@@ -5987,8 +6028,8 @@
             {
               attrs: {
                 width: _vm.reverse ? _vm.width : 5,
-                height: _vm.reverse ? 5 : _vm.height
-              }
+                height: _vm.reverse ? 5 : _vm.height,
+              },
             },
             [
               _c("polyline", {
@@ -5996,8 +6037,8 @@
                   stroke: _vm.mergedColor[0],
                   points: _vm.reverse
                     ? "0, 2.5 " + _vm.width + ", 2.5"
-                    : "2.5, 0 2.5, " + _vm.height
-                }
+                    : "2.5, 0 2.5, " + _vm.height,
+                },
               }),
               _vm._v(" "),
               _c("polyline", {
@@ -6009,43 +6050,43 @@
                   "stroke-dashoffset": "-30",
                   points: _vm.reverse
                     ? "0, 2.5 " + _vm.width + ", 2.5"
-                    : "2.5, 0 2.5, " + _vm.height
-                }
-              })
+                    : "2.5, 0 2.5, " + _vm.height,
+                },
+              }),
             ]
-          )
+          ),
         ]
-      )
+      ),
     ])
   };
-  var __vue_staticRenderFns__$i = [];
-  __vue_render__$i._withStripped = true;
+  var __vue_staticRenderFns__$j = [];
+  __vue_render__$j._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$i = function (inject) {
+    const __vue_inject_styles__$j = function (inject) {
       if (!inject) return
-      inject("data-v-506ac984_0", { source: ".dv-decoration-4 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-decoration-4 .container {\n  display: flex;\n  overflow: hidden;\n  position: absolute;\n  flex: 1;\n}\n.dv-decoration-4 .normal {\n  animation: ani-height ease-in-out infinite;\n  left: 50%;\n  margin-left: -2px;\n}\n.dv-decoration-4 .reverse {\n  animation: ani-width ease-in-out infinite;\n  top: 50%;\n  margin-top: -2px;\n}\n@keyframes ani-height {\n0% {\n    height: 0%;\n}\n70% {\n    height: 100%;\n}\n100% {\n    height: 100%;\n}\n}\n@keyframes ani-width {\n0% {\n    width: 0%;\n}\n70% {\n    width: 100%;\n}\n100% {\n    width: 100%;\n}\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,aAAa;EACb,gBAAgB;EAChB,kBAAkB;EAClB,OAAO;AACT;AACA;EACE,0CAA0C;EAC1C,SAAS;EACT,iBAAiB;AACnB;AACA;EACE,yCAAyC;EACzC,QAAQ;EACR,gBAAgB;AAClB;AACA;AACE;IACE,UAAU;AACZ;AACA;IACE,YAAY;AACd;AACA;IACE,YAAY;AACd;AACF;AACA;AACE;IACE,SAAS;AACX;AACA;IACE,WAAW;AACb;AACA;IACE,WAAW;AACb;AACF","file":"main.vue","sourcesContent":[".dv-decoration-4 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-decoration-4 .container {\n  display: flex;\n  overflow: hidden;\n  position: absolute;\n  flex: 1;\n}\n.dv-decoration-4 .normal {\n  animation: ani-height ease-in-out infinite;\n  left: 50%;\n  margin-left: -2px;\n}\n.dv-decoration-4 .reverse {\n  animation: ani-width ease-in-out infinite;\n  top: 50%;\n  margin-top: -2px;\n}\n@keyframes ani-height {\n  0% {\n    height: 0%;\n  }\n  70% {\n    height: 100%;\n  }\n  100% {\n    height: 100%;\n  }\n}\n@keyframes ani-width {\n  0% {\n    width: 0%;\n  }\n  70% {\n    width: 100%;\n  }\n  100% {\n    width: 100%;\n  }\n}\n"]}, media: undefined });
+      inject("data-v-c157adc2_0", { source: ".dv-decoration-4 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-decoration-4 .container {\n  display: flex;\n  overflow: hidden;\n  position: absolute;\n  flex: 1;\n}\n.dv-decoration-4 .normal {\n  animation: ani-height ease-in-out infinite;\n  left: 50%;\n  margin-left: -2px;\n}\n.dv-decoration-4 .reverse {\n  animation: ani-width ease-in-out infinite;\n  top: 50%;\n  margin-top: -2px;\n}\n@keyframes ani-height {\n0% {\n    height: 0%;\n}\n70% {\n    height: 100%;\n}\n100% {\n    height: 100%;\n}\n}\n@keyframes ani-width {\n0% {\n    width: 0%;\n}\n70% {\n    width: 100%;\n}\n100% {\n    width: 100%;\n}\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,aAAa;EACb,gBAAgB;EAChB,kBAAkB;EAClB,OAAO;AACT;AACA;EACE,0CAA0C;EAC1C,SAAS;EACT,iBAAiB;AACnB;AACA;EACE,yCAAyC;EACzC,QAAQ;EACR,gBAAgB;AAClB;AACA;AACE;IACE,UAAU;AACZ;AACA;IACE,YAAY;AACd;AACA;IACE,YAAY;AACd;AACF;AACA;AACE;IACE,SAAS;AACX;AACA;IACE,WAAW;AACb;AACA;IACE,WAAW;AACb;AACF","file":"main.vue","sourcesContent":[".dv-decoration-4 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-decoration-4 .container {\n  display: flex;\n  overflow: hidden;\n  position: absolute;\n  flex: 1;\n}\n.dv-decoration-4 .normal {\n  animation: ani-height ease-in-out infinite;\n  left: 50%;\n  margin-left: -2px;\n}\n.dv-decoration-4 .reverse {\n  animation: ani-width ease-in-out infinite;\n  top: 50%;\n  margin-top: -2px;\n}\n@keyframes ani-height {\n  0% {\n    height: 0%;\n  }\n  70% {\n    height: 100%;\n  }\n  100% {\n    height: 100%;\n  }\n}\n@keyframes ani-width {\n  0% {\n    width: 0%;\n  }\n  70% {\n    width: 100%;\n  }\n  100% {\n    width: 100%;\n  }\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$i = undefined;
+    const __vue_scope_id__$j = undefined;
     /* module identifier */
-    const __vue_module_identifier__$i = undefined;
+    const __vue_module_identifier__$j = undefined;
     /* functional template */
-    const __vue_is_functional_template__$i = false;
+    const __vue_is_functional_template__$j = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$i = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$i, staticRenderFns: __vue_staticRenderFns__$i },
-      __vue_inject_styles__$i,
-      __vue_script__$i,
-      __vue_scope_id__$i,
-      __vue_is_functional_template__$i,
-      __vue_module_identifier__$i,
+    const __vue_component__$j = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$j, staticRenderFns: __vue_staticRenderFns__$j },
+      __vue_inject_styles__$j,
+      __vue_script__$j,
+      __vue_scope_id__$j,
+      __vue_is_functional_template__$j,
+      __vue_module_identifier__$j,
       false,
       createInjector,
       undefined,
@@ -6053,11 +6094,11 @@
     );
 
   function decoration4 (Vue) {
-    Vue.component(__vue_component__$i.name, __vue_component__$i);
+    Vue.component(__vue_component__$j.name, __vue_component__$j);
   }
 
   //
-  var script$j = {
+  var script$i = {
     name: 'DvDecoration5',
     mixins: [autoResize],
     props: {
@@ -6107,8 +6148,8 @@
         } = this;
         let line1Points = [[0, height * 0.2], [width * 0.18, height * 0.2], [width * 0.2, height * 0.4], [width * 0.25, height * 0.4], [width * 0.27, height * 0.6], [width * 0.72, height * 0.6], [width * 0.75, height * 0.4], [width * 0.8, height * 0.4], [width * 0.82, height * 0.2], [width, height * 0.2]];
         let line2Points = [[width * 0.3, height * 0.8], [width * 0.7, height * 0.8]];
-        const line1Length = util_7$1(line1Points);
-        const line2Length = util_7$1(line2Points);
+        const line1Length = util_7(line1Points);
+        const line2Length = util_7(line2Points);
         line1Points = line1Points.map(point => point.join(',')).join(' ');
         line2Points = line2Points.map(point => point.join(',')).join(' ');
         this.line1Points = line1Points;
@@ -6129,7 +6170,7 @@
           color,
           defaultColor
         } = this;
-        this.mergedColor = util_2$1(util_1(defaultColor, true), color || []);
+        this.mergedColor = util_2(util_1(defaultColor, true), color || []);
       }
 
     },
@@ -6144,10 +6185,10 @@
   };
 
   /* script */
-  const __vue_script__$j = script$j;
+  const __vue_script__$i = script$i;
 
   /* template */
-  var __vue_render__$j = function() {
+  var __vue_render__$i = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -6160,8 +6201,8 @@
               fill: "transparent",
               stroke: _vm.mergedColor[0],
               "stroke-width": "3",
-              points: _vm.line1Points
-            }
+              points: _vm.line1Points,
+            },
           },
           [
             _c("animate", {
@@ -6175,9 +6216,9 @@
                 calcMode: "spline",
                 keyTimes: "0;1",
                 keySplines: "0.4,1,0.49,0.98",
-                repeatCount: "indefinite"
-              }
-            })
+                repeatCount: "indefinite",
+              },
+            }),
           ]
         ),
         _vm._v(" "),
@@ -6188,8 +6229,8 @@
               fill: "transparent",
               stroke: _vm.mergedColor[1],
               "stroke-width": "2",
-              points: _vm.line2Points
-            }
+              points: _vm.line2Points,
+            },
           },
           [
             _c("animate", {
@@ -6203,42 +6244,42 @@
                 calcMode: "spline",
                 keyTimes: "0;1",
                 keySplines: ".4,1,.49,.98",
-                repeatCount: "indefinite"
-              }
-            })
+                repeatCount: "indefinite",
+              },
+            }),
           ]
-        )
-      ])
+        ),
+      ]),
     ])
   };
-  var __vue_staticRenderFns__$j = [];
-  __vue_render__$j._withStripped = true;
+  var __vue_staticRenderFns__$i = [];
+  __vue_render__$i._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$j = function (inject) {
+    const __vue_inject_styles__$i = function (inject) {
       if (!inject) return
-      inject("data-v-183f85bc_0", { source: ".dv-decoration-5 {\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-decoration-5 {\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
+      inject("data-v-57a60d3d_0", { source: ".dv-decoration-5 {\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-decoration-5 {\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$j = undefined;
+    const __vue_scope_id__$i = undefined;
     /* module identifier */
-    const __vue_module_identifier__$j = undefined;
+    const __vue_module_identifier__$i = undefined;
     /* functional template */
-    const __vue_is_functional_template__$j = false;
+    const __vue_is_functional_template__$i = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$j = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$j, staticRenderFns: __vue_staticRenderFns__$j },
-      __vue_inject_styles__$j,
-      __vue_script__$j,
-      __vue_scope_id__$j,
-      __vue_is_functional_template__$j,
-      __vue_module_identifier__$j,
+    const __vue_component__$i = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$i, staticRenderFns: __vue_staticRenderFns__$i },
+      __vue_inject_styles__$i,
+      __vue_script__$i,
+      __vue_scope_id__$i,
+      __vue_is_functional_template__$i,
+      __vue_module_identifier__$i,
       false,
       createInjector,
       undefined,
@@ -6246,11 +6287,11 @@
     );
 
   function decoration5 (Vue) {
-    Vue.component(__vue_component__$j.name, __vue_component__$j);
+    Vue.component(__vue_component__$i.name, __vue_component__$i);
   }
 
   //
-  var script$k = {
+  var script$h = {
     name: 'DvDecoration6',
     mixins: [autoResize],
     props: {
@@ -6343,7 +6384,7 @@
           color,
           defaultColor
         } = this;
-        this.mergedColor = util_2$1(util_1(defaultColor, true), color || []);
+        this.mergedColor = util_2(util_1(defaultColor, true), color || []);
       }
 
     },
@@ -6358,10 +6399,10 @@
   };
 
   /* script */
-  const __vue_script__$k = script$k;
+  const __vue_script__$h = script$h;
 
   /* template */
-  var __vue_render__$k = function() {
+  var __vue_render__$h = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -6371,10 +6412,10 @@
         {
           style:
             "transform:scale(" + _vm.svgScale[0] + "," + _vm.svgScale[1] + ");",
-          attrs: { width: _vm.svgWH[0] + "px", height: _vm.svgWH[1] + "px" }
+          attrs: { width: _vm.svgWH[0] + "px", height: _vm.svgWH[1] + "px" },
         },
         [
-          _vm._l(_vm.points, function(point, i) {
+          _vm._l(_vm.points, function (point, i) {
             return [
               _c(
                 "rect",
@@ -6385,8 +6426,8 @@
                     x: point[0] - _vm.halfRectWidth,
                     y: point[1] - _vm.heights[i] / 2,
                     width: _vm.rectWidth,
-                    height: _vm.heights[i]
-                  }
+                    height: _vm.heights[i],
+                  },
                 },
                 [
                   _c("animate", {
@@ -6404,8 +6445,8 @@
                       calcMode: "spline",
                       keySplines: "0.42,0,0.58,1;0.42,0,0.58,1",
                       begin: "0s",
-                      repeatCount: "indefinite"
-                    }
+                      repeatCount: "indefinite",
+                    },
                   }),
                   _vm._v(" "),
                   _c("animate", {
@@ -6422,46 +6463,46 @@
                       calcMode: "spline",
                       keySplines: "0.42,0,0.58,1;0.42,0,0.58,1",
                       begin: "0s",
-                      repeatCount: "indefinite"
-                    }
-                  })
+                      repeatCount: "indefinite",
+                    },
+                  }),
                 ]
-              )
+              ),
             ]
-          })
+          }),
         ],
         2
-      )
+      ),
     ])
   };
-  var __vue_staticRenderFns__$k = [];
-  __vue_render__$k._withStripped = true;
+  var __vue_staticRenderFns__$h = [];
+  __vue_render__$h._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$k = function (inject) {
+    const __vue_inject_styles__$h = function (inject) {
       if (!inject) return
-      inject("data-v-a29c4fc2_0", { source: ".dv-decoration-6 {\n  width: 100%;\n  height: 100%;\n}\n.dv-decoration-6 svg {\n  transform-origin: left top;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;AACd;AACA;EACE,0BAA0B;AAC5B","file":"main.vue","sourcesContent":[".dv-decoration-6 {\n  width: 100%;\n  height: 100%;\n}\n.dv-decoration-6 svg {\n  transform-origin: left top;\n}\n"]}, media: undefined });
+      inject("data-v-52c37851_0", { source: ".dv-decoration-6 {\n  width: 100%;\n  height: 100%;\n}\n.dv-decoration-6 svg {\n  transform-origin: left top;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;AACd;AACA;EACE,0BAA0B;AAC5B","file":"main.vue","sourcesContent":[".dv-decoration-6 {\n  width: 100%;\n  height: 100%;\n}\n.dv-decoration-6 svg {\n  transform-origin: left top;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$k = undefined;
+    const __vue_scope_id__$h = undefined;
     /* module identifier */
-    const __vue_module_identifier__$k = undefined;
+    const __vue_module_identifier__$h = undefined;
     /* functional template */
-    const __vue_is_functional_template__$k = false;
+    const __vue_is_functional_template__$h = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$k = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$k, staticRenderFns: __vue_staticRenderFns__$k },
-      __vue_inject_styles__$k,
-      __vue_script__$k,
-      __vue_scope_id__$k,
-      __vue_is_functional_template__$k,
-      __vue_module_identifier__$k,
+    const __vue_component__$h = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$h, staticRenderFns: __vue_staticRenderFns__$h },
+      __vue_inject_styles__$h,
+      __vue_script__$h,
+      __vue_scope_id__$h,
+      __vue_is_functional_template__$h,
+      __vue_module_identifier__$h,
       false,
       createInjector,
       undefined,
@@ -6469,11 +6510,11 @@
     );
 
   function decoration6 (Vue) {
-    Vue.component(__vue_component__$k.name, __vue_component__$k);
+    Vue.component(__vue_component__$h.name, __vue_component__$h);
   }
 
   //
-  var script$l = {
+  var script$g = {
     name: 'DvDecoration7',
     props: {
       color: {
@@ -6504,7 +6545,7 @@
           color,
           defaultColor
         } = this;
-        this.mergedColor = util_2$1(util_1(defaultColor, true), color || []);
+        this.mergedColor = util_2(util_1(defaultColor, true), color || []);
       }
 
     },
@@ -6519,10 +6560,10 @@
   };
 
   /* script */
-  const __vue_script__$l = script$l;
+  const __vue_script__$g = script$g;
 
   /* template */
-  var __vue_render__$l = function() {
+  var __vue_render__$g = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -6536,8 +6577,8 @@
               "stroke-width": "4",
               fill: "transparent",
               stroke: _vm.mergedColor[0],
-              points: "10, 0 19, 10 10, 20"
-            }
+              points: "10, 0 19, 10 10, 20",
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
@@ -6545,9 +6586,9 @@
               "stroke-width": "2",
               fill: "transparent",
               stroke: _vm.mergedColor[1],
-              points: "2, 0 11, 10 2, 20"
-            }
-          })
+              points: "2, 0 11, 10 2, 20",
+            },
+          }),
         ]),
         _vm._v(" "),
         _vm._t("default"),
@@ -6558,8 +6599,8 @@
               "stroke-width": "4",
               fill: "transparent",
               stroke: _vm.mergedColor[0],
-              points: "11, 0 2, 10 11, 20"
-            }
+              points: "11, 0 2, 10 11, 20",
+            },
           }),
           _vm._v(" "),
           _c("polyline", {
@@ -6567,42 +6608,42 @@
               "stroke-width": "2",
               fill: "transparent",
               stroke: _vm.mergedColor[1],
-              points: "19, 0 10, 10 19, 20"
-            }
-          })
-        ])
+              points: "19, 0 10, 10 19, 20",
+            },
+          }),
+        ]),
       ],
       2
     )
   };
-  var __vue_staticRenderFns__$l = [];
-  __vue_render__$l._withStripped = true;
+  var __vue_staticRenderFns__$g = [];
+  __vue_render__$g._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$l = function (inject) {
+    const __vue_inject_styles__$g = function (inject) {
       if (!inject) return
-      inject("data-v-b84d1f12_0", { source: ".dv-decoration-7 {\n  display: flex;\n  width: 100%;\n  height: 100%;\n  justify-content: center;\n  align-items: center;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,WAAW;EACX,YAAY;EACZ,uBAAuB;EACvB,mBAAmB;AACrB","file":"main.vue","sourcesContent":[".dv-decoration-7 {\n  display: flex;\n  width: 100%;\n  height: 100%;\n  justify-content: center;\n  align-items: center;\n}\n"]}, media: undefined });
+      inject("data-v-ab5e98b8_0", { source: ".dv-decoration-7 {\n  display: flex;\n  width: 100%;\n  height: 100%;\n  justify-content: center;\n  align-items: center;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,WAAW;EACX,YAAY;EACZ,uBAAuB;EACvB,mBAAmB;AACrB","file":"main.vue","sourcesContent":[".dv-decoration-7 {\n  display: flex;\n  width: 100%;\n  height: 100%;\n  justify-content: center;\n  align-items: center;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$l = undefined;
+    const __vue_scope_id__$g = undefined;
     /* module identifier */
-    const __vue_module_identifier__$l = undefined;
+    const __vue_module_identifier__$g = undefined;
     /* functional template */
-    const __vue_is_functional_template__$l = false;
+    const __vue_is_functional_template__$g = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$l = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$l, staticRenderFns: __vue_staticRenderFns__$l },
-      __vue_inject_styles__$l,
-      __vue_script__$l,
-      __vue_scope_id__$l,
-      __vue_is_functional_template__$l,
-      __vue_module_identifier__$l,
+    const __vue_component__$g = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$g, staticRenderFns: __vue_staticRenderFns__$g },
+      __vue_inject_styles__$g,
+      __vue_script__$g,
+      __vue_scope_id__$g,
+      __vue_is_functional_template__$g,
+      __vue_module_identifier__$g,
       false,
       createInjector,
       undefined,
@@ -6610,11 +6651,11 @@
     );
 
   function decoration7 (Vue) {
-    Vue.component(__vue_component__$l.name, __vue_component__$l);
+    Vue.component(__vue_component__$g.name, __vue_component__$g);
   }
 
   //
-  var script$m = {
+  var script$f = {
     name: 'DvDecoration8',
     mixins: [autoResize],
     props: {
@@ -6660,7 +6701,7 @@
           color,
           defaultColor
         } = this;
-        this.mergedColor = util_2$1(util_1(defaultColor, true), color || []);
+        this.mergedColor = util_2(util_1(defaultColor, true), color || []);
       }
 
     },
@@ -6675,10 +6716,10 @@
   };
 
   /* script */
-  const __vue_script__$m = script$m;
+  const __vue_script__$f = script$f;
 
   /* template */
-  var __vue_render__$m = function() {
+  var __vue_render__$f = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -6689,8 +6730,8 @@
             stroke: _vm.mergedColor[0],
             "stroke-width": "2",
             fill: "transparent",
-            points: _vm.xPos(0) + ", 0 " + _vm.xPos(30) + ", " + _vm.height / 2
-          }
+            points: _vm.xPos(0) + ", 0 " + _vm.xPos(30) + ", " + _vm.height / 2,
+          },
         }),
         _vm._v(" "),
         _c("polyline", {
@@ -6707,8 +6748,8 @@
               " " +
               _vm.xPos(_vm.width) +
               ", " +
-              _vm.height / 2
-          }
+              _vm.height / 2,
+          },
         }),
         _vm._v(" "),
         _c("polyline", {
@@ -6723,40 +6764,40 @@
               ", " +
               _vm.xPos(200) +
               ", " +
-              (_vm.height - 3)
-          }
-        })
-      ])
+              (_vm.height - 3),
+          },
+        }),
+      ]),
     ])
   };
-  var __vue_staticRenderFns__$m = [];
-  __vue_render__$m._withStripped = true;
+  var __vue_staticRenderFns__$f = [];
+  __vue_render__$f._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$m = function (inject) {
+    const __vue_inject_styles__$f = function (inject) {
       if (!inject) return
-      inject("data-v-53cf43a5_0", { source: ".dv-decoration-8 {\n  display: flex;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-decoration-8 {\n  display: flex;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
+      inject("data-v-369005fa_0", { source: ".dv-decoration-8 {\n  display: flex;\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-decoration-8 {\n  display: flex;\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$m = undefined;
+    const __vue_scope_id__$f = undefined;
     /* module identifier */
-    const __vue_module_identifier__$m = undefined;
+    const __vue_module_identifier__$f = undefined;
     /* functional template */
-    const __vue_is_functional_template__$m = false;
+    const __vue_is_functional_template__$f = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$m = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$m, staticRenderFns: __vue_staticRenderFns__$m },
-      __vue_inject_styles__$m,
-      __vue_script__$m,
-      __vue_scope_id__$m,
-      __vue_is_functional_template__$m,
-      __vue_module_identifier__$m,
+    const __vue_component__$f = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$f, staticRenderFns: __vue_staticRenderFns__$f },
+      __vue_inject_styles__$f,
+      __vue_script__$f,
+      __vue_scope_id__$f,
+      __vue_is_functional_template__$f,
+      __vue_module_identifier__$f,
       false,
       createInjector,
       undefined,
@@ -6764,11 +6805,11 @@
     );
 
   function decoration8 (Vue) {
-    Vue.component(__vue_component__$m.name, __vue_component__$m);
+    Vue.component(__vue_component__$f.name, __vue_component__$f);
   }
 
   //
-  var script$n = {
+  var script$e = {
     name: 'DvDecoration9',
     mixins: [autoResize],
     props: {
@@ -6833,7 +6874,7 @@
           color,
           defaultColor
         } = this;
-        this.mergedColor = util_2$1(util_1(defaultColor, true), color || []);
+        this.mergedColor = util_2(util_1(defaultColor, true), color || []);
       },
 
       fade: lib_9
@@ -6849,10 +6890,10 @@
   };
 
   /* script */
-  const __vue_script__$n = script$n;
+  const __vue_script__$e = script$e;
 
   /* template */
-  var __vue_render__$n = function() {
+  var __vue_render__$e = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -6865,16 +6906,16 @@
           {
             style:
               "transform:scale(" + _vm.svgScale[0] + "," + _vm.svgScale[1] + ");",
-            attrs: { width: _vm.svgWH[0] + "px", height: _vm.svgWH[1] + "px" }
+            attrs: { width: _vm.svgWH[0] + "px", height: _vm.svgWH[1] + "px" },
           },
           [
             _c("defs", [
               _c("polygon", {
                 attrs: {
                   id: _vm.polygonId,
-                  points: "15, 46.5, 21, 47.5, 21, 52.5, 15, 53.5"
-                }
-              })
+                  points: "15, 46.5, 21, 47.5, 21, 52.5, 15, 53.5",
+                },
+              }),
             ]),
             _vm._v(" "),
             _c(
@@ -6887,8 +6928,8 @@
                   fill: "transparent",
                   stroke: _vm.mergedColor[1],
                   "stroke-width": "10",
-                  "stroke-dasharray": "80, 100, 30, 100"
-                }
+                  "stroke-dasharray": "80, 100, 30, 100",
+                },
               },
               [
                 _c("animateTransform", {
@@ -6897,9 +6938,9 @@
                     type: "rotate",
                     values: "0 50 50;360 50 50",
                     dur: _vm.dur + "s",
-                    repeatCount: "indefinite"
-                  }
-                })
+                    repeatCount: "indefinite",
+                  },
+                }),
               ],
               1
             ),
@@ -6914,8 +6955,8 @@
                   fill: "transparent",
                   stroke: _vm.mergedColor[0],
                   "stroke-width": "6",
-                  "stroke-dasharray": "50, 66, 100, 66"
-                }
+                  "stroke-dasharray": "50, 66, 100, 66",
+                },
               },
               [
                 _c("animateTransform", {
@@ -6924,9 +6965,9 @@
                     type: "rotate",
                     values: "0 50 50;-360 50 50",
                     dur: _vm.dur + "s",
-                    repeatCount: "indefinite"
-                  }
-                })
+                    repeatCount: "indefinite",
+                  },
+                }),
               ],
               1
             ),
@@ -6939,11 +6980,11 @@
                 fill: "transparent",
                 stroke: _vm.fade(_vm.mergedColor[1] || _vm.defaultColor[1], 30),
                 "stroke-width": "1",
-                "stroke-dasharray": "5, 1"
-              }
+                "stroke-dasharray": "5, 1",
+              },
             }),
             _vm._v(" "),
-            _vm._l(new Array(20).fill(0), function(foo, i) {
+            _vm._l(new Array(20).fill(0), function (foo, i) {
               return _c(
                 "use",
                 {
@@ -6951,8 +6992,9 @@
                   attrs: {
                     "xlink:href": "#" + _vm.polygonId,
                     stroke: _vm.mergedColor[1],
-                    fill: Math.random() > 0.4 ? "transparent" : _vm.mergedColor[0]
-                  }
+                    fill:
+                      Math.random() > 0.4 ? "transparent" : _vm.mergedColor[0],
+                  },
                 },
                 [
                   _c("animateTransform", {
@@ -6962,9 +7004,9 @@
                       values: "0 50 50;360 50 50",
                       dur: _vm.dur + "s",
                       begin: (i * _vm.dur) / 20 + "s",
-                      repeatCount: "indefinite"
-                    }
-                  })
+                      repeatCount: "indefinite",
+                    },
+                  }),
                 ],
                 1
               )
@@ -6978,46 +7020,46 @@
                 fill: "transparent",
                 stroke: _vm.fade(_vm.mergedColor[1] || _vm.defaultColor[1], 30),
                 "stroke-width": "1",
-                "stroke-dasharray": "5, 1"
-              }
-            })
+                "stroke-dasharray": "5, 1",
+              },
+            }),
           ],
           2
         ),
         _vm._v(" "),
-        _vm._t("default")
+        _vm._t("default"),
       ],
       2
     )
   };
-  var __vue_staticRenderFns__$n = [];
-  __vue_render__$n._withStripped = true;
+  var __vue_staticRenderFns__$e = [];
+  __vue_render__$e._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$n = function (inject) {
+    const __vue_inject_styles__$e = function (inject) {
       if (!inject) return
-      inject("data-v-b47f91a8_0", { source: ".dv-decoration-9 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.dv-decoration-9 svg {\n  position: absolute;\n  left: 0px;\n  top: 0px;\n  transform-origin: left top;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,aAAa;EACb,mBAAmB;EACnB,uBAAuB;AACzB;AACA;EACE,kBAAkB;EAClB,SAAS;EACT,QAAQ;EACR,0BAA0B;AAC5B","file":"main.vue","sourcesContent":[".dv-decoration-9 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.dv-decoration-9 svg {\n  position: absolute;\n  left: 0px;\n  top: 0px;\n  transform-origin: left top;\n}\n"]}, media: undefined });
+      inject("data-v-ea7a6532_0", { source: ".dv-decoration-9 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.dv-decoration-9 svg {\n  position: absolute;\n  left: 0px;\n  top: 0px;\n  transform-origin: left top;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,aAAa;EACb,mBAAmB;EACnB,uBAAuB;AACzB;AACA;EACE,kBAAkB;EAClB,SAAS;EACT,QAAQ;EACR,0BAA0B;AAC5B","file":"main.vue","sourcesContent":[".dv-decoration-9 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n.dv-decoration-9 svg {\n  position: absolute;\n  left: 0px;\n  top: 0px;\n  transform-origin: left top;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$n = undefined;
+    const __vue_scope_id__$e = undefined;
     /* module identifier */
-    const __vue_module_identifier__$n = undefined;
+    const __vue_module_identifier__$e = undefined;
     /* functional template */
-    const __vue_is_functional_template__$n = false;
+    const __vue_is_functional_template__$e = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$n = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$n, staticRenderFns: __vue_staticRenderFns__$n },
-      __vue_inject_styles__$n,
-      __vue_script__$n,
-      __vue_scope_id__$n,
-      __vue_is_functional_template__$n,
-      __vue_module_identifier__$n,
+    const __vue_component__$e = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$e, staticRenderFns: __vue_staticRenderFns__$e },
+      __vue_inject_styles__$e,
+      __vue_script__$e,
+      __vue_scope_id__$e,
+      __vue_is_functional_template__$e,
+      __vue_module_identifier__$e,
       false,
       createInjector,
       undefined,
@@ -7025,11 +7067,11 @@
     );
 
   function decoration9 (Vue) {
-    Vue.component(__vue_component__$n.name, __vue_component__$n);
+    Vue.component(__vue_component__$e.name, __vue_component__$e);
   }
 
   //
-  var script$o = {
+  var script$d = {
     name: 'DvDecoration10',
     mixins: [autoResize],
     props: {
@@ -7070,7 +7112,7 @@
           color,
           defaultColor
         } = this;
-        this.mergedColor = util_2$1(util_1(defaultColor, true), color || []);
+        this.mergedColor = util_2(util_1(defaultColor, true), color || []);
       }
 
     },
@@ -7085,10 +7127,10 @@
   };
 
   /* script */
-  const __vue_script__$o = script$o;
+  const __vue_script__$d = script$d;
 
   /* template */
-  var __vue_render__$o = function() {
+  var __vue_render__$d = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -7099,8 +7141,8 @@
             stroke: _vm.mergedColor[1],
             "stroke-width": "2",
             points:
-              "0, " + _vm.height / 2 + " " + _vm.width + ", " + _vm.height / 2
-          }
+              "0, " + _vm.height / 2 + " " + _vm.width + ", " + _vm.height / 2,
+          },
         }),
         _vm._v(" "),
         _c(
@@ -7117,8 +7159,8 @@
                 ", " +
                 _vm.height / 2,
               "stroke-dasharray": "0, " + _vm.width * 0.2,
-              fill: "freeze"
-            }
+              fill: "freeze",
+            },
           },
           [
             _c("animate", {
@@ -7128,8 +7170,8 @@
                 values: "0, " + _vm.width * 0.2 + ";" + _vm.width * 0.2 + ", 0;",
                 dur: "3s",
                 begin: _vm.animationId1 + ".end",
-                fill: "freeze"
-              }
+                fill: "freeze",
+              },
             }),
             _vm._v(" "),
             _c("animate", {
@@ -7138,9 +7180,9 @@
                 values: _vm.width * 0.2 + ", 0;0, " + _vm.width * 0.2,
                 dur: "0.01s",
                 begin: _vm.animationId7 + ".end",
-                fill: "freeze"
-              }
-            })
+                fill: "freeze",
+              },
+            }),
           ]
         ),
         _vm._v(" "),
@@ -7159,8 +7201,8 @@
                 (_vm.width * 0.8 - 3) +
                 ", " +
                 _vm.height / 2,
-              "stroke-dasharray": "0, " + _vm.width * 0.6
-            }
+              "stroke-dasharray": "0, " + _vm.width * 0.6,
+            },
           },
           [
             _c("animate", {
@@ -7170,8 +7212,8 @@
                 values: "0, " + _vm.width * 0.6 + ";" + _vm.width * 0.6 + ", 0",
                 dur: "3s",
                 begin: _vm.animationId3 + ".end + 1s",
-                fill: "freeze"
-              }
+                fill: "freeze",
+              },
             }),
             _vm._v(" "),
             _c("animate", {
@@ -7180,9 +7222,9 @@
                 values: _vm.width * 0.6 + ", 0;0, " + _vm.width * 0.6,
                 dur: "0.01s",
                 begin: _vm.animationId7 + ".end",
-                fill: "freeze"
-              }
-            })
+                fill: "freeze",
+              },
+            }),
           ]
         ),
         _vm._v(" "),
@@ -7201,8 +7243,8 @@
                 (_vm.width - 5) +
                 ", " +
                 _vm.height / 2,
-              "stroke-dasharray": "0, " + _vm.width * 0.2
-            }
+              "stroke-dasharray": "0, " + _vm.width * 0.2,
+            },
           },
           [
             _c("animate", {
@@ -7212,8 +7254,8 @@
                 values: "0, " + _vm.width * 0.2 + ";" + _vm.width * 0.2 + ", 0",
                 dur: "3s",
                 begin: _vm.animationId5 + ".end + 1s",
-                fill: "freeze"
-              }
+                fill: "freeze",
+              },
             }),
             _vm._v(" "),
             _c("animate", {
@@ -7222,9 +7264,9 @@
                 values: _vm.width * 0.2 + ", 0;0, " + _vm.width * 0.3,
                 dur: "0.01s",
                 begin: _vm.animationId7 + ".end",
-                fill: "freeze"
-              }
-            })
+                fill: "freeze",
+              },
+            }),
           ]
         ),
         _vm._v(" "),
@@ -7235,8 +7277,8 @@
               cx: "2",
               cy: _vm.height / 2,
               r: "2",
-              fill: _vm.mergedColor[1]
-            }
+              fill: _vm.mergedColor[1],
+            },
           },
           [
             _c("animate", {
@@ -7246,9 +7288,9 @@
                 values: _vm.mergedColor[1] + ";" + _vm.mergedColor[0],
                 begin: "0s;" + _vm.animationId7 + ".end",
                 dur: "0.3s",
-                fill: "freeze"
-              }
-            })
+                fill: "freeze",
+              },
+            }),
           ]
         ),
         _vm._v(" "),
@@ -7259,8 +7301,8 @@
               cx: _vm.width * 0.2,
               cy: _vm.height / 2,
               r: "2",
-              fill: _vm.mergedColor[1]
-            }
+              fill: _vm.mergedColor[1],
+            },
           },
           [
             _c("animate", {
@@ -7270,8 +7312,8 @@
                 values: _vm.mergedColor[1] + ";" + _vm.mergedColor[0],
                 begin: _vm.animationId2 + ".end",
                 dur: "0.3s",
-                fill: "freeze"
-              }
+                fill: "freeze",
+              },
             }),
             _vm._v(" "),
             _c("animate", {
@@ -7280,9 +7322,9 @@
                 values: _vm.mergedColor[1] + ";" + _vm.mergedColor[1],
                 dur: "0.01s",
                 begin: _vm.animationId7 + ".end",
-                fill: "freeze"
-              }
-            })
+                fill: "freeze",
+              },
+            }),
           ]
         ),
         _vm._v(" "),
@@ -7293,8 +7335,8 @@
               cx: _vm.width * 0.8,
               cy: _vm.height / 2,
               r: "2",
-              fill: _vm.mergedColor[1]
-            }
+              fill: _vm.mergedColor[1],
+            },
           },
           [
             _c("animate", {
@@ -7304,8 +7346,8 @@
                 values: _vm.mergedColor[1] + ";" + _vm.mergedColor[0],
                 begin: _vm.animationId4 + ".end",
                 dur: "0.3s",
-                fill: "freeze"
-              }
+                fill: "freeze",
+              },
             }),
             _vm._v(" "),
             _c("animate", {
@@ -7314,9 +7356,9 @@
                 values: _vm.mergedColor[1] + ";" + _vm.mergedColor[1],
                 dur: "0.01s",
                 begin: _vm.animationId7 + ".end",
-                fill: "freeze"
-              }
-            })
+                fill: "freeze",
+              },
+            }),
           ]
         ),
         _vm._v(" "),
@@ -7327,8 +7369,8 @@
               cx: _vm.width - 2,
               cy: _vm.height / 2,
               r: "2",
-              fill: _vm.mergedColor[1]
-            }
+              fill: _vm.mergedColor[1],
+            },
           },
           [
             _c("animate", {
@@ -7338,8 +7380,8 @@
                 values: _vm.mergedColor[1] + ";" + _vm.mergedColor[0],
                 begin: _vm.animationId6 + ".end",
                 dur: "0.3s",
-                fill: "freeze"
-              }
+                fill: "freeze",
+              },
             }),
             _vm._v(" "),
             _c("animate", {
@@ -7348,42 +7390,42 @@
                 values: _vm.mergedColor[1] + ";" + _vm.mergedColor[1],
                 dur: "0.01s",
                 begin: _vm.animationId7 + ".end",
-                fill: "freeze"
-              }
-            })
+                fill: "freeze",
+              },
+            }),
           ]
-        )
-      ])
+        ),
+      ]),
     ])
   };
-  var __vue_staticRenderFns__$o = [];
-  __vue_render__$o._withStripped = true;
+  var __vue_staticRenderFns__$d = [];
+  __vue_render__$d._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$o = function (inject) {
+    const __vue_inject_styles__$d = function (inject) {
       if (!inject) return
-      inject("data-v-23172a05_0", { source: ".dv-decoration-10 {\n  width: 100%;\n  height: 100%;\n  display: flex;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;EACZ,aAAa;AACf","file":"main.vue","sourcesContent":[".dv-decoration-10 {\n  width: 100%;\n  height: 100%;\n  display: flex;\n}\n"]}, media: undefined });
+      inject("data-v-cb825f20_0", { source: ".dv-decoration-10 {\n  width: 100%;\n  height: 100%;\n  display: flex;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;EACZ,aAAa;AACf","file":"main.vue","sourcesContent":[".dv-decoration-10 {\n  width: 100%;\n  height: 100%;\n  display: flex;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$o = undefined;
+    const __vue_scope_id__$d = undefined;
     /* module identifier */
-    const __vue_module_identifier__$o = undefined;
+    const __vue_module_identifier__$d = undefined;
     /* functional template */
-    const __vue_is_functional_template__$o = false;
+    const __vue_is_functional_template__$d = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$o = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$o, staticRenderFns: __vue_staticRenderFns__$o },
-      __vue_inject_styles__$o,
-      __vue_script__$o,
-      __vue_scope_id__$o,
-      __vue_is_functional_template__$o,
-      __vue_module_identifier__$o,
+    const __vue_component__$d = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$d, staticRenderFns: __vue_staticRenderFns__$d },
+      __vue_inject_styles__$d,
+      __vue_script__$d,
+      __vue_scope_id__$d,
+      __vue_is_functional_template__$d,
+      __vue_module_identifier__$d,
       false,
       createInjector,
       undefined,
@@ -7391,11 +7433,11 @@
     );
 
   function decoration10 (Vue) {
-    Vue.component(__vue_component__$o.name, __vue_component__$o);
+    Vue.component(__vue_component__$d.name, __vue_component__$d);
   }
 
   //
-  var script$p = {
+  var script$c = {
     name: 'DvDecoration11',
     mixins: [autoResize],
     props: {
@@ -7428,7 +7470,7 @@
           color,
           defaultColor
         } = this;
-        this.mergedColor = util_2$1(util_1(defaultColor, true), color || []);
+        this.mergedColor = util_2(util_1(defaultColor, true), color || []);
       },
 
       fade: lib_9
@@ -7444,10 +7486,10 @@
   };
 
   /* script */
-  const __vue_script__$p = script$p;
+  const __vue_script__$c = script$c;
 
   /* template */
-  var __vue_render__$p = function() {
+  var __vue_render__$c = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -7457,8 +7499,8 @@
           attrs: {
             fill: _vm.fade(_vm.mergedColor[1] || _vm.defaultColor[1], 10),
             stroke: _vm.mergedColor[1],
-            points: "20 10, 25 4, 55 4 60 10"
-          }
+            points: "20 10, 25 4, 55 4 60 10",
+          },
         }),
         _vm._v(" "),
         _c("polygon", {
@@ -7473,8 +7515,8 @@
               ", 55 " +
               (_vm.height - 4) +
               " 60 " +
-              (_vm.height - 10)
-          }
+              (_vm.height - 10),
+          },
         }),
         _vm._v(" "),
         _c("polygon", {
@@ -7490,8 +7532,8 @@
               (_vm.width - 55) +
               " 4 " +
               (_vm.width - 60) +
-              " 10"
-          }
+              " 10",
+          },
         }),
         _vm._v(" "),
         _c("polygon", {
@@ -7514,8 +7556,8 @@
               " " +
               (_vm.width - 60) +
               " " +
-              (_vm.height - 10)
-          }
+              (_vm.height - 10),
+          },
         }),
         _vm._v(" "),
         _c("polygon", {
@@ -7537,16 +7579,16 @@
               _vm.height / 2 +
               " " +
               (_vm.width - 20) +
-              " 10\n      "
-          }
+              " 10\n      ",
+          },
         }),
         _vm._v(" "),
         _c("polyline", {
           attrs: {
             fill: "transparent",
             stroke: _vm.fade(_vm.mergedColor[0] || _vm.defaultColor[0], 70),
-            points: "25 18, 15 " + _vm.height / 2 + " 25 " + (_vm.height - 18)
-          }
+            points: "25 18, 15 " + _vm.height / 2 + " 25 " + (_vm.height - 18),
+          },
         }),
         _vm._v(" "),
         _c("polyline", {
@@ -7563,42 +7605,42 @@
               " " +
               (_vm.width - 25) +
               " " +
-              (_vm.height - 18)
-          }
-        })
+              (_vm.height - 18),
+          },
+        }),
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "decoration-content" }, [_vm._t("default")], 2)
+      _c("div", { staticClass: "decoration-content" }, [_vm._t("default")], 2),
     ])
   };
-  var __vue_staticRenderFns__$p = [];
-  __vue_render__$p._withStripped = true;
+  var __vue_staticRenderFns__$c = [];
+  __vue_render__$c._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$p = function (inject) {
+    const __vue_inject_styles__$c = function (inject) {
       if (!inject) return
-      inject("data-v-53895fd4_0", { source: ".dv-decoration-11 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  display: flex;\n}\n.dv-decoration-11 .decoration-content {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,aAAa;AACf;AACA;EACE,kBAAkB;EAClB,QAAQ;EACR,SAAS;EACT,WAAW;EACX,YAAY;EACZ,aAAa;EACb,mBAAmB;EACnB,uBAAuB;AACzB","file":"main.vue","sourcesContent":[".dv-decoration-11 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  display: flex;\n}\n.dv-decoration-11 .decoration-content {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n"]}, media: undefined });
+      inject("data-v-5da00dd8_0", { source: ".dv-decoration-11 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  display: flex;\n}\n.dv-decoration-11 .decoration-content {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,aAAa;AACf;AACA;EACE,kBAAkB;EAClB,QAAQ;EACR,SAAS;EACT,WAAW;EACX,YAAY;EACZ,aAAa;EACb,mBAAmB;EACnB,uBAAuB;AACzB","file":"main.vue","sourcesContent":[".dv-decoration-11 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  display: flex;\n}\n.dv-decoration-11 .decoration-content {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$p = undefined;
+    const __vue_scope_id__$c = undefined;
     /* module identifier */
-    const __vue_module_identifier__$p = undefined;
+    const __vue_module_identifier__$c = undefined;
     /* functional template */
-    const __vue_is_functional_template__$p = false;
+    const __vue_is_functional_template__$c = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$p = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$p, staticRenderFns: __vue_staticRenderFns__$p },
-      __vue_inject_styles__$p,
-      __vue_script__$p,
-      __vue_scope_id__$p,
-      __vue_is_functional_template__$p,
-      __vue_module_identifier__$p,
+    const __vue_component__$c = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$c, staticRenderFns: __vue_staticRenderFns__$c },
+      __vue_inject_styles__$c,
+      __vue_script__$c,
+      __vue_scope_id__$c,
+      __vue_is_functional_template__$c,
+      __vue_module_identifier__$c,
       false,
       createInjector,
       undefined,
@@ -7606,11 +7648,11 @@
     );
 
   function decoration11 (Vue) {
-    Vue.component(__vue_component__$p.name, __vue_component__$p);
+    Vue.component(__vue_component__$c.name, __vue_component__$c);
   }
 
   //
-  var script$q = {
+  var script$b = {
     name: 'DvDecoration12',
     mixins: [autoResize],
     props: {
@@ -7705,7 +7747,7 @@
           color,
           defaultColor
         } = this;
-        this.mergedColor = util_2$1(util_1(defaultColor, true), color || []);
+        this.mergedColor = util_2(util_1(defaultColor, true), color || []);
       },
 
       calcPathD() {
@@ -7794,10 +7836,10 @@
   };
 
   /* script */
-  const __vue_script__$q = script$q;
+  const __vue_script__$b = script$b;
 
   /* template */
-  var __vue_render__$q = function() {
+  var __vue_render__$b = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -7812,15 +7854,15 @@
               _c(
                 "g",
                 { attrs: { id: _vm.gId } },
-                _vm._l(_vm.pathD, function(d, i) {
+                _vm._l(_vm.pathD, function (d, i) {
                   return _c("path", {
                     key: d,
                     attrs: {
                       stroke: _vm.pathColor[i],
                       "stroke-width": _vm.width / 2,
                       fill: "transparent",
-                      d: d
-                    }
+                      d: d,
+                    },
                   })
                 }),
                 0
@@ -7834,8 +7876,8 @@
                     attrs: {
                       offset: "0%",
                       "stop-color": "transparent",
-                      "stop-opacity": "1"
-                    }
+                      "stop-opacity": "1",
+                    },
                   }),
                   _vm._v(" "),
                   _c("stop", {
@@ -7845,17 +7887,17 @@
                         _vm.mergedColor[1] || _vm.defaultColor[1],
                         30
                       ),
-                      "stop-opacity": "1"
-                    }
-                  })
+                      "stop-opacity": "1",
+                    },
+                  }),
                 ],
                 1
-              )
+              ),
             ],
             1
           ),
           _vm._v(" "),
-          _vm._l(_vm.circleR, function(r) {
+          _vm._l(_vm.circleR, function (r) {
             return _c("circle", {
               key: r,
               attrs: {
@@ -7864,8 +7906,8 @@
                 cy: _vm.y,
                 stroke: _vm.mergedColor[1],
                 "stroke-width": 0.5,
-                fill: "transparent"
-              }
+                fill: "transparent",
+              },
             })
           }),
           _vm._v(" "),
@@ -7877,8 +7919,8 @@
                 cx: _vm.x,
                 cy: _vm.y,
                 stroke: "transparent",
-                fill: "url(#" + _vm.gradientId + ")"
-              }
+                fill: "url(#" + _vm.gradientId + ")",
+              },
             },
             [
               _c("animate", {
@@ -7886,8 +7928,8 @@
                   attributeName: "r",
                   values: "1;" + _vm.width / 2,
                   dur: _vm.haloDur + "s",
-                  repeatCount: "indefinite"
-                }
+                  repeatCount: "indefinite",
+                },
               }),
               _vm._v(" "),
               _c("animate", {
@@ -7895,43 +7937,43 @@
                   attributeName: "opacity",
                   values: "1;0",
                   dur: _vm.haloDur + "s",
-                  repeatCount: "indefinite"
-                }
-              })
+                  repeatCount: "indefinite",
+                },
+              }),
             ]
           ),
           _vm._v(" "),
           _c("circle", {
-            attrs: { r: "2", cx: _vm.x, cy: _vm.y, fill: _vm.mergedColor[1] }
+            attrs: { r: "2", cx: _vm.x, cy: _vm.y, fill: _vm.mergedColor[1] },
           }),
           _vm._v(" "),
           _vm.showSplitLine
             ? _c(
                 "g",
-                _vm._l(_vm.splitLinePoints, function(p) {
+                _vm._l(_vm.splitLinePoints, function (p) {
                   return _c("polyline", {
                     key: p,
                     attrs: {
                       points: p,
                       stroke: _vm.mergedColor[1],
                       "stroke-width": 0.5,
-                      opacity: "0.5"
-                    }
+                      opacity: "0.5",
+                    },
                   })
                 }),
                 0
               )
             : _vm._e(),
           _vm._v(" "),
-          _vm._l(_vm.arcD, function(d) {
+          _vm._l(_vm.arcD, function (d) {
             return _c("path", {
               key: d,
               attrs: {
                 d: d,
                 stroke: _vm.mergedColor[1],
                 "stroke-width": "2",
-                fill: "transparent"
-              }
+                fill: "transparent",
+              },
             })
           }),
           _vm._v(" "),
@@ -7946,47 +7988,47 @@
                   values:
                     "0, " + _vm.x + " " + _vm.y + ";360, " + _vm.x + " " + _vm.y,
                   dur: _vm.scanDur + "s",
-                  repeatCount: "indefinite"
-                }
-              })
+                  repeatCount: "indefinite",
+                },
+              }),
             ],
             1
-          )
+          ),
         ],
         2
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "decoration-content" }, [_vm._t("default")], 2)
+      _c("div", { staticClass: "decoration-content" }, [_vm._t("default")], 2),
     ])
   };
-  var __vue_staticRenderFns__$q = [];
-  __vue_render__$q._withStripped = true;
+  var __vue_staticRenderFns__$b = [];
+  __vue_render__$b._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$q = function (inject) {
+    const __vue_inject_styles__$b = function (inject) {
       if (!inject) return
-      inject("data-v-70099a0c_0", { source: ".dv-decoration-12 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  display: flex;\n}\n.dv-decoration-12 .decoration-content {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,aAAa;AACf;AACA;EACE,kBAAkB;EAClB,QAAQ;EACR,SAAS;EACT,WAAW;EACX,YAAY;EACZ,aAAa;EACb,mBAAmB;EACnB,uBAAuB;AACzB","file":"main.vue","sourcesContent":[".dv-decoration-12 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  display: flex;\n}\n.dv-decoration-12 .decoration-content {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n"]}, media: undefined });
+      inject("data-v-7373165a_0", { source: ".dv-decoration-12 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  display: flex;\n}\n.dv-decoration-12 .decoration-content {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,aAAa;AACf;AACA;EACE,kBAAkB;EAClB,QAAQ;EACR,SAAS;EACT,WAAW;EACX,YAAY;EACZ,aAAa;EACb,mBAAmB;EACnB,uBAAuB;AACzB","file":"main.vue","sourcesContent":[".dv-decoration-12 {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  display: flex;\n}\n.dv-decoration-12 .decoration-content {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$q = undefined;
+    const __vue_scope_id__$b = undefined;
     /* module identifier */
-    const __vue_module_identifier__$q = undefined;
+    const __vue_module_identifier__$b = undefined;
     /* functional template */
-    const __vue_is_functional_template__$q = false;
+    const __vue_is_functional_template__$b = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$q = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$q, staticRenderFns: __vue_staticRenderFns__$q },
-      __vue_inject_styles__$q,
-      __vue_script__$q,
-      __vue_scope_id__$q,
-      __vue_is_functional_template__$q,
-      __vue_module_identifier__$q,
+    const __vue_component__$b = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$b, staticRenderFns: __vue_staticRenderFns__$b },
+      __vue_inject_styles__$b,
+      __vue_script__$b,
+      __vue_scope_id__$b,
+      __vue_is_functional_template__$b,
+      __vue_module_identifier__$b,
       false,
       createInjector,
       undefined,
@@ -7994,17 +8036,22 @@
     );
 
   function decoration12 (Vue) {
-    Vue.component(__vue_component__$q.name, __vue_component__$q);
+    Vue.component(__vue_component__$b.name, __vue_component__$b);
   }
 
+  var classCallCheck = createCommonjsModule(function (module) {
   function _classCallCheck(instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   }
 
-  var classCallCheck = _classCallCheck;
+  module.exports = _classCallCheck, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  });
 
+  unwrapExports(classCallCheck);
+
+  var defineProperty = createCommonjsModule(function (module) {
   function _defineProperty(obj, key, value) {
     if (key in obj) {
       Object.defineProperty(obj, key, {
@@ -8020,7 +8067,10 @@
     return obj;
   }
 
-  var defineProperty = _defineProperty;
+  module.exports = _defineProperty, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  });
+
+  unwrapExports(defineProperty);
 
   var bezierCurveToPolyline_1 = createCommonjsModule(function (module, exports) {
 
@@ -8360,8 +8410,8 @@
   });
 
   unwrapExports(bezierCurveToPolyline_1);
-  var bezierCurveToPolyline_2 = bezierCurveToPolyline_1.bezierCurveToPolyline;
-  var bezierCurveToPolyline_3 = bezierCurveToPolyline_1.getBezierCurveLength;
+  bezierCurveToPolyline_1.bezierCurveToPolyline;
+  bezierCurveToPolyline_1.getBezierCurveLength;
 
   var polylineToBezierCurve_1 = createCommonjsModule(function (module, exports) {
 
@@ -8479,7 +8529,7 @@
 
   unwrapExports(polylineToBezierCurve_1);
 
-  var lib$1 = createCommonjsModule(function (module, exports) {
+  var lib$3 = createCommonjsModule(function (module, exports) {
 
 
 
@@ -8518,7 +8568,7 @@
   exports["default"] = _default;
   });
 
-  unwrapExports(lib$1);
+  unwrapExports(lib$3);
 
   var canvas = createCommonjsModule(function (module, exports) {
 
@@ -8583,8 +8633,8 @@
   });
 
   unwrapExports(canvas);
-  var canvas_1 = canvas.drawPolylinePath;
-  var canvas_2 = canvas.drawBezierCurvePath;
+  canvas.drawPolylinePath;
+  canvas.drawBezierCurvePath;
 
   var graphs_1 = createCommonjsModule(function (module, exports) {
 
@@ -8600,7 +8650,7 @@
 
   var _slicedToArray2 = interopRequireDefault(slicedToArray);
 
-  var _bezierCurve2 = interopRequireDefault(lib$1);
+  var _bezierCurve2 = interopRequireDefault(lib$3);
 
 
 
@@ -8644,7 +8694,7 @@
       var rx = shape.rx,
           ry = shape.ry,
           r = shape.r;
-      return (0, util.checkPointIsInCircle)(position, rx, ry, r);
+      return (0, util$1.checkPointIsInCircle)(position, rx, ry, r);
     },
     setGraphCenter: function setGraphCenter(e, _ref5) {
       var shape = _ref5.shape,
@@ -8709,7 +8759,7 @@
       var c = Math.sqrt(a * a - b * b);
       var leftFocusPoint = [rx - c, ry];
       var rightFocusPoint = [rx + c, ry];
-      var distance = (0, util.getTwoPointDistance)(position, leftFocusPoint) + (0, util.getTwoPointDistance)(position, rightFocusPoint);
+      var distance = (0, util$1.getTwoPointDistance)(position, leftFocusPoint) + (0, util$1.getTwoPointDistance)(position, rightFocusPoint);
       return distance <= 2 * a;
     },
     setGraphCenter: function setGraphCenter(e, _ref12) {
@@ -8770,7 +8820,7 @@
           y = shape.y,
           w = shape.w,
           h = shape.h;
-      return (0, util.checkPointIsInRect)(position, x, y, w, h);
+      return (0, util$1.checkPointIsInRect)(position, x, y, w, h);
     },
     setGraphCenter: function setGraphCenter(e, _ref19) {
       var shape = _ref19.shape,
@@ -8832,7 +8882,7 @@
       var halfLineWidth = lineWidth / 2;
       var minDistance = r - halfLineWidth;
       var maxDistance = r + halfLineWidth;
-      var distance = (0, util.getTwoPointDistance)(position, [rx, ry]);
+      var distance = (0, util$1.getTwoPointDistance)(position, [rx, ry]);
       return distance >= minDistance && distance <= maxDistance;
     },
     setGraphCenter: function setGraphCenter(e, _ref26) {
@@ -8902,7 +8952,7 @@
       var halfLineWidth = lineWidth / 2;
       var insideRadius = r - halfLineWidth;
       var outsideRadius = r + halfLineWidth;
-      return !(0, util.checkPointIsInSector)(position, rx, ry, insideRadius, startAngle, endAngle, clockWise) && (0, util.checkPointIsInSector)(position, rx, ry, outsideRadius, startAngle, endAngle, clockWise);
+      return !(0, util$1.checkPointIsInSector)(position, rx, ry, insideRadius, startAngle, endAngle, clockWise) && (0, util$1.checkPointIsInSector)(position, rx, ry, outsideRadius, startAngle, endAngle, clockWise);
     },
     setGraphCenter: function setGraphCenter(e, _ref33) {
       var shape = _ref33.shape,
@@ -8968,7 +9018,7 @@
           startAngle = shape.startAngle,
           endAngle = shape.endAngle,
           clockWise = shape.clockWise;
-      return (0, util.checkPointIsInSector)(position, rx, ry, r, startAngle, endAngle, clockWise);
+      return (0, util$1.checkPointIsInSector)(position, rx, ry, r, startAngle, endAngle, clockWise);
     },
     setGraphCenter: function setGraphCenter(e, _ref40) {
       var shape = _ref40.shape,
@@ -9027,7 +9077,7 @@
           side = shape.side;
 
       if (!cache.points || cache.rx !== rx || cache.ry !== ry || cache.r !== r || cache.side !== side) {
-        var _points = (0, util.getRegularPolygonPoints)(rx, ry, r, side);
+        var _points = (0, util$1.getRegularPolygonPoints)(rx, ry, r, side);
 
         Object.assign(cache, {
           points: _points,
@@ -9047,7 +9097,7 @@
     hoverCheck: function hoverCheck(position, _ref46) {
       var cache = _ref46.cache;
       var points = cache.points;
-      return (0, util.checkPointIsInPolygon)(position, points);
+      return (0, util$1.checkPointIsInPolygon)(position, points);
     },
     setGraphCenter: function setGraphCenter(e, _ref47) {
       var shape = _ref47.shape,
@@ -9102,7 +9152,7 @@
       ctx.beginPath();
       var points = shape.points,
           close = shape.close;
-      if (lineWidth === 1) points = (0, util.eliminateBlur)(points);
+      if (lineWidth === 1) points = (0, util$1.eliminateBlur)(points);
       (0, canvas.drawPolylinePath)(ctx, points);
 
       if (close) {
@@ -9121,9 +9171,9 @@
       var lineWidth = style.lineWidth;
 
       if (close) {
-        return (0, util.checkPointIsInPolygon)(position, points);
+        return (0, util$1.checkPointIsInPolygon)(position, points);
       } else {
-        return (0, util.checkPointIsNearPolyline)(position, points, lineWidth);
+        return (0, util$1.checkPointIsNearPolyline)(position, points, lineWidth);
       }
     },
     setGraphCenter: function setGraphCenter(e, _ref56) {
@@ -9178,7 +9228,7 @@
 
         var hoverPoints = bezierCurveToPolyline(_bezierCurve);
         Object.assign(cache, {
-          points: (0, util.deepClone)(points, true),
+          points: (0, util$1.deepClone)(points, true),
           bezierCurve: _bezierCurve,
           hoverPoints: hoverPoints
         });
@@ -9205,9 +9255,9 @@
       var lineWidth = style.lineWidth;
 
       if (close) {
-        return (0, util.checkPointIsInPolygon)(position, hoverPoints);
+        return (0, util$1.checkPointIsInPolygon)(position, hoverPoints);
       } else {
-        return (0, util.checkPointIsNearPolyline)(position, hoverPoints, lineWidth);
+        return (0, util$1.checkPointIsNearPolyline)(position, hoverPoints, lineWidth);
       }
     },
     setGraphCenter: function setGraphCenter(e, _ref65) {
@@ -9284,7 +9334,7 @@
       if (!cache.points || cache.points.toString() !== points.toString()) {
         var hoverPoints = bezierCurveToPolyline(points, 20);
         Object.assign(cache, {
-          points: (0, util.deepClone)(points, true),
+          points: (0, util$1.deepClone)(points, true),
           hoverPoints: hoverPoints
         });
       }
@@ -9309,9 +9359,9 @@
       var lineWidth = style.lineWidth;
 
       if (close) {
-        return (0, util.checkPointIsInPolygon)(position, hoverPoints);
+        return (0, util$1.checkPointIsInPolygon)(position, hoverPoints);
       } else {
-        return (0, util.checkPointIsNearPolyline)(position, hoverPoints, lineWidth);
+        return (0, util$1.checkPointIsNearPolyline)(position, hoverPoints, lineWidth);
       }
     },
     setGraphCenter: function setGraphCenter(e, _ref78) {
@@ -9428,8 +9478,8 @@
       ctx.closePath();
     },
     hoverCheck: function hoverCheck(position, _ref88) {
-      var shape = _ref88.shape,
-          style = _ref88.style;
+      _ref88.shape;
+          _ref88.style;
       return false;
     },
     setGraphCenter: function setGraphCenter(e, _ref89) {
@@ -9490,752 +9540,394 @@
   });
 
   unwrapExports(graphs_1);
-  var graphs_2 = graphs_1.extendNewGraph;
-  var graphs_3 = graphs_1.text;
-  var graphs_4 = graphs_1.bezierCurve;
-  var graphs_5 = graphs_1.smoothline;
-  var graphs_6 = graphs_1.polyline;
-  var graphs_7 = graphs_1.regPolygon;
-  var graphs_8 = graphs_1.sector;
-  var graphs_9 = graphs_1.arc;
-  var graphs_10 = graphs_1.ring;
-  var graphs_11 = graphs_1.rect;
-  var graphs_12 = graphs_1.ellipse;
-  var graphs_13 = graphs_1.circle;
+  graphs_1.extendNewGraph;
+  graphs_1.text;
+  graphs_1.bezierCurve;
+  graphs_1.smoothline;
+  graphs_1.polyline;
+  graphs_1.regPolygon;
+  graphs_1.sector;
+  graphs_1.arc;
+  graphs_1.ring;
+  graphs_1.rect;
+  graphs_1.ellipse;
+  graphs_1.circle;
 
-  var runtime_1 = createCommonjsModule(function (module) {
-  /**
-   * Copyright (c) 2014-present, Facebook, Inc.
-   *
-   * This source code is licensed under the MIT license found in the
-   * LICENSE file in the root directory of this source tree.
-   */
+  var regeneratorRuntime$1 = createCommonjsModule(function (module) {
+  var _typeof = _typeof_1["default"];
 
-  var runtime = (function (exports) {
+  function _regeneratorRuntime() {
+    /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
 
-    var Op = Object.prototype;
-    var hasOwn = Op.hasOwnProperty;
-    var undefined$1; // More compressible than void 0.
-    var $Symbol = typeof Symbol === "function" ? Symbol : {};
-    var iteratorSymbol = $Symbol.iterator || "@@iterator";
-    var asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator";
-    var toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
+    module.exports = _regeneratorRuntime = function _regeneratorRuntime() {
+      return exports;
+    }, module.exports.__esModule = true, module.exports["default"] = module.exports;
+    var exports = {},
+        Op = Object.prototype,
+        hasOwn = Op.hasOwnProperty,
+        $Symbol = "function" == typeof Symbol ? Symbol : {},
+        iteratorSymbol = $Symbol.iterator || "@@iterator",
+        asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator",
+        toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
+
+    function define(obj, key, value) {
+      return Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: !0,
+        configurable: !0,
+        writable: !0
+      }), obj[key];
+    }
+
+    try {
+      define({}, "");
+    } catch (err) {
+      define = function define(obj, key, value) {
+        return obj[key] = value;
+      };
+    }
 
     function wrap(innerFn, outerFn, self, tryLocsList) {
-      // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.
-      var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator;
-      var generator = Object.create(protoGenerator.prototype);
-      var context = new Context(tryLocsList || []);
+      var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator,
+          generator = Object.create(protoGenerator.prototype),
+          context = new Context(tryLocsList || []);
+      return generator._invoke = function (innerFn, self, context) {
+        var state = "suspendedStart";
+        return function (method, arg) {
+          if ("executing" === state) throw new Error("Generator is already running");
 
-      // The ._invoke method unifies the implementations of the .next,
-      // .throw, and .return methods.
-      generator._invoke = makeInvokeMethod(innerFn, self, context);
+          if ("completed" === state) {
+            if ("throw" === method) throw arg;
+            return doneResult();
+          }
 
-      return generator;
+          for (context.method = method, context.arg = arg;;) {
+            var delegate = context.delegate;
+
+            if (delegate) {
+              var delegateResult = maybeInvokeDelegate(delegate, context);
+
+              if (delegateResult) {
+                if (delegateResult === ContinueSentinel) continue;
+                return delegateResult;
+              }
+            }
+
+            if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) {
+              if ("suspendedStart" === state) throw state = "completed", context.arg;
+              context.dispatchException(context.arg);
+            } else "return" === context.method && context.abrupt("return", context.arg);
+            state = "executing";
+            var record = tryCatch(innerFn, self, context);
+
+            if ("normal" === record.type) {
+              if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue;
+              return {
+                value: record.arg,
+                done: context.done
+              };
+            }
+
+            "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg);
+          }
+        };
+      }(innerFn, self, context), generator;
     }
-    exports.wrap = wrap;
 
-    // Try/catch helper to minimize deoptimizations. Returns a completion
-    // record like context.tryEntries[i].completion. This interface could
-    // have been (and was previously) designed to take a closure to be
-    // invoked without arguments, but in all the cases we care about we
-    // already have an existing method we want to call, so there's no need
-    // to create a new function object. We can even get away with assuming
-    // the method takes exactly one argument, since that happens to be true
-    // in every case, so we don't have to touch the arguments object. The
-    // only additional allocation required is the completion record, which
-    // has a stable shape and so hopefully should be cheap to allocate.
     function tryCatch(fn, obj, arg) {
       try {
-        return { type: "normal", arg: fn.call(obj, arg) };
+        return {
+          type: "normal",
+          arg: fn.call(obj, arg)
+        };
       } catch (err) {
-        return { type: "throw", arg: err };
+        return {
+          type: "throw",
+          arg: err
+        };
       }
     }
 
-    var GenStateSuspendedStart = "suspendedStart";
-    var GenStateSuspendedYield = "suspendedYield";
-    var GenStateExecuting = "executing";
-    var GenStateCompleted = "completed";
-
-    // Returning this object from the innerFn has the same effect as
-    // breaking out of the dispatch switch statement.
+    exports.wrap = wrap;
     var ContinueSentinel = {};
 
-    // Dummy constructor functions that we use as the .constructor and
-    // .constructor.prototype properties for functions that return Generator
-    // objects. For full spec compliance, you may wish to configure your
-    // minifier not to mangle the names of these two functions.
     function Generator() {}
+
     function GeneratorFunction() {}
+
     function GeneratorFunctionPrototype() {}
 
-    // This is a polyfill for %IteratorPrototype% for environments that
-    // don't natively support it.
     var IteratorPrototype = {};
-    IteratorPrototype[iteratorSymbol] = function () {
+    define(IteratorPrototype, iteratorSymbol, function () {
       return this;
-    };
+    });
+    var getProto = Object.getPrototypeOf,
+        NativeIteratorPrototype = getProto && getProto(getProto(values([])));
+    NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype);
+    var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype);
 
-    var getProto = Object.getPrototypeOf;
-    var NativeIteratorPrototype = getProto && getProto(getProto(values([])));
-    if (NativeIteratorPrototype &&
-        NativeIteratorPrototype !== Op &&
-        hasOwn.call(NativeIteratorPrototype, iteratorSymbol)) {
-      // This environment has a native %IteratorPrototype%; use it instead
-      // of the polyfill.
-      IteratorPrototype = NativeIteratorPrototype;
-    }
-
-    var Gp = GeneratorFunctionPrototype.prototype =
-      Generator.prototype = Object.create(IteratorPrototype);
-    GeneratorFunction.prototype = Gp.constructor = GeneratorFunctionPrototype;
-    GeneratorFunctionPrototype.constructor = GeneratorFunction;
-    GeneratorFunctionPrototype[toStringTagSymbol] =
-      GeneratorFunction.displayName = "GeneratorFunction";
-
-    // Helper for defining the .next, .throw, and .return methods of the
-    // Iterator interface in terms of a single ._invoke method.
     function defineIteratorMethods(prototype) {
-      ["next", "throw", "return"].forEach(function(method) {
-        prototype[method] = function(arg) {
+      ["next", "throw", "return"].forEach(function (method) {
+        define(prototype, method, function (arg) {
           return this._invoke(method, arg);
-        };
+        });
       });
     }
-
-    exports.isGeneratorFunction = function(genFun) {
-      var ctor = typeof genFun === "function" && genFun.constructor;
-      return ctor
-        ? ctor === GeneratorFunction ||
-          // For the native GeneratorFunction constructor, the best we can
-          // do is to check its .name property.
-          (ctor.displayName || ctor.name) === "GeneratorFunction"
-        : false;
-    };
-
-    exports.mark = function(genFun) {
-      if (Object.setPrototypeOf) {
-        Object.setPrototypeOf(genFun, GeneratorFunctionPrototype);
-      } else {
-        genFun.__proto__ = GeneratorFunctionPrototype;
-        if (!(toStringTagSymbol in genFun)) {
-          genFun[toStringTagSymbol] = "GeneratorFunction";
-        }
-      }
-      genFun.prototype = Object.create(Gp);
-      return genFun;
-    };
-
-    // Within the body of any async function, `await x` is transformed to
-    // `yield regeneratorRuntime.awrap(x)`, so that the runtime can test
-    // `hasOwn.call(value, "__await")` to determine if the yielded value is
-    // meant to be awaited.
-    exports.awrap = function(arg) {
-      return { __await: arg };
-    };
 
     function AsyncIterator(generator, PromiseImpl) {
       function invoke(method, arg, resolve, reject) {
         var record = tryCatch(generator[method], generator, arg);
-        if (record.type === "throw") {
-          reject(record.arg);
-        } else {
-          var result = record.arg;
-          var value = result.value;
-          if (value &&
-              typeof value === "object" &&
-              hasOwn.call(value, "__await")) {
-            return PromiseImpl.resolve(value.__await).then(function(value) {
-              invoke("next", value, resolve, reject);
-            }, function(err) {
-              invoke("throw", err, resolve, reject);
-            });
-          }
 
-          return PromiseImpl.resolve(value).then(function(unwrapped) {
-            // When a yielded Promise is resolved, its final value becomes
-            // the .value of the Promise<{value,done}> result for the
-            // current iteration.
-            result.value = unwrapped;
-            resolve(result);
-          }, function(error) {
-            // If a rejected Promise was yielded, throw the rejection back
-            // into the async generator function so it can be handled there.
+        if ("throw" !== record.type) {
+          var result = record.arg,
+              value = result.value;
+          return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) {
+            invoke("next", value, resolve, reject);
+          }, function (err) {
+            invoke("throw", err, resolve, reject);
+          }) : PromiseImpl.resolve(value).then(function (unwrapped) {
+            result.value = unwrapped, resolve(result);
+          }, function (error) {
             return invoke("throw", error, resolve, reject);
           });
         }
+
+        reject(record.arg);
       }
 
       var previousPromise;
 
-      function enqueue(method, arg) {
+      this._invoke = function (method, arg) {
         function callInvokeWithMethodAndArg() {
-          return new PromiseImpl(function(resolve, reject) {
+          return new PromiseImpl(function (resolve, reject) {
             invoke(method, arg, resolve, reject);
           });
         }
 
-        return previousPromise =
-          // If enqueue has been called before, then we want to wait until
-          // all previous Promises have been resolved before calling invoke,
-          // so that results are always delivered in the correct order. If
-          // enqueue has not been called before, then it is important to
-          // call invoke immediately, without waiting on a callback to fire,
-          // so that the async generator function has the opportunity to do
-          // any necessary setup in a predictable way. This predictability
-          // is why the Promise constructor synchronously invokes its
-          // executor callback, and why async functions synchronously
-          // execute code before the first await. Since we implement simple
-          // async functions in terms of async generators, it is especially
-          // important to get this right, even though it requires care.
-          previousPromise ? previousPromise.then(
-            callInvokeWithMethodAndArg,
-            // Avoid propagating failures to Promises returned by later
-            // invocations of the iterator.
-            callInvokeWithMethodAndArg
-          ) : callInvokeWithMethodAndArg();
-      }
-
-      // Define the unified helper method that is used to implement .next,
-      // .throw, and .return (see defineIteratorMethods).
-      this._invoke = enqueue;
-    }
-
-    defineIteratorMethods(AsyncIterator.prototype);
-    AsyncIterator.prototype[asyncIteratorSymbol] = function () {
-      return this;
-    };
-    exports.AsyncIterator = AsyncIterator;
-
-    // Note that simple async functions are implemented on top of
-    // AsyncIterator objects; they just return a Promise for the value of
-    // the final result produced by the iterator.
-    exports.async = function(innerFn, outerFn, self, tryLocsList, PromiseImpl) {
-      if (PromiseImpl === void 0) PromiseImpl = Promise;
-
-      var iter = new AsyncIterator(
-        wrap(innerFn, outerFn, self, tryLocsList),
-        PromiseImpl
-      );
-
-      return exports.isGeneratorFunction(outerFn)
-        ? iter // If outerFn is a generator, return the full iterator.
-        : iter.next().then(function(result) {
-            return result.done ? result.value : iter.next();
-          });
-    };
-
-    function makeInvokeMethod(innerFn, self, context) {
-      var state = GenStateSuspendedStart;
-
-      return function invoke(method, arg) {
-        if (state === GenStateExecuting) {
-          throw new Error("Generator is already running");
-        }
-
-        if (state === GenStateCompleted) {
-          if (method === "throw") {
-            throw arg;
-          }
-
-          // Be forgiving, per 25.3.3.3.3 of the spec:
-          // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-generatorresume
-          return doneResult();
-        }
-
-        context.method = method;
-        context.arg = arg;
-
-        while (true) {
-          var delegate = context.delegate;
-          if (delegate) {
-            var delegateResult = maybeInvokeDelegate(delegate, context);
-            if (delegateResult) {
-              if (delegateResult === ContinueSentinel) continue;
-              return delegateResult;
-            }
-          }
-
-          if (context.method === "next") {
-            // Setting context._sent for legacy support of Babel's
-            // function.sent implementation.
-            context.sent = context._sent = context.arg;
-
-          } else if (context.method === "throw") {
-            if (state === GenStateSuspendedStart) {
-              state = GenStateCompleted;
-              throw context.arg;
-            }
-
-            context.dispatchException(context.arg);
-
-          } else if (context.method === "return") {
-            context.abrupt("return", context.arg);
-          }
-
-          state = GenStateExecuting;
-
-          var record = tryCatch(innerFn, self, context);
-          if (record.type === "normal") {
-            // If an exception is thrown from innerFn, we leave state ===
-            // GenStateExecuting and loop back for another invocation.
-            state = context.done
-              ? GenStateCompleted
-              : GenStateSuspendedYield;
-
-            if (record.arg === ContinueSentinel) {
-              continue;
-            }
-
-            return {
-              value: record.arg,
-              done: context.done
-            };
-
-          } else if (record.type === "throw") {
-            state = GenStateCompleted;
-            // Dispatch the exception by looping back around to the
-            // context.dispatchException(context.arg) call above.
-            context.method = "throw";
-            context.arg = record.arg;
-          }
-        }
+        return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg();
       };
     }
 
-    // Call delegate.iterator[context.method](context.arg) and handle the
-    // result, either by returning a { value, done } result from the
-    // delegate iterator, or by modifying context.method and context.arg,
-    // setting context.delegate to null, and returning the ContinueSentinel.
     function maybeInvokeDelegate(delegate, context) {
       var method = delegate.iterator[context.method];
-      if (method === undefined$1) {
-        // A .throw or .return when the delegate iterator has no .throw
-        // method always terminates the yield* loop.
-        context.delegate = null;
 
-        if (context.method === "throw") {
-          // Note: ["return"] must be used for ES3 parsing compatibility.
-          if (delegate.iterator["return"]) {
-            // If the delegate iterator has a return method, give it a
-            // chance to clean up.
-            context.method = "return";
-            context.arg = undefined$1;
-            maybeInvokeDelegate(delegate, context);
-
-            if (context.method === "throw") {
-              // If maybeInvokeDelegate(context) changed context.method from
-              // "return" to "throw", let that override the TypeError below.
-              return ContinueSentinel;
-            }
-          }
-
-          context.method = "throw";
-          context.arg = new TypeError(
-            "The iterator does not provide a 'throw' method");
+      if (undefined === method) {
+        if (context.delegate = null, "throw" === context.method) {
+          if (delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method)) return ContinueSentinel;
+          context.method = "throw", context.arg = new TypeError("The iterator does not provide a 'throw' method");
         }
 
         return ContinueSentinel;
       }
 
       var record = tryCatch(method, delegate.iterator, context.arg);
-
-      if (record.type === "throw") {
-        context.method = "throw";
-        context.arg = record.arg;
-        context.delegate = null;
-        return ContinueSentinel;
-      }
-
+      if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel;
       var info = record.arg;
-
-      if (! info) {
-        context.method = "throw";
-        context.arg = new TypeError("iterator result is not an object");
-        context.delegate = null;
-        return ContinueSentinel;
-      }
-
-      if (info.done) {
-        // Assign the result of the finished delegate to the temporary
-        // variable specified by delegate.resultName (see delegateYield).
-        context[delegate.resultName] = info.value;
-
-        // Resume execution at the desired location (see delegateYield).
-        context.next = delegate.nextLoc;
-
-        // If context.method was "throw" but the delegate handled the
-        // exception, let the outer generator proceed normally. If
-        // context.method was "next", forget context.arg since it has been
-        // "consumed" by the delegate iterator. If context.method was
-        // "return", allow the original .return call to continue in the
-        // outer generator.
-        if (context.method !== "return") {
-          context.method = "next";
-          context.arg = undefined$1;
-        }
-
-      } else {
-        // Re-yield the result returned by the delegate method.
-        return info;
-      }
-
-      // The delegate iterator is finished, so forget it and continue with
-      // the outer generator.
-      context.delegate = null;
-      return ContinueSentinel;
+      return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel);
     }
 
-    // Define Generator.prototype.{next,throw,return} in terms of the
-    // unified ._invoke helper method.
-    defineIteratorMethods(Gp);
-
-    Gp[toStringTagSymbol] = "Generator";
-
-    // A Generator should always return itself as the iterator object when the
-    // @@iterator function is called on it. Some browsers' implementations of the
-    // iterator prototype chain incorrectly implement this, causing the Generator
-    // object to not be returned from this call. This ensures that doesn't happen.
-    // See https://github.com/facebook/regenerator/issues/274 for more details.
-    Gp[iteratorSymbol] = function() {
-      return this;
-    };
-
-    Gp.toString = function() {
-      return "[object Generator]";
-    };
-
     function pushTryEntry(locs) {
-      var entry = { tryLoc: locs[0] };
-
-      if (1 in locs) {
-        entry.catchLoc = locs[1];
-      }
-
-      if (2 in locs) {
-        entry.finallyLoc = locs[2];
-        entry.afterLoc = locs[3];
-      }
-
-      this.tryEntries.push(entry);
+      var entry = {
+        tryLoc: locs[0]
+      };
+      1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry);
     }
 
     function resetTryEntry(entry) {
       var record = entry.completion || {};
-      record.type = "normal";
-      delete record.arg;
-      entry.completion = record;
+      record.type = "normal", delete record.arg, entry.completion = record;
     }
 
     function Context(tryLocsList) {
-      // The root entry object (effectively a try statement without a catch
-      // or a finally block) gives us a place to store values thrown from
-      // locations where there is no enclosing try statement.
-      this.tryEntries = [{ tryLoc: "root" }];
-      tryLocsList.forEach(pushTryEntry, this);
-      this.reset(true);
+      this.tryEntries = [{
+        tryLoc: "root"
+      }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0);
     }
-
-    exports.keys = function(object) {
-      var keys = [];
-      for (var key in object) {
-        keys.push(key);
-      }
-      keys.reverse();
-
-      // Rather than returning an object with a next method, we keep
-      // things simple and return the next function itself.
-      return function next() {
-        while (keys.length) {
-          var key = keys.pop();
-          if (key in object) {
-            next.value = key;
-            next.done = false;
-            return next;
-          }
-        }
-
-        // To avoid creating an additional object, we just hang the .value
-        // and .done properties off the next function object itself. This
-        // also ensures that the minifier will not anonymize the function.
-        next.done = true;
-        return next;
-      };
-    };
 
     function values(iterable) {
       if (iterable) {
         var iteratorMethod = iterable[iteratorSymbol];
-        if (iteratorMethod) {
-          return iteratorMethod.call(iterable);
-        }
-
-        if (typeof iterable.next === "function") {
-          return iterable;
-        }
+        if (iteratorMethod) return iteratorMethod.call(iterable);
+        if ("function" == typeof iterable.next) return iterable;
 
         if (!isNaN(iterable.length)) {
-          var i = -1, next = function next() {
-            while (++i < iterable.length) {
-              if (hasOwn.call(iterable, i)) {
-                next.value = iterable[i];
-                next.done = false;
-                return next;
-              }
+          var i = -1,
+              next = function next() {
+            for (; ++i < iterable.length;) {
+              if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next;
             }
 
-            next.value = undefined$1;
-            next.done = true;
-
-            return next;
+            return next.value = undefined, next.done = !0, next;
           };
 
           return next.next = next;
         }
       }
 
-      // Return an iterator with no values.
-      return { next: doneResult };
+      return {
+        next: doneResult
+      };
     }
-    exports.values = values;
 
     function doneResult() {
-      return { value: undefined$1, done: true };
+      return {
+        value: undefined,
+        done: !0
+      };
     }
 
-    Context.prototype = {
+    return GeneratorFunction.prototype = GeneratorFunctionPrototype, define(Gp, "constructor", GeneratorFunctionPrototype), define(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) {
+      var ctor = "function" == typeof genFun && genFun.constructor;
+      return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name));
+    }, exports.mark = function (genFun) {
+      return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun;
+    }, exports.awrap = function (arg) {
+      return {
+        __await: arg
+      };
+    }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () {
+      return this;
+    }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) {
+      void 0 === PromiseImpl && (PromiseImpl = Promise);
+      var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl);
+      return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) {
+        return result.done ? result.value : iter.next();
+      });
+    }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () {
+      return this;
+    }), define(Gp, "toString", function () {
+      return "[object Generator]";
+    }), exports.keys = function (object) {
+      var keys = [];
+
+      for (var key in object) {
+        keys.push(key);
+      }
+
+      return keys.reverse(), function next() {
+        for (; keys.length;) {
+          var key = keys.pop();
+          if (key in object) return next.value = key, next.done = !1, next;
+        }
+
+        return next.done = !0, next;
+      };
+    }, exports.values = values, Context.prototype = {
       constructor: Context,
-
-      reset: function(skipTempReset) {
-        this.prev = 0;
-        this.next = 0;
-        // Resetting context._sent for legacy support of Babel's
-        // function.sent implementation.
-        this.sent = this._sent = undefined$1;
-        this.done = false;
-        this.delegate = null;
-
-        this.method = "next";
-        this.arg = undefined$1;
-
-        this.tryEntries.forEach(resetTryEntry);
-
-        if (!skipTempReset) {
-          for (var name in this) {
-            // Not sure about the optimal order of these conditions:
-            if (name.charAt(0) === "t" &&
-                hasOwn.call(this, name) &&
-                !isNaN(+name.slice(1))) {
-              this[name] = undefined$1;
-            }
-          }
+      reset: function reset(skipTempReset) {
+        if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) {
+          "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined);
         }
       },
-
-      stop: function() {
-        this.done = true;
-
-        var rootEntry = this.tryEntries[0];
-        var rootRecord = rootEntry.completion;
-        if (rootRecord.type === "throw") {
-          throw rootRecord.arg;
-        }
-
+      stop: function stop() {
+        this.done = !0;
+        var rootRecord = this.tryEntries[0].completion;
+        if ("throw" === rootRecord.type) throw rootRecord.arg;
         return this.rval;
       },
-
-      dispatchException: function(exception) {
-        if (this.done) {
-          throw exception;
-        }
-
+      dispatchException: function dispatchException(exception) {
+        if (this.done) throw exception;
         var context = this;
+
         function handle(loc, caught) {
-          record.type = "throw";
-          record.arg = exception;
-          context.next = loc;
-
-          if (caught) {
-            // If the dispatched exception was caught by a catch block,
-            // then let that catch block handle the exception normally.
-            context.method = "next";
-            context.arg = undefined$1;
-          }
-
-          return !! caught;
+          return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught;
         }
 
         for (var i = this.tryEntries.length - 1; i >= 0; --i) {
-          var entry = this.tryEntries[i];
-          var record = entry.completion;
-
-          if (entry.tryLoc === "root") {
-            // Exception thrown outside of any try block that could handle
-            // it, so set the completion value of the entire function to
-            // throw the exception.
-            return handle("end");
-          }
+          var entry = this.tryEntries[i],
+              record = entry.completion;
+          if ("root" === entry.tryLoc) return handle("end");
 
           if (entry.tryLoc <= this.prev) {
-            var hasCatch = hasOwn.call(entry, "catchLoc");
-            var hasFinally = hasOwn.call(entry, "finallyLoc");
+            var hasCatch = hasOwn.call(entry, "catchLoc"),
+                hasFinally = hasOwn.call(entry, "finallyLoc");
 
             if (hasCatch && hasFinally) {
-              if (this.prev < entry.catchLoc) {
-                return handle(entry.catchLoc, true);
-              } else if (this.prev < entry.finallyLoc) {
-                return handle(entry.finallyLoc);
-              }
-
+              if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0);
+              if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc);
             } else if (hasCatch) {
-              if (this.prev < entry.catchLoc) {
-                return handle(entry.catchLoc, true);
-              }
-
-            } else if (hasFinally) {
-              if (this.prev < entry.finallyLoc) {
-                return handle(entry.finallyLoc);
-              }
-
+              if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0);
             } else {
-              throw new Error("try statement without catch or finally");
+              if (!hasFinally) throw new Error("try statement without catch or finally");
+              if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc);
             }
           }
         }
       },
-
-      abrupt: function(type, arg) {
+      abrupt: function abrupt(type, arg) {
         for (var i = this.tryEntries.length - 1; i >= 0; --i) {
           var entry = this.tryEntries[i];
-          if (entry.tryLoc <= this.prev &&
-              hasOwn.call(entry, "finallyLoc") &&
-              this.prev < entry.finallyLoc) {
+
+          if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) {
             var finallyEntry = entry;
             break;
           }
         }
 
-        if (finallyEntry &&
-            (type === "break" ||
-             type === "continue") &&
-            finallyEntry.tryLoc <= arg &&
-            arg <= finallyEntry.finallyLoc) {
-          // Ignore the finally entry if control is not jumping to a
-          // location outside the try/catch block.
-          finallyEntry = null;
-        }
-
+        finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null);
         var record = finallyEntry ? finallyEntry.completion : {};
-        record.type = type;
-        record.arg = arg;
-
-        if (finallyEntry) {
-          this.method = "next";
-          this.next = finallyEntry.finallyLoc;
-          return ContinueSentinel;
-        }
-
-        return this.complete(record);
+        return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record);
       },
-
-      complete: function(record, afterLoc) {
-        if (record.type === "throw") {
-          throw record.arg;
-        }
-
-        if (record.type === "break" ||
-            record.type === "continue") {
-          this.next = record.arg;
-        } else if (record.type === "return") {
-          this.rval = this.arg = record.arg;
-          this.method = "return";
-          this.next = "end";
-        } else if (record.type === "normal" && afterLoc) {
-          this.next = afterLoc;
-        }
-
-        return ContinueSentinel;
+      complete: function complete(record, afterLoc) {
+        if ("throw" === record.type) throw record.arg;
+        return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel;
       },
-
-      finish: function(finallyLoc) {
+      finish: function finish(finallyLoc) {
         for (var i = this.tryEntries.length - 1; i >= 0; --i) {
           var entry = this.tryEntries[i];
-          if (entry.finallyLoc === finallyLoc) {
-            this.complete(entry.completion, entry.afterLoc);
-            resetTryEntry(entry);
-            return ContinueSentinel;
-          }
+          if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel;
         }
       },
-
-      "catch": function(tryLoc) {
+      "catch": function _catch(tryLoc) {
         for (var i = this.tryEntries.length - 1; i >= 0; --i) {
           var entry = this.tryEntries[i];
+
           if (entry.tryLoc === tryLoc) {
             var record = entry.completion;
-            if (record.type === "throw") {
+
+            if ("throw" === record.type) {
               var thrown = record.arg;
               resetTryEntry(entry);
             }
+
             return thrown;
           }
         }
 
-        // The context.catch method must only be called with a location
-        // argument that corresponds to a known catch block.
         throw new Error("illegal catch attempt");
       },
-
-      delegateYield: function(iterable, resultName, nextLoc) {
-        this.delegate = {
+      delegateYield: function delegateYield(iterable, resultName, nextLoc) {
+        return this.delegate = {
           iterator: values(iterable),
           resultName: resultName,
           nextLoc: nextLoc
-        };
-
-        if (this.method === "next") {
-          // Deliberately forget the last sent value so that we don't
-          // accidentally pass it on to the delegate.
-          this.arg = undefined$1;
-        }
-
-        return ContinueSentinel;
+        }, "next" === this.method && (this.arg = undefined), ContinueSentinel;
       }
-    };
+    }, exports;
+  }
 
-    // Regardless of whether this script is executing as a CommonJS module
-    // or not, return the runtime object so that we can declare the variable
-    // regeneratorRuntime in the outer scope, which allows this module to be
-    // injected easily by `bin/regenerator --include-runtime script.js`.
-    return exports;
+  module.exports = _regeneratorRuntime, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  });
 
-  }(
-    // If this script is executing as a CommonJS module, use module.exports
-    // as the regeneratorRuntime namespace. Otherwise create a new empty
-    // object. Either way, the resulting object will be used to initialize
-    // the regeneratorRuntime variable at the top of this file.
-     module.exports 
-  ));
+  unwrapExports(regeneratorRuntime$1);
 
+  // TODO(Babel 8): Remove this file.
+
+  var runtime = regeneratorRuntime$1();
+  var regenerator = runtime;
+
+  // Copied from https://github.com/facebook/regenerator/blob/main/packages/runtime/runtime.js#L736=
   try {
     regeneratorRuntime = runtime;
   } catch (accidentalStrictMode) {
-    // This module should not be running in strict mode, so the above
-    // assignment should always work unless something is misconfigured. Just
-    // in case runtime.js accidentally runs in strict mode, we can escape
-    // strict mode using a global Function call. This could conceivably fail
-    // if a Content Security Policy forbids using Function, but in that case
-    // the proper solution is to fix the accidental strict mode problem. If
-    // you've misconfigured your bundler to force strict mode and applied a
-    // CSP to forbid Function, and you're not willing to fix either of those
-    // problems, please detail your unique predicament in a GitHub issue.
-    Function("r", "regeneratorRuntime = r")(runtime);
+    if (typeof globalThis === "object") {
+      globalThis.regeneratorRuntime = runtime;
+    } else {
+      Function("r", "regeneratorRuntime = r")(runtime);
+    }
   }
-  });
 
-  var regenerator = runtime_1;
-
+  var asyncToGenerator = createCommonjsModule(function (module) {
   function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
     try {
       var info = gen[key](arg);
@@ -10272,7 +9964,10 @@
     };
   }
 
-  var asyncToGenerator = _asyncToGenerator;
+  module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  });
+
+  unwrapExports(asyncToGenerator);
 
   var style_class = createCommonjsModule(function (module, exports) {
 
@@ -10546,7 +10241,7 @@
 
   Style.prototype.colorProcessor = function (style) {
     var reverse = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-    var processor = reverse ? lib.getColorFromRgbValue : lib.getRgbaValue;
+    var processor = reverse ? lib$4.getColorFromRgbValue : lib$4.getRgbaValue;
     var colorProcessorKeys = ['fill', 'stroke', 'shadowColor'];
     var allKeys = Object.keys(style);
     var colorKeys = allKeys.filter(function (key) {
@@ -10626,9 +10321,9 @@
     fill[3] *= opacity;
     stroke[3] *= opacity;
     shadowColor[3] *= opacity;
-    ctx.fillStyle = (0, lib.getColorFromRgbValue)(fill);
-    ctx.strokeStyle = (0, lib.getColorFromRgbValue)(stroke);
-    ctx.shadowColor = (0, lib.getColorFromRgbValue)(shadowColor);
+    ctx.fillStyle = (0, lib$4.getColorFromRgbValue)(fill);
+    ctx.strokeStyle = (0, lib$4.getColorFromRgbValue)(stroke);
+    ctx.shadowColor = (0, lib$4.getColorFromRgbValue)(shadowColor);
     var lineDash = style.lineDash,
         shadowBlur = style.shadowBlur;
 
@@ -10670,7 +10365,7 @@
       return clonedColor;
     });
     gradientColor = gradientColor.map(function (c) {
-      return (0, lib.getColorFromRgbValue)(c);
+      return (0, lib$4.getColorFromRgbValue)(c);
     });
     if (gradientStops === 'auto') gradientStops = getAutoColorStops(gradientColor);
     var gradient = ctx["create".concat(gradientType.slice(0, 1).toUpperCase() + gradientType.slice(1), "Gradient")].apply(ctx, (0, _toConsumableArray2["default"])(gradientParams));
@@ -10764,7 +10459,7 @@
 
 
   Style.prototype.getStyle = function () {
-    var clonedStyle = (0, util.deepClone)(this, true);
+    var clonedStyle = (0, util$1.deepClone)(this, true);
     this.colorProcessor(clonedStyle, true);
     return clonedStyle;
   };
@@ -10867,31 +10562,31 @@
   });
 
   unwrapExports(curves);
-  var curves_1 = curves.easeInOutBounce;
-  var curves_2 = curves.easeOutBounce;
-  var curves_3 = curves.easeInBounce;
-  var curves_4 = curves.easeInOutElastic;
-  var curves_5 = curves.easeOutElastic;
-  var curves_6 = curves.easeInElastic;
-  var curves_7 = curves.easeInOutBack;
-  var curves_8 = curves.easeOutBack;
-  var curves_9 = curves.easeInBack;
-  var curves_10 = curves.easeInOutQuint;
-  var curves_11 = curves.easeOutQuint;
-  var curves_12 = curves.easeInQuint;
-  var curves_13 = curves.easeInOutQuart;
-  var curves_14 = curves.easeOutQuart;
-  var curves_15 = curves.easeInQuart;
-  var curves_16 = curves.easeInOutCubic;
-  var curves_17 = curves.easeOutCubic;
-  var curves_18 = curves.easeInCubic;
-  var curves_19 = curves.easeInOutQuad;
-  var curves_20 = curves.easeOutQuad;
-  var curves_21 = curves.easeInQuad;
-  var curves_22 = curves.easeInOutSine;
-  var curves_23 = curves.easeOutSine;
-  var curves_24 = curves.easeInSine;
-  var curves_25 = curves.linear;
+  curves.easeInOutBounce;
+  curves.easeOutBounce;
+  curves.easeInBounce;
+  curves.easeInOutElastic;
+  curves.easeOutElastic;
+  curves.easeInElastic;
+  curves.easeInOutBack;
+  curves.easeOutBack;
+  curves.easeInBack;
+  curves.easeInOutQuint;
+  curves.easeOutQuint;
+  curves.easeInQuint;
+  curves.easeInOutQuart;
+  curves.easeOutQuart;
+  curves.easeInQuart;
+  curves.easeInOutCubic;
+  curves.easeOutCubic;
+  curves.easeInCubic;
+  curves.easeInOutQuad;
+  curves.easeOutQuad;
+  curves.easeInQuad;
+  curves.easeInOutSine;
+  curves.easeOutSine;
+  curves.easeInSine;
+  curves.linear;
 
   var lib$2 = createCommonjsModule(function (module, exports) {
 
@@ -11233,8 +10928,8 @@
   });
 
   unwrapExports(lib$2);
-  var lib_1$1 = lib$2.transition;
-  var lib_2$1 = lib$2.injectNewCurve;
+  lib$2.transition;
+  lib$2.injectNewCurve;
 
   var graph_class = createCommonjsModule(function (module, exports) {
 
@@ -11269,7 +10964,7 @@
    */
   var Graph = function Graph(graph, config) {
     (0, _classCallCheck2["default"])(this, Graph);
-    config = (0, util.deepClone)(config, true);
+    config = (0, util$1.deepClone)(config, true);
     var defaultConfig = {
       /**
        * @description Weather to render graph
@@ -11422,16 +11117,16 @@
         translate = style.translate;
 
     if (graphCenter) {
-      if (rotate) position = (0, util.getRotatePointPos)(-rotate, position, graphCenter);
-      if (scale) position = (0, util.getScalePointPos)(scale.map(function (s) {
+      if (rotate) position = (0, util$1.getRotatePointPos)(-rotate, position, graphCenter);
+      if (scale) position = (0, util$1.getScalePointPos)(scale.map(function (s) {
         return 1 / s;
       }), position, graphCenter);
-      if (translate) position = (0, util.getTranslatePointPos)(translate.map(function (v) {
+      if (translate) position = (0, util$1.getTranslatePointPos)(translate.map(function (v) {
         return v * -1;
       }), position);
     }
 
-    if (hoverRect) return util.checkPointIsInRect.apply(void 0, [position].concat((0, _toConsumableArray2["default"])(hoverRect)));
+    if (hoverRect) return util$1.checkPointIsInRect.apply(void 0, [position].concat((0, _toConsumableArray2["default"])(hoverRect)));
     return hoverCheck(position, this);
   };
   /**
@@ -11459,7 +11154,7 @@
     var change = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : undefined;
     if (!attrName || change === undefined) return false;
     var isObject = (0, _typeof2["default"])(this[attrName]) === 'object';
-    if (isObject) change = (0, util.deepClone)(change, true);
+    if (isObject) change = (0, util$1.deepClone)(change, true);
     var render = this.render;
 
     if (attrName === 'style') {
@@ -11515,7 +11210,7 @@
               return _context2.abrupt("return");
 
             case 4:
-              change = (0, util.deepClone)(change, true);
+              change = (0, util$1.deepClone)(change, true);
               if (attrName === 'style') this.style.colorProcessor(change);
               changeRoot = this[attrName];
               changeKeys = Object.keys(change);
@@ -11744,9 +11439,9 @@
 
   var _classCallCheck2 = interopRequireDefault(classCallCheck);
 
-  var _color = interopRequireDefault(lib);
+  var _color = interopRequireDefault(lib$4);
 
-  var _bezierCurve = interopRequireDefault(lib$1);
+  var _bezierCurve = interopRequireDefault(lib$3);
 
 
 
@@ -12107,14 +11802,14 @@
     });
 
     delete clonedGraph.render;
-    clonedGraph = (0, util.deepClone)(clonedGraph, true);
+    clonedGraph = (0, util$1.deepClone)(clonedGraph, true);
     return this.add(clonedGraph);
   };
   });
 
   unwrapExports(crender_class);
 
-  var lib$3 = createCommonjsModule(function (module, exports) {
+  var lib$1 = createCommonjsModule(function (module, exports) {
 
 
 
@@ -12143,7 +11838,7 @@
   exports["default"] = _default;
   });
 
-  var CRender = unwrapExports(lib$3);
+  var CRender = unwrapExports(lib$1);
 
   var _defineProperty2 = interopRequireDefault(defineProperty);
 
@@ -12161,9 +11856,9 @@
 
   function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-  function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { (0, _defineProperty2["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+  function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { (0, _defineProperty2["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
-  var pie = {
+  var pie$1 = {
     shape: {
       rx: 0,
       ry: 0,
@@ -12200,10 +11895,10 @@
       rx = parseInt(rx) + 0.5;
       ry = parseInt(ry) + 0.5;
       ctx.arc(rx, ry, ir > 0 ? ir : 0, startAngle, endAngle, !clockWise);
-      var connectPoint1 = (0, util.getCircleRadianPoint)(rx, ry, or, endAngle).map(function (p) {
+      var connectPoint1 = (0, util$1.getCircleRadianPoint)(rx, ry, or, endAngle).map(function (p) {
         return parseInt(p) + 0.5;
       });
-      var connectPoint2 = (0, util.getCircleRadianPoint)(rx, ry, ir, startAngle).map(function (p) {
+      var connectPoint2 = (0, util$1.getCircleRadianPoint)(rx, ry, ir, startAngle).map(function (p) {
         return parseInt(p) + 0.5;
       });
       ctx.lineTo.apply(ctx, (0, _toConsumableArray2["default"])(connectPoint1));
@@ -12243,7 +11938,7 @@
           style = _ref6.style;
       var gradient = style.gradient;
       gradient = gradient.map(function (cv) {
-        return (0, lib.getColorFromRgbValue)(cv);
+        return (0, lib$4.getColorFromRgbValue)(cv);
       });
 
       if (gradient.length === 1) {
@@ -12265,9 +11960,9 @@
 
       for (var i = 0; i < gradientArcNum; i++) {
         ctx.beginPath();
-        var startPoint = (0, util.getCircleRadianPoint)(rx, ry, r, startAngle + angleGap * i);
-        var endPoint = (0, util.getCircleRadianPoint)(rx, ry, r, startAngle + angleGap * (i + 1));
-        var color = (0, util$1.getLinearGradientColor)(ctx, startPoint, endPoint, [gradient[i], gradient[i + 1]]);
+        var startPoint = (0, util$1.getCircleRadianPoint)(rx, ry, r, startAngle + angleGap * i);
+        var endPoint = (0, util$1.getCircleRadianPoint)(rx, ry, r, startAngle + angleGap * (i + 1));
+        var color = (0, util.getLinearGradientColor)(ctx, startPoint, endPoint, [gradient[i], gradient[i + 1]]);
         var arcStartAngle = startAngle + angleGap * i;
         var arcEndAngle = startAngle + angleGap * (i + 1);
         var doBreak = false;
@@ -12317,7 +12012,8 @@
       var textSegments = content.split('{nt}');
       var textString = '';
       textSegments.forEach(function (t, i) {
-        var currentNumber = number[i] || '';
+        var currentNumber = number[i];
+        if (typeof currentNumber !== 'number') currentNumber = '';
 
         if (typeof currentNumber === 'number') {
           currentNumber = currentNumber.toFixed(toFixed);
@@ -12330,7 +12026,7 @@
       graphs_1.text.draw({
         ctx: ctx
       }, {
-        shape: _objectSpread({}, shape, {
+        shape: _objectSpread(_objectSpread({}, shape), {}, {
           content: textString,
           rowGap: rowGap
         })
@@ -12387,7 +12083,7 @@
           y = shape.y,
           w = shape.w,
           h = shape.h;
-      return (0, util.checkPointIsInRect)(position, x, y, w, h);
+      return (0, util$1.checkPointIsInRect)(position, x, y, w, h);
     },
     setGraphCenter: function setGraphCenter(e, _ref14) {
       var shape = _ref14.shape,
@@ -12399,10 +12095,10 @@
       style.graphCenter = [x + w / 2, y + h / 2];
     }
   };
-  (0, lib$3.extendNewGraph)('pie', pie);
-  (0, lib$3.extendNewGraph)('agArc', agArc);
-  (0, lib$3.extendNewGraph)('numberText', numberText);
-  (0, lib$3.extendNewGraph)('lineIcon', lineIcon);
+  (0, lib$1.extendNewGraph)('pie', pie$1);
+  (0, lib$1.extendNewGraph)('agArc', agArc);
+  (0, lib$1.extendNewGraph)('numberText', numberText);
+  (0, lib$1.extendNewGraph)('lineIcon', lineIcon);
 
   var color = createCommonjsModule(function (module, exports) {
 
@@ -12415,7 +12111,7 @@
   });
 
   unwrapExports(color);
-  var color_1 = color.colorConfig;
+  color.colorConfig;
 
   var grid = createCommonjsModule(function (module, exports) {
 
@@ -12491,7 +12187,7 @@
   });
 
   unwrapExports(grid);
-  var grid_1 = grid.gridConfig;
+  grid.gridConfig;
 
   var axis = createCommonjsModule(function (module, exports) {
 
@@ -12958,8 +12654,8 @@
   });
 
   unwrapExports(axis);
-  var axis_1 = axis.yAxisConfig;
-  var axis_2 = axis.xAxisConfig;
+  axis.yAxisConfig;
+  axis.xAxisConfig;
 
   var title = createCommonjsModule(function (module, exports) {
 
@@ -13028,7 +12724,7 @@
   });
 
   unwrapExports(title);
-  var title_1 = title.titleConfig;
+  title.titleConfig;
 
   var line = createCommonjsModule(function (module, exports) {
 
@@ -13231,7 +12927,7 @@
   });
 
   unwrapExports(line);
-  var line_1 = line.lineConfig;
+  line.lineConfig;
 
   var bar = createCommonjsModule(function (module, exports) {
 
@@ -13483,9 +13179,9 @@
   });
 
   unwrapExports(bar);
-  var bar_1 = bar.barConfig;
+  bar.barConfig;
 
-  var pie$1 = createCommonjsModule(function (module, exports) {
+  var pie = createCommonjsModule(function (module, exports) {
 
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -13701,8 +13397,8 @@
   exports.pieConfig = pieConfig;
   });
 
-  unwrapExports(pie$1);
-  var pie_1 = pie$1.pieConfig;
+  unwrapExports(pie);
+  pie.pieConfig;
 
   var radarAxis = createCommonjsModule(function (module, exports) {
 
@@ -13905,7 +13601,7 @@
   });
 
   unwrapExports(radarAxis);
-  var radarAxis_1 = radarAxis.radarAxisConfig;
+  radarAxis.radarAxisConfig;
 
   var radar = createCommonjsModule(function (module, exports) {
 
@@ -14045,7 +13741,7 @@
   });
 
   unwrapExports(radar);
-  var radar_1 = radar.radarConfig;
+  radar.radarConfig;
 
   var gauge = createCommonjsModule(function (module, exports) {
 
@@ -14351,7 +14047,7 @@
   });
 
   unwrapExports(gauge);
-  var gauge_1 = gauge.gaugeConfig;
+  gauge.gaugeConfig;
 
   var legend = createCommonjsModule(function (module, exports) {
 
@@ -14506,7 +14202,7 @@
   });
 
   unwrapExports(legend);
-  var legend_1 = legend.legendConfig;
+  legend.legendConfig;
 
   var config = createCommonjsModule(function (module, exports) {
 
@@ -14559,7 +14255,7 @@
   Object.defineProperty(exports, "pieConfig", {
     enumerable: true,
     get: function get() {
-      return pie$1.pieConfig;
+      return pie.pieConfig;
     }
   });
   Object.defineProperty(exports, "radarAxisConfig", {
@@ -14620,19 +14316,18 @@
     titleConfig: title.titleConfig,
     lineConfig: line.lineConfig,
     barConfig: bar.barConfig,
-    pieConfig: pie$1.pieConfig,
+    pieConfig: pie.pieConfig,
     radarAxisConfig: radarAxis.radarAxisConfig,
     radarConfig: radar.radarConfig,
     gaugeConfig: gauge.gaugeConfig,
     legendConfig: legend.legendConfig
-    /**
-     * @description Change default configuration
-     * @param {String} key          Configuration key
-     * @param {Object|Array} config Your config
-     * @return {Undefined} No return
-     */
-
   };
+  /**
+   * @description Change default configuration
+   * @param {String} key          Configuration key
+   * @param {Object|Array} config Your config
+   * @return {Undefined} No return
+   */
 
   function changeDefaultConfig(key, config) {
     if (!allConfig["".concat(key, "Config")]) {
@@ -14640,7 +14335,7 @@
       return;
     }
 
-    (0, util$1.deepMerge)(allConfig["".concat(key, "Config")], config);
+    (0, util.deepMerge)(allConfig["".concat(key, "Config")], config);
   }
 
   var keys = ['color', 'title', 'legend', 'xAxis', 'yAxis', 'grid', 'radarAxis', 'line', 'bar', 'pie', 'radar', 'gauge'];
@@ -14648,8 +14343,8 @@
   });
 
   unwrapExports(config);
-  var config_1 = config.changeDefaultConfig;
-  var config_2 = config.keys;
+  config.changeDefaultConfig;
+  config.keys;
 
   var mergeColor_1 = createCommonjsModule(function (module, exports) {
 
@@ -14666,12 +14361,12 @@
 
   function mergeColor(chart) {
     var option = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-    var defaultColor = (0, util.deepClone)(config.colorConfig, true);
+    var defaultColor = (0, util$1.deepClone)(config.colorConfig, true);
     var color = option.color,
         series = option.series;
     if (!series) series = [];
     if (!color) color = [];
-    option.color = color = (0, util$1.deepMerge)(defaultColor, color);
+    option.color = color = (0, util.deepMerge)(defaultColor, color);
     if (!series.length) return;
     var colorNum = color.length;
     series.forEach(function (item, i) {
@@ -14709,7 +14404,7 @@
   });
 
   unwrapExports(mergeColor_1);
-  var mergeColor_2 = mergeColor_1.mergeColor;
+  mergeColor_1.mergeColor;
 
   var updater_class = createCommonjsModule(function (module, exports) {
 
@@ -14880,10 +14575,10 @@
   });
 
   unwrapExports(updater_class);
-  var updater_class_1 = updater_class.doUpdate;
-  var updater_class_2 = updater_class.Updater;
+  updater_class.doUpdate;
+  updater_class.Updater;
 
-  var title_1$1 = createCommonjsModule(function (module, exports) {
+  var title_1 = createCommonjsModule(function (module, exports) {
 
 
 
@@ -14907,7 +14602,7 @@
     var title = [];
 
     if (option.title) {
-      title[0] = (0, util$1.deepMerge)((0, util.deepClone)(config.titleConfig, true), option.title);
+      title[0] = (0, util.deepMerge)((0, util$1.deepClone)(config.titleConfig, true), option.title);
     }
 
     (0, updater_class.doUpdate)({
@@ -14959,10 +14654,10 @@
   }
   });
 
-  unwrapExports(title_1$1);
-  var title_2 = title_1$1.title;
+  unwrapExports(title_1);
+  title_1.title;
 
-  var grid_1$1 = createCommonjsModule(function (module, exports) {
+  var grid_1 = createCommonjsModule(function (module, exports) {
 
 
 
@@ -14985,12 +14680,12 @@
 
   function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-  function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { (0, _defineProperty2["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+  function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { (0, _defineProperty2["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
   function grid(chart) {
     var option = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     var grid = option.grid;
-    grid = (0, util$1.deepMerge)((0, util.deepClone)(config.gridConfig, true), grid || {});
+    grid = (0, util.deepMerge)((0, util$1.deepClone)(config.gridConfig, true), grid || {});
     (0, updater_class.doUpdate)({
       chart: chart,
       series: [grid],
@@ -15047,10 +14742,10 @@
   }
   });
 
-  unwrapExports(grid_1$1);
-  var grid_2 = grid_1$1.grid;
+  unwrapExports(grid_1);
+  grid_1.grid;
 
-  var axis_1$1 = createCommonjsModule(function (module, exports) {
+  var axis_1 = createCommonjsModule(function (module, exports) {
 
 
 
@@ -15077,7 +14772,7 @@
 
   function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-  function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { (0, _defineProperty2["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+  function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { (0, _defineProperty2["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
   var axisConfig = {
     xAxisConfig: config.xAxisConfig,
@@ -15165,13 +14860,13 @@
     allXAxis.splice(2);
     allYAxis.splice(2);
     allXAxis = allXAxis.map(function (axis, i) {
-      return _objectSpread({}, axis, {
+      return _objectSpread(_objectSpread({}, axis), {}, {
         index: i,
         axis: 'x'
       });
     });
     allYAxis = allYAxis.map(function (axis, i) {
-      return _objectSpread({}, axis, {
+      return _objectSpread(_objectSpread({}, axis), {}, {
         index: i,
         axis: 'y'
       });
@@ -15189,10 +14884,10 @@
       return axis === 'y';
     });
     xAxis = xAxis.map(function (axis) {
-      return (0, util$1.deepMerge)((0, util.deepClone)(config.xAxisConfig), axis);
+      return (0, util.deepMerge)((0, util$1.deepClone)(config.xAxisConfig), axis);
     });
     yAxis = yAxis.map(function (axis) {
-      return (0, util$1.deepMerge)((0, util.deepClone)(config.yAxisConfig), axis);
+      return (0, util.deepMerge)((0, util$1.deepClone)(config.yAxisConfig), axis);
     });
     return [].concat((0, _toConsumableArray2["default"])(xAxis), (0, _toConsumableArray2["default"])(yAxis));
   }
@@ -15253,7 +14948,7 @@
       label = label.map(function (l) {
         return parseFloat(l.toFixed(2));
       });
-      return _objectSpread({}, axis, {
+      return _objectSpread(_objectSpread({}, axis), {}, {
         maxValue: label.slice(-1)[0],
         minValue: label[0],
         label: getAfterFormatterLabel(label, formatter)
@@ -15285,19 +14980,19 @@
     if (!series) return;
     var minValue = Math.min.apply(Math, (0, _toConsumableArray2["default"])(series.map(function (_ref9) {
       var data = _ref9.data;
-      return Math.min.apply(Math, (0, _toConsumableArray2["default"])((0, util$1.filterNonNumber)(data)));
+      return Math.min.apply(Math, (0, _toConsumableArray2["default"])((0, util.filterNonNumber)(data)));
     })));
     var maxValue = Math.max.apply(Math, (0, _toConsumableArray2["default"])(series.map(function (_ref10) {
       var data = _ref10.data;
-      return Math.max.apply(Math, (0, _toConsumableArray2["default"])((0, util$1.filterNonNumber)(data)));
+      return Math.max.apply(Math, (0, _toConsumableArray2["default"])((0, util.filterNonNumber)(data)));
     })));
     return [minValue, maxValue];
   }
 
   function mergeStackData(series) {
-    var seriesCloned = (0, util.deepClone)(series, true);
+    var seriesCloned = (0, util$1.deepClone)(series, true);
     series.forEach(function (item, i) {
-      var data = (0, util$1.mergeSameStackData)(item, series);
+      var data = (0, util.mergeSameStackData)(item, series);
       seriesCloned[i].data = data;
     });
     return seriesCloned;
@@ -15404,7 +15099,7 @@
     return labelAxis.map(function (axis) {
       var data = axis.data,
           formatter = axis.axisLabel.formatter;
-      return _objectSpread({}, axis, {
+      return _objectSpread(_objectSpread({}, axis), {}, {
         label: getAfterFormatterLabel(data, formatter)
       });
     });
@@ -15474,7 +15169,7 @@
         linePosition = [[x, y + h], [x + w, y + h]];
       }
 
-      return _objectSpread({}, axis, {
+      return _objectSpread(_objectSpread({}, axis), {}, {
         linePosition: linePosition
       });
     });
@@ -15509,7 +15204,7 @@
         return [startX, startY + gap * (boundaryGap ? i + 0.5 : i)];
       });
       var tickLinePosition = getTickLinePosition(axis, boundaryGap, position, tickPosition, gap);
-      return _objectSpread({}, axisItem, {
+      return _objectSpread(_objectSpread({}, axisItem), {}, {
         tickPosition: tickPosition,
         tickLinePosition: tickLinePosition,
         tickGap: gap
@@ -15523,9 +15218,9 @@
     if (axisType === 'x' && position === 'top') plus = -5;
     if (axisType === 'y' && position === 'left') plus = -5;
     var tickLinePosition = tickPosition.map(function (lineStart) {
-      var lineEnd = (0, util.deepClone)(lineStart);
+      var lineEnd = (0, util$1.deepClone)(lineStart);
       lineEnd[index] += plus;
-      return [(0, util.deepClone)(lineStart), lineEnd];
+      return [(0, util$1.deepClone)(lineStart), lineEnd];
     });
     if (!boundaryGap) return tickLinePosition;
     index = axisType === 'x' ? 0 : 1;
@@ -15571,7 +15266,7 @@
       if (position === 'bottom' && nameLocation === 'start') plus *= -1;
       if (position === 'right' && nameLocation === 'end') plus *= -1;
       namePosition[index] += plus;
-      return _objectSpread({}, axisItem, {
+      return _objectSpread(_objectSpread({}, axisItem), {}, {
         namePosition: namePosition
       });
     });
@@ -15599,7 +15294,7 @@
         return [(0, _toConsumableArray2["default"])(startPoint), endPoint];
       });
       if (!boundaryGap) splitLinePosition.shift();
-      return _objectSpread({}, axisItem, {
+      return _objectSpread(_objectSpread({}, axisItem), {}, {
         splitLinePosition: splitLinePosition
       });
     });
@@ -15702,7 +15397,7 @@
         plus = 10;
     if (position === 'top' || position === 'bottom') index = 1;
     if (position === 'top' || position === 'left') plus = -10;
-    points = (0, util.deepClone)(points);
+    points = (0, util$1.deepClone)(points);
     points[index] += plus;
     return points;
   }
@@ -15711,10 +15406,10 @@
     var position = axisItem.position;
     var style = axisItem.axisLabel.style;
     var align = getAxisLabelRealAlign(position);
-    style = (0, util$1.deepMerge)(align, style);
+    style = (0, util.deepMerge)(align, style);
     var styles = shapes.map(function (_ref20) {
       var position = _ref20.position;
-      return _objectSpread({}, style, {
+      return _objectSpread(_objectSpread({}, style), {}, {
         graphCenter: position
       });
     });
@@ -15768,7 +15463,7 @@
         position = axisItem.position,
         style = axisItem.nameTextStyle;
     var align = getNameRealAlign(position, nameLocation);
-    return (0, util$1.deepMerge)(align, style);
+    return (0, util.deepMerge)(align, style);
   }
 
   function getNameRealAlign(position, location) {
@@ -15823,10 +15518,10 @@
   }
   });
 
-  unwrapExports(axis_1$1);
-  var axis_2$1 = axis_1$1.axis;
+  unwrapExports(axis_1);
+  axis_1.axis;
 
-  var line_1$1 = createCommonjsModule(function (module, exports) {
+  var line_1 = createCommonjsModule(function (module, exports) {
 
 
 
@@ -15847,13 +15542,13 @@
 
 
 
-  var _bezierCurve = interopRequireDefault(lib$1);
+  var _bezierCurve = interopRequireDefault(lib$3);
 
 
 
   function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-  function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { (0, _defineProperty2["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+  function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { (0, _defineProperty2["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
   var polylineToBezierCurve = _bezierCurve["default"].polylineToBezierCurve,
       getBezierCurveLength = _bezierCurve["default"].getBezierCurveLength;
@@ -15866,7 +15561,7 @@
     var lines = [];
 
     if (xAxis && yAxis && series) {
-      lines = (0, util$1.initNeedSeries)(series, config.lineConfig, 'line');
+      lines = (0, util.initNeedSeries)(series, config.lineConfig, 'line');
       lines = calcLinesPosition(lines, chart);
     }
 
@@ -15906,12 +15601,12 @@
   function calcLinesPosition(lines, chart) {
     var axisData = chart.axisData;
     return lines.map(function (lineItem) {
-      var lineData = (0, util$1.mergeSameStackData)(lineItem, lines);
+      var lineData = (0, util.mergeSameStackData)(lineItem, lines);
       lineData = mergeNonNumber(lineItem, lineData);
       var lineAxis = getLineAxis(lineItem, axisData);
       var linePosition = getLinePosition(lineData, lineAxis);
       var lineFillBottomPos = getLineFillBottomPos(lineAxis);
-      return _objectSpread({}, lineItem, {
+      return _objectSpread(_objectSpread({}, lineItem), {}, {
         linePosition: linePosition.filter(function (p) {
           return p;
         }),
@@ -16034,13 +15729,13 @@
     var gradient = lineArea.gradient,
         style = lineArea.style;
     var fillColor = [style.fill || color];
-    var gradientColor = (0, util$1.deepMerge)(fillColor, gradient);
+    var gradientColor = (0, util.deepMerge)(fillColor, gradient);
     if (gradientColor.length === 1) gradientColor.push(gradientColor[0]);
     var gradientParams = getGradientParams(lineItem);
-    style = _objectSpread({}, style, {
+    style = _objectSpread(_objectSpread({}, style), {}, {
       stroke: 'rgba(0, 0, 0, 0)'
     });
-    return (0, util$1.deepMerge)({
+    return (0, util.deepMerge)({
       gradientColor: gradientColor,
       gradientParams: gradientParams,
       gradientType: 'linear',
@@ -16151,7 +15846,7 @@
         smooth = lineItem.smooth,
         linePosition = lineItem.linePosition;
     var lineLength = getLineLength(linePosition, smooth);
-    return (0, util$1.deepMerge)({
+    return (0, util.deepMerge)({
       stroke: color,
       lineDash: [lineLength, 0]
     }, lineStyle);
@@ -16159,7 +15854,7 @@
 
   function getLineLength(points) {
     var smooth = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-    if (!smooth) return (0, util$1.getPolylineLength)(points);
+    if (!smooth) return (0, util.getPolylineLength)(points);
     var curve = polylineToBezierCurve(points);
     return getBezierCurveLength(curve);
   }
@@ -16217,7 +15912,7 @@
   function getPointStyle(lineItem) {
     var color = lineItem.color,
         style = lineItem.linePoint.style;
-    return (0, util$1.deepMerge)({
+    return (0, util.deepMerge)({
       stroke: color
     }, style);
   }
@@ -16333,16 +16028,16 @@
   function getLabelStyle(lineItem) {
     var color = lineItem.color,
         style = lineItem.label.style;
-    return (0, util$1.deepMerge)({
+    return (0, util.deepMerge)({
       fill: color
     }, style);
   }
   });
 
-  unwrapExports(line_1$1);
-  var line_2 = line_1$1.line;
+  unwrapExports(line_1);
+  line_1.line;
 
-  var bar_1$1 = createCommonjsModule(function (module, exports) {
+  var bar_1 = createCommonjsModule(function (module, exports) {
 
 
 
@@ -16369,7 +16064,7 @@
 
   function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-  function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { (0, _defineProperty2["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+  function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { (0, _defineProperty2["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
   function bar(chart) {
     var option = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
@@ -16379,7 +16074,7 @@
     var bars = [];
 
     if (xAxis && yAxis && series) {
-      bars = (0, util$1.initNeedSeries)(series, config.barConfig, 'bar');
+      bars = (0, util.initNeedSeries)(series, config.barConfig, 'bar');
       bars = setBarAxis(bars, chart);
       bars = setBarPositionData(bars);
       bars = calcBarsPosition(bars);
@@ -16635,7 +16330,7 @@
         var barItemsStartPos = barCategoryStartPos + (tickGap - barAllWidthAndGap) / 2;
         return barItemsStartPos + (barIndex + 0.5) * barWidth + barIndex * barGap;
       });
-      return _objectSpread({}, bar, {
+      return _objectSpread(_objectSpread({}, bar), {}, {
         barLabelAxisPos: barLabelAxisPos
       });
     });
@@ -16643,7 +16338,7 @@
 
   function calcBarValueAxisCoordinate(bars) {
     return bars.map(function (bar) {
-      var data = (0, util$1.mergeSameStackData)(bar, bars);
+      var data = (0, util.mergeSameStackData)(bar, bars);
       data = eliminateNonNumberData(bar, data);
       var _bar$valueAxis = bar.valueAxis,
           axis = _bar$valueAxis.axis,
@@ -16657,7 +16352,7 @@
       var barValueAxisPos = endPos.map(function (p) {
         return [startPos, p];
       });
-      return _objectSpread({}, bar, {
+      return _objectSpread(_objectSpread({}, bar), {}, {
         barValueAxisPos: barValueAxisPos
       });
     });
@@ -16680,7 +16375,7 @@
         if (typeof d === 'number') return;
         barLabelAxisPos[i] = null;
       });
-      return _objectSpread({}, bar, {
+      return _objectSpread(_objectSpread({}, bar), {}, {
         barLabelAxisPos: barLabelAxisPos.filter(function (p) {
           return p !== null;
         })
@@ -16925,7 +16620,7 @@
         independentColor = barItem.independentColor,
         independentColors = barItem.independentColors;
     var fillColor = [barStyle.fill || color];
-    var gradientColor = (0, util$1.deepMerge)(fillColor, gradient.color);
+    var gradientColor = (0, util.deepMerge)(fillColor, gradient.color);
 
     if (independentColor) {
       var idtColor = independentColors[i % independentColors.length];
@@ -16934,7 +16629,7 @@
 
     if (gradientColor.length === 1) gradientColor.push(gradientColor[0]);
     var gradientParams = getGradientParams(barItem, i);
-    return (0, util$1.deepMerge)({
+    return (0, util.deepMerge)({
       gradientColor: gradientColor,
       gradientParams: gradientParams,
       gradientType: 'linear',
@@ -16996,7 +16691,7 @@
 
   function getStartLeftEchelonShape(shape, barItem) {
     var axis = barItem.valueAxis.axis;
-    shape = (0, util.deepClone)(shape);
+    shape = (0, util$1.deepClone)(shape);
     var _shape = shape,
         points = _shape.points;
     var index = axis === 'x' ? 0 : 1;
@@ -17009,7 +16704,7 @@
 
   function getStartRightEchelonShape(shape, barItem) {
     var axis = barItem.valueAxis.axis;
-    shape = (0, util.deepClone)(shape);
+    shape = (0, util$1.deepClone)(shape);
     var _shape2 = shape,
         points = _shape2.points;
     var index = axis === 'x' ? 0 : 1;
@@ -17152,24 +16847,24 @@
         style = barItem.label.style,
         gc = barItem.gradient.color;
     if (gc.length) color = gc[0];
-    style = (0, util$1.deepMerge)({
+    style = (0, util.deepMerge)({
       fill: color
     }, style);
     return style;
   }
   });
 
-  unwrapExports(bar_1$1);
-  var bar_2 = bar_1$1.bar;
+  unwrapExports(bar_1);
+  bar_1.bar;
 
-  var pie_1$1 = createCommonjsModule(function (module, exports) {
+  var pie_1 = createCommonjsModule(function (module, exports) {
 
 
 
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.pie = pie;
+  exports.pie = pie$1;
 
   var _defineProperty2 = interopRequireDefault(defineProperty);
 
@@ -17189,13 +16884,13 @@
 
   function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-  function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { (0, _defineProperty2["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+  function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { (0, _defineProperty2["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
-  function pie(chart) {
+  function pie$1(chart) {
     var option = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     var series = option.series;
     if (!series) series = [];
-    var pies = (0, util$1.initNeedSeries)(series, pie$1.pieConfig, 'pie');
+    var pies = (0, util.initNeedSeries)(series, pie.pieConfig, 'pie');
     pies = calcPiesCenter(pies, chart);
     pies = calcPiesRadius(pies, chart);
     pies = calcRosePiesRadius(pies);
@@ -17339,7 +17034,7 @@
         item.percent = value / sum * 100;
         item.percentForLabel = toFixedNoCeil(value / sum * 100, percentToFixed);
       });
-      var percentSumNoLast = (0, util$1.mulAdd)(data.slice(0, -1).map(function (_ref5) {
+      var percentSumNoLast = (0, util.mulAdd)(data.slice(0, -1).map(function (_ref5) {
         var percent = _ref5.percent;
         return percent;
       }));
@@ -17360,7 +17055,7 @@
   }
 
   function getDataSum(data) {
-    return (0, util$1.mulAdd)(data.map(function (_ref6) {
+    return (0, util.mulAdd)(data.map(function (_ref6) {
       var value = _ref6.value;
       return value;
     }));
@@ -17386,7 +17081,7 @@
   function getDataAngle(data, i) {
     var fullAngle = Math.PI * 2;
     var needAddData = data.slice(0, i + 1);
-    var percentSum = (0, util$1.mulAdd)(needAddData.map(function (_ref7) {
+    var percentSum = (0, util.mulAdd)(needAddData.map(function (_ref7) {
       var percent = _ref7.percent;
       return percent;
     }));
@@ -17416,7 +17111,7 @@
 
     var radius = (ir + or) / 2;
     var angle = (startAngle + endAngle) / 2;
-    return util.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(center).concat([radius, angle]));
+    return util$1.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(center).concat([radius, angle]));
   }
 
   function calcPiesEdgeCenterPos(pies) {
@@ -17429,7 +17124,7 @@
             radius = item.radius;
         var centerAngle = (startAngle + endAngle) / 2;
 
-        var pos = util.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(center).concat([radius[1], centerAngle]));
+        var pos = util$1.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(center).concat([radius[1], centerAngle]));
 
         item.edgeCenterPos = pos;
       });
@@ -17463,9 +17158,9 @@
   function getPieMaxRadius(pieItem) {
     var data = pieItem.data;
     var radius = data.map(function (_ref8) {
-      var _ref8$radius = (0, _slicedToArray2["default"])(_ref8.radius, 2),
-          foo = _ref8$radius[0],
-          r = _ref8$radius[1];
+      var _ref8$radius = (0, _slicedToArray2["default"])(_ref8.radius, 2);
+          _ref8$radius[0];
+          var r = _ref8$radius[1];
 
       return r;
     });
@@ -17487,13 +17182,13 @@
 
   function sortPiesFromTopToBottom(dataItem) {
     dataItem.sort(function (_ref10, _ref11) {
-      var _ref10$edgeCenterPos = (0, _slicedToArray2["default"])(_ref10.edgeCenterPos, 2),
-          t = _ref10$edgeCenterPos[0],
-          ay = _ref10$edgeCenterPos[1];
+      var _ref10$edgeCenterPos = (0, _slicedToArray2["default"])(_ref10.edgeCenterPos, 2);
+          _ref10$edgeCenterPos[0];
+          var ay = _ref10$edgeCenterPos[1];
 
-      var _ref11$edgeCenterPos = (0, _slicedToArray2["default"])(_ref11.edgeCenterPos, 2),
-          tt = _ref11$edgeCenterPos[0],
-          by = _ref11$edgeCenterPos[1];
+      var _ref11$edgeCenterPos = (0, _slicedToArray2["default"])(_ref11.edgeCenterPos, 2);
+          _ref11$edgeCenterPos[0];
+          var by = _ref11$edgeCenterPos[1];
 
       if (ay > by) return 1;
       if (ay < by) return -1;
@@ -17514,12 +17209,12 @@
       var labelLineEndLength = outsideLabel.labelLineEndLength;
       var angle = (startAngle + endAngle) / 2;
 
-      var bendPoint = util.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(center).concat([radius, angle]));
+      var bendPoint = util$1.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(center).concat([radius, angle]));
 
       var endPoint = (0, _toConsumableArray2["default"])(bendPoint);
       endPoint[0] += labelLineEndLength * (left ? -1 : 1);
       item.labelLine = [edgeCenterPos, bendPoint, endPoint];
-      item.labelLineLength = (0, util$1.getPolylineLength)(item.labelLine);
+      item.labelLineLength = (0, util.getPolylineLength)(item.labelLine);
       item.align = {
         textAlign: 'left',
         textBaseline: 'middle'
@@ -17583,7 +17278,7 @@
         data = pieItem.data;
     var dataItem = data[i];
     var color = dataItem.color;
-    return (0, util$1.deepMerge)({
+    return (0, util.deepMerge)({
       fill: color
     }, pieStyle);
   }
@@ -17675,7 +17370,7 @@
         data = pieItem.data;
     var labelLineStyle = outsideLabel.labelLineStyle;
     var color = data[i].color;
-    return (0, util$1.deepMerge)({
+    return (0, util.deepMerge)({
       stroke: color,
       lineDash: [data[i].labelLineLength, 0]
     }, labelLineStyle);
@@ -17743,16 +17438,16 @@
         color = _data$i2.color,
         align = _data$i2.align;
     var style = outsideLabel.style;
-    return (0, util$1.deepMerge)(_objectSpread({
+    return (0, util.deepMerge)(_objectSpread({
       fill: color
     }, align), style);
   }
   });
 
-  unwrapExports(pie_1$1);
-  var pie_2 = pie_1$1.pie;
+  unwrapExports(pie_1);
+  pie_1.pie;
 
-  var radarAxis_1$1 = createCommonjsModule(function (module, exports) {
+  var radarAxis_1 = createCommonjsModule(function (module, exports) {
 
 
 
@@ -17777,7 +17472,7 @@
 
   function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-  function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { (0, _defineProperty2["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+  function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { (0, _defineProperty2["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
   function radarAxis(chart) {
     var option = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
@@ -17828,7 +17523,7 @@
   }
 
   function mergeRadarAxisDefaultConfig(radar) {
-    return (0, util$1.deepMerge)((0, util.deepClone)(config.radarAxisConfig), radar);
+    return (0, util.deepMerge)((0, util$1.deepClone)(config.radarAxisConfig), radar);
   }
 
   function calcRadarAxisCenter(radarAxis, chart) {
@@ -17868,7 +17563,7 @@
     });
     radarAxis.axisLineAngles = angles;
     radarAxis.axisLinePosition = angles.map(function (g) {
-      return util.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(centerPos).concat([radius, g]));
+      return util$1.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(centerPos).concat([radius, g]));
     });
     return radarAxis;
   }
@@ -17889,7 +17584,7 @@
         axisLabel = radarAxis.axisLabel;
     radius += axisLabel.labelGap;
     radarAxis.axisLabelPosition = axisLineAngles.map(function (angle) {
-      return util.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(centerPos).concat([radius, angle]));
+      return util$1.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(centerPos).concat([radius, angle]));
     });
     return radarAxis;
   }
@@ -17943,19 +17638,19 @@
     var lineWidth = ringRadius[0] - 0;
 
     if (polygon) {
-      var point1 = util.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(centerPos).concat([ringRadius[0], axisLineAngles[0]]));
+      var point1 = util$1.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(centerPos).concat([ringRadius[0], axisLineAngles[0]]));
 
-      var point2 = util.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(centerPos).concat([ringRadius[0], axisLineAngles[1]]));
+      var point2 = util$1.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(centerPos).concat([ringRadius[0], axisLineAngles[1]]));
 
-      lineWidth = (0, util$1.getPointToLineDistance)(centerPos, point1, point2);
+      lineWidth = (0, util.getPointToLineDistance)(centerPos, point1, point2);
     }
 
-    style = (0, util$1.deepMerge)((0, util.deepClone)(style, true), {
+    style = (0, util.deepMerge)((0, util$1.deepClone)(style, true), {
       lineWidth: lineWidth
     });
     if (!color.length) return style;
     var colorNum = color.length;
-    return (0, util$1.deepMerge)(style, {
+    return (0, util.deepMerge)(style, {
       stroke: color[i % colorNum]
     });
   }
@@ -18025,7 +17720,7 @@
     }, style);
     if (!color.length) return style;
     var colorNum = color.length;
-    return (0, util$1.deepMerge)(style, {
+    return (0, util.deepMerge)(style, {
       stroke: color[i % colorNum]
     });
   }
@@ -18084,7 +17779,7 @@
         style = axisLine.style;
     if (!color.length) return style;
     var colorNum = color.length;
-    return (0, util$1.deepMerge)(style, {
+    return (0, util.deepMerge)(style, {
       stroke: color[i % colorNum]
     });
   }
@@ -18132,22 +17827,22 @@
 
     var textAlign = labelXpos > x ? 'left' : 'right';
     var textBaseline = labelYPos > y ? 'top' : 'bottom';
-    style = (0, util$1.deepMerge)({
+    style = (0, util.deepMerge)({
       textAlign: textAlign,
       textBaseline: textBaseline
     }, style);
     if (!color.length) return style;
     var colorNum = color.length;
-    return (0, util$1.deepMerge)(style, {
+    return (0, util.deepMerge)(style, {
       fill: color[i % colorNum]
     });
   }
   });
 
-  unwrapExports(radarAxis_1$1);
-  var radarAxis_2 = radarAxis_1$1.radarAxis;
+  unwrapExports(radarAxis_1);
+  radarAxis_1.radarAxis;
 
-  var radar_1$1 = createCommonjsModule(function (module, exports) {
+  var radar_1 = createCommonjsModule(function (module, exports) {
 
 
 
@@ -18176,13 +17871,13 @@
 
   function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-  function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { (0, _defineProperty2["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+  function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { (0, _defineProperty2["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
   function radar(chart) {
     var option = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     var series = option.series;
     if (!series) series = [];
-    var radars = (0, util$1.initNeedSeries)(series, config.radarConfig, 'radar');
+    var radars = (0, util.initNeedSeries)(series, config.radarConfig, 'radar');
     radars = calcRadarPosition(radars, chart);
     radars = calcRadarLabelPosition(radars, chart);
     radars = calcRadarLabelAlign(radars, chart);
@@ -18228,7 +17923,7 @@
         if (typeof v !== 'number') v = min;
         var dataRadius = (v - min) / (max - min) * radius;
         radarItem.dataRadius[i] = dataRadius;
-        return util.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(centerPos).concat([dataRadius, axisLineAngles[i]]));
+        return util$1.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(centerPos).concat([dataRadius, axisLineAngles[i]]));
       });
     });
     return radars;
@@ -18244,7 +17939,7 @@
           label = radarItem.label;
       var labelGap = label.labelGap;
       radarItem.labelPosition = dataRadius.map(function (r, i) {
-        return util.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(centerPos).concat([r + labelGap, axisLineAngles[i]]));
+        return util$1.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(centerPos).concat([r + labelGap, axisLineAngles[i]]));
       });
     });
     return radars;
@@ -18313,13 +18008,13 @@
   function getRadarStyle(radarItem) {
     var radarStyle = radarItem.radarStyle,
         color = radarItem.color;
-    var colorRgbaValue = (0, lib.getRgbaValue)(color);
+    var colorRgbaValue = (0, lib$4.getRgbaValue)(color);
     colorRgbaValue[3] = 0.5;
     var radarDefaultColor = {
       stroke: color,
-      fill: (0, lib.getColorFromRgbValue)(colorRgbaValue)
+      fill: (0, lib$4.getColorFromRgbValue)(colorRgbaValue)
     };
-    return (0, util$1.deepMerge)(radarDefaultColor, radarStyle);
+    return (0, util.deepMerge)(radarDefaultColor, radarStyle);
   }
 
   function beforeChangeRadar(graph, _ref4) {
@@ -18381,7 +18076,7 @@
     var point = radarItem.point,
         color = radarItem.color;
     var style = point.style;
-    return (0, util$1.deepMerge)({
+    return (0, util.deepMerge)({
       stroke: color
     }, style);
   }
@@ -18443,14 +18138,14 @@
       fill: color
     }, labelAlign[i]);
 
-    return (0, util$1.deepMerge)(defaultColorAndAlign, style);
+    return (0, util.deepMerge)(defaultColorAndAlign, style);
   }
   });
 
-  unwrapExports(radar_1$1);
-  var radar_2 = radar_1$1.radar;
+  unwrapExports(radar_1);
+  radar_1.radar;
 
-  var gauge_1$1 = createCommonjsModule(function (module, exports) {
+  var gauge_1 = createCommonjsModule(function (module, exports) {
 
 
 
@@ -18479,13 +18174,13 @@
 
   function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-  function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { (0, _defineProperty2["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+  function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { (0, _defineProperty2["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
   function gauge$1(chart) {
     var option = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     var series = option.series;
     if (!series) series = [];
-    var gauges = (0, util$1.initNeedSeries)(series, gauge.gaugeConfig, 'gauge');
+    var gauges = (0, util.initNeedSeries)(series, gauge.gaugeConfig, 'gauge');
     gauges = calcGaugesCenter(gauges, chart);
     gauges = calcGaugesRadius(gauges, chart);
     gauges = calcGaugesDataRadiusAndLineWidth(gauges, chart);
@@ -18644,7 +18339,7 @@
         if (i === splitNum - 1) angle -= offset;
         gaugeItem.tickAngles[i] = angle;
         gaugeItem.tickInnerRadius[i] = innerRadius;
-        return [util.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(center).concat([outerRadius, angle])), util.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(center).concat([innerRadius, angle]))];
+        return [util$1.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(center).concat([outerRadius, angle])), util$1.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(center).concat([innerRadius, angle]))];
       });
     });
     return gauges;
@@ -18657,7 +18352,7 @@
           tickAngles = gaugeItem.tickAngles,
           labelGap = gaugeItem.axisLabel.labelGap;
       var position = tickAngles.map(function (angle, i) {
-        return util.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(center).concat([tickInnerRadius[i] - labelGap, tickAngles[i]]));
+        return util$1.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(center).concat([tickInnerRadius[i] - labelGap, tickAngles[i]]));
       });
       var align = position.map(function (_ref) {
         var _ref2 = (0, _slicedToArray2["default"])(_ref, 2),
@@ -18688,7 +18383,7 @@
         return parseInt(min + valueGap * i);
       });
       var formatterType = (0, _typeof2["default"])(formatter);
-      data = (0, util$1.deepMerge)(value, data).map(function (v, i) {
+      data = (0, util.deepMerge)(value, data).map(function (v, i) {
         var label = v;
 
         if (formatterType === 'string') {
@@ -18725,9 +18420,9 @@
         if (position === 'center') {
           point = center;
         } else if (position === 'start') {
-          point = util.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(center).concat([radius, startAngle]));
+          point = util$1.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(center).concat([radius, startAngle]));
         } else if (position === 'end') {
-          point = util.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(center).concat([radius, endAngle]));
+          point = util$1.getCircleRadianPoint.apply(void 0, (0, _toConsumableArray2["default"])(center).concat([radius, endAngle]));
         }
 
         return getOffsetedPoint(point, offset);
@@ -18832,7 +18527,7 @@
     var labelAlign = gaugeItem.labelAlign,
         axisLabel = gaugeItem.axisLabel;
     var style = axisLabel.style;
-    return (0, util$1.deepMerge)(_objectSpread({}, labelAlign[i]), style);
+    return (0, util.deepMerge)(_objectSpread({}, labelAlign[i]), style);
   }
 
   function getBackgroundArcConfig(gaugeItem) {
@@ -18868,7 +18563,7 @@
     var backgroundArc = gaugeItem.backgroundArc,
         arcLineWidth = gaugeItem.arcLineWidth;
     var style = backgroundArc.style;
-    return (0, util$1.deepMerge)({
+    return (0, util.deepMerge)({
       lineWidth: arcLineWidth
     }, style);
   }
@@ -18927,9 +18622,9 @@
         lineWidth = _data$i2.lineWidth,
         gradient = _data$i2.gradient;
     gradient = gradient.map(function (c) {
-      return (0, lib.getRgbaValue)(c);
+      return (0, lib$4.getRgbaValue)(c);
     });
-    return (0, util$1.deepMerge)({
+    return (0, util.deepMerge)({
       lineWidth: lineWidth,
       gradient: gradient
     }, dataItemStyle);
@@ -19000,8 +18695,8 @@
         style = pointer.style;
     var value = data[valueIndex] ? data[valueIndex].value : 0;
     var angle = (value - min) / (max - min) * (endAngle - startAngle) + startAngle + Math.PI / 2;
-    return (0, util$1.deepMerge)({
-      rotate: (0, util$1.radianToAngle)(angle),
+    return (0, util.deepMerge)({
+      rotate: (0, util.radianToAngle)(angle),
       scale: [1, 1],
       graphCenter: center
     }, style);
@@ -19022,7 +18717,7 @@
   function getStartPointerConfig(gaugeItem) {
     var startAngle = gaugeItem.startAngle;
     var config = getPointerConfig(gaugeItem)[0];
-    config.style.rotate = (0, util$1.radianToAngle)(startAngle + Math.PI / 2);
+    config.style.rotate = (0, util.radianToAngle)(startAngle + Math.PI / 2);
     return [config];
   }
 
@@ -19067,16 +18762,16 @@
         data = gaugeItem.data;
     var style = details.style;
     var color = data[i].color;
-    return (0, util$1.deepMerge)({
+    return (0, util.deepMerge)({
       fill: color
     }, style);
   }
   });
 
-  unwrapExports(gauge_1$1);
-  var gauge_2 = gauge_1$1.gauge;
+  unwrapExports(gauge_1);
+  gauge_1.gauge;
 
-  var legend_1$1 = createCommonjsModule(function (module, exports) {
+  var legend_1 = createCommonjsModule(function (module, exports) {
 
 
 
@@ -19104,7 +18799,7 @@
     var legend = option.legend;
 
     if (legend) {
-      legend = (0, util$1.deepMerge)((0, util.deepClone)(config.legendConfig, true), legend);
+      legend = (0, util.deepMerge)((0, util$1.deepClone)(config.legendConfig, true), legend);
       legend = initLegendData(legend);
       legend = filterInvalidData(legend, option, chart);
       legend = calcLegendTextWidth(legend, chart);
@@ -19260,7 +18955,7 @@
         iconWidth = legend.iconWidth,
         itemGap = legend.itemGap;
     var beforeItem = data.slice(startIndex, currentIndex);
-    return (0, util$1.mulAdd)(beforeItem.map(function (_ref2) {
+    return (0, util.mulAdd)(beforeItem.map(function (_ref2) {
       var textWidth = _ref2.textWidth;
       return textWidth;
     })) + (currentIndex - startIndex) * (itemGap + 5 + iconWidth);
@@ -19273,7 +18968,7 @@
         itemGap = legend.itemGap;
     var w = chart.render.area[0];
     var dataNum = data.length;
-    var allWidth = (0, util$1.mulAdd)(data.map(function (_ref3) {
+    var allWidth = (0, util.mulAdd)(data.map(function (_ref3) {
       var textWidth = _ref3.textWidth;
       return textWidth;
     })) + dataNum * (5 + iconWidth) + (dataNum - 1) * itemGap;
@@ -19452,7 +19147,7 @@
         status = _data$i.status,
         color = _data$i.color;
     var style = status ? iconStyle : iconUnselectedStyle;
-    return (0, util$1.deepMerge)({
+    return (0, util.deepMerge)({
       fill: color
     }, style);
   }
@@ -19496,7 +19191,7 @@
         status = _legendItem$data$i2.status,
         align = _legendItem$data$i2.align;
     var style = status ? textStyle : textUnselectedStyle;
-    return (0, util$1.deepMerge)((0, util.deepClone)(style, true), align);
+    return (0, util.deepMerge)((0, util$1.deepClone)(style, true), align);
   }
 
   function getTextHoverRect(legendItem, i) {
@@ -19533,8 +19228,8 @@
   }
   });
 
-  unwrapExports(legend_1$1);
-  var legend_2 = legend_1$1.legend;
+  unwrapExports(legend_1);
+  legend_1.legend;
 
   var core = createCommonjsModule(function (module, exports) {
 
@@ -19550,61 +19245,61 @@
   Object.defineProperty(exports, "title", {
     enumerable: true,
     get: function get() {
-      return title_1$1.title;
+      return title_1.title;
     }
   });
   Object.defineProperty(exports, "grid", {
     enumerable: true,
     get: function get() {
-      return grid_1$1.grid;
+      return grid_1.grid;
     }
   });
   Object.defineProperty(exports, "axis", {
     enumerable: true,
     get: function get() {
-      return axis_1$1.axis;
+      return axis_1.axis;
     }
   });
   Object.defineProperty(exports, "line", {
     enumerable: true,
     get: function get() {
-      return line_1$1.line;
+      return line_1.line;
     }
   });
   Object.defineProperty(exports, "bar", {
     enumerable: true,
     get: function get() {
-      return bar_1$1.bar;
+      return bar_1.bar;
     }
   });
   Object.defineProperty(exports, "pie", {
     enumerable: true,
     get: function get() {
-      return pie_1$1.pie;
+      return pie_1.pie;
     }
   });
   Object.defineProperty(exports, "radarAxis", {
     enumerable: true,
     get: function get() {
-      return radarAxis_1$1.radarAxis;
+      return radarAxis_1.radarAxis;
     }
   });
   Object.defineProperty(exports, "radar", {
     enumerable: true,
     get: function get() {
-      return radar_1$1.radar;
+      return radar_1.radar;
     }
   });
   Object.defineProperty(exports, "gauge", {
     enumerable: true,
     get: function get() {
-      return gauge_1$1.gauge;
+      return gauge_1.gauge;
     }
   });
   Object.defineProperty(exports, "legend", {
     enumerable: true,
     get: function get() {
-      return legend_1$1.legend;
+      return legend_1.legend;
     }
   });
   });
@@ -19626,7 +19321,7 @@
 
 
 
-  var _cRender = interopRequireDefault(lib$3);
+  var _cRender = interopRequireDefault(lib$1);
 
 
 
@@ -19675,7 +19370,7 @@
     if (animationEnd) this.render.graphs.forEach(function (graph) {
       return graph.animationEnd();
     });
-    var optionCloned = (0, util.deepClone)(option, true);
+    var optionCloned = (0, util$1.deepClone)(option, true);
     (0, core.mergeColor)(this, optionCloned);
     (0, core.grid)(this, optionCloned);
     (0, core.axis)(this, optionCloned);
@@ -19712,7 +19407,7 @@
 
   unwrapExports(charts_class);
 
-  var lib$4 = createCommonjsModule(function (module, exports) {
+  var lib = createCommonjsModule(function (module, exports) {
 
 
 
@@ -19735,10 +19430,10 @@
   exports["default"] = _default;
   });
 
-  var Charts = unwrapExports(lib$4);
+  var Charts = unwrapExports(lib);
 
   //
-  var script$r = {
+  var script$a = {
     name: 'DvCharts',
     mixins: [autoResize],
     props: {
@@ -19800,45 +19495,45 @@
   };
 
   /* script */
-  const __vue_script__$r = script$r;
+  const __vue_script__$a = script$a;
 
   /* template */
-  var __vue_render__$r = function() {
+  var __vue_render__$a = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
     return _c("div", { ref: _vm.ref, staticClass: "dv-charts-container" }, [
-      _c("div", { ref: _vm.chartRef, staticClass: "charts-canvas-container" })
+      _c("div", { ref: _vm.chartRef, staticClass: "charts-canvas-container" }),
     ])
   };
-  var __vue_staticRenderFns__$r = [];
-  __vue_render__$r._withStripped = true;
+  var __vue_staticRenderFns__$a = [];
+  __vue_render__$a._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$r = function (inject) {
+    const __vue_inject_styles__$a = function (inject) {
       if (!inject) return
-      inject("data-v-1f446fe6_0", { source: ".dv-charts-container {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-charts-container .charts-canvas-container {\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-charts-container {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-charts-container .charts-canvas-container {\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
+      inject("data-v-3f8a3120_0", { source: ".dv-charts-container {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-charts-container .charts-canvas-container {\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;AACA;EACE,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-charts-container {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.dv-charts-container .charts-canvas-container {\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$r = undefined;
+    const __vue_scope_id__$a = undefined;
     /* module identifier */
-    const __vue_module_identifier__$r = undefined;
+    const __vue_module_identifier__$a = undefined;
     /* functional template */
-    const __vue_is_functional_template__$r = false;
+    const __vue_is_functional_template__$a = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$r = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$r, staticRenderFns: __vue_staticRenderFns__$r },
-      __vue_inject_styles__$r,
-      __vue_script__$r,
-      __vue_scope_id__$r,
-      __vue_is_functional_template__$r,
-      __vue_module_identifier__$r,
+    const __vue_component__$a = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$a, staticRenderFns: __vue_staticRenderFns__$a },
+      __vue_inject_styles__$a,
+      __vue_script__$a,
+      __vue_scope_id__$a,
+      __vue_is_functional_template__$a,
+      __vue_module_identifier__$a,
       false,
       createInjector,
       undefined,
@@ -19846,11 +19541,11 @@
     );
 
   function charts (Vue) {
-    Vue.component(__vue_component__$r.name, __vue_component__$r);
+    Vue.component(__vue_component__$a.name, __vue_component__$a);
   }
 
   //
-  var script$s = {
+  var script$9 = {
     name: 'DvDigitalFlop',
     props: {
       config: {
@@ -19968,7 +19663,7 @@
           defaultConfig,
           config
         } = this;
-        this.mergedConfig = util_2$1(util_1(defaultConfig, true), config || {});
+        this.mergedConfig = util_2(util_1(defaultConfig, true), config || {});
       },
 
       initGraph() {
@@ -20021,7 +19716,7 @@
           style,
           textAlign
         } = this.mergedConfig;
-        return util_2$1(style, {
+        return util_2(style, {
           textAlign,
           textBaseline: 'middle'
         });
@@ -20070,45 +19765,45 @@
   };
 
   /* script */
-  const __vue_script__$s = script$s;
+  const __vue_script__$9 = script$9;
 
   /* template */
-  var __vue_render__$s = function() {
+  var __vue_render__$9 = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
     return _c("div", { staticClass: "dv-digital-flop" }, [
-      _c("canvas", { ref: "digital-flop" })
+      _c("canvas", { ref: "digital-flop" }),
     ])
   };
-  var __vue_staticRenderFns__$s = [];
-  __vue_render__$s._withStripped = true;
+  var __vue_staticRenderFns__$9 = [];
+  __vue_render__$9._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$s = function (inject) {
+    const __vue_inject_styles__$9 = function (inject) {
       if (!inject) return
-      inject("data-v-113591fb_0", { source: ".dv-digital-flop canvas {\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-digital-flop canvas {\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
+      inject("data-v-3d2cedb4_0", { source: ".dv-digital-flop canvas {\n  width: 100%;\n  height: 100%;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;AACd","file":"main.vue","sourcesContent":[".dv-digital-flop canvas {\n  width: 100%;\n  height: 100%;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$s = undefined;
+    const __vue_scope_id__$9 = undefined;
     /* module identifier */
-    const __vue_module_identifier__$s = undefined;
+    const __vue_module_identifier__$9 = undefined;
     /* functional template */
-    const __vue_is_functional_template__$s = false;
+    const __vue_is_functional_template__$9 = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$s = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$s, staticRenderFns: __vue_staticRenderFns__$s },
-      __vue_inject_styles__$s,
-      __vue_script__$s,
-      __vue_scope_id__$s,
-      __vue_is_functional_template__$s,
-      __vue_module_identifier__$s,
+    const __vue_component__$9 = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$9, staticRenderFns: __vue_staticRenderFns__$9 },
+      __vue_inject_styles__$9,
+      __vue_script__$9,
+      __vue_scope_id__$9,
+      __vue_is_functional_template__$9,
+      __vue_module_identifier__$9,
       false,
       createInjector,
       undefined,
@@ -20116,10 +19811,10 @@
     );
 
   //
-  var script$t = {
+  var script$8 = {
     name: 'DvActiveRingChart',
     components: {
-      dvDigitalFlop: __vue_component__$s
+      dvDigitalFlop: __vue_component__$9
     },
     props: {
       config: {
@@ -20319,7 +20014,7 @@
           defaultConfig,
           config
         } = this;
-        this.mergedConfig = util_2$1(util_1(defaultConfig, true), config || {});
+        this.mergedConfig = util_2(util_1(defaultConfig, true), config || {});
       },
 
       setRingOption() {
@@ -20424,17 +20119,17 @@
   };
 
   /* script */
-  const __vue_script__$t = script$t;
+  const __vue_script__$8 = script$8;
 
   /* template */
-  var __vue_render__$t = function() {
+  var __vue_render__$8 = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
     return _c("div", { staticClass: "dv-active-ring-chart" }, [
       _c("div", {
         ref: "active-ring-chart",
-        staticClass: "active-ring-chart-container"
+        staticClass: "active-ring-chart-container",
       }),
       _vm._v(" "),
       _c(
@@ -20444,41 +20139,41 @@
           _c("dv-digital-flop", { attrs: { config: _vm.digitalFlop } }),
           _vm._v(" "),
           _c("div", { staticClass: "active-ring-name", style: _vm.fontSize }, [
-            _vm._v(_vm._s(_vm.ringName))
-          ])
+            _vm._v(_vm._s(_vm.ringName)),
+          ]),
         ],
         1
-      )
+      ),
     ])
   };
-  var __vue_staticRenderFns__$t = [];
-  __vue_render__$t._withStripped = true;
+  var __vue_staticRenderFns__$8 = [];
+  __vue_render__$8._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$t = function (inject) {
+    const __vue_inject_styles__$8 = function (inject) {
       if (!inject) return
-      inject("data-v-ca8abc0a_0", { source: ".dv-active-ring-chart {\n  position: relative;\n}\n.dv-active-ring-chart .active-ring-chart-container {\n  width: 100%;\n  height: 100%;\n}\n.dv-active-ring-chart .active-ring-info {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0px;\n  top: 0px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n.dv-active-ring-chart .active-ring-info .dv-digital-flop {\n  width: 100px;\n  height: 30px;\n}\n.dv-active-ring-chart .active-ring-info .active-ring-name {\n  width: 100px;\n  height: 30px;\n  color: #fff;\n  text-align: center;\n  vertical-align: middle;\n  text-overflow: ellipsis;\n  overflow: hidden;\n  white-space: nowrap;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;AACpB;AACA;EACE,WAAW;EACX,YAAY;AACd;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,SAAS;EACT,QAAQ;EACR,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;AACrB;AACA;EACE,YAAY;EACZ,YAAY;AACd;AACA;EACE,YAAY;EACZ,YAAY;EACZ,WAAW;EACX,kBAAkB;EAClB,sBAAsB;EACtB,uBAAuB;EACvB,gBAAgB;EAChB,mBAAmB;AACrB","file":"main.vue","sourcesContent":[".dv-active-ring-chart {\n  position: relative;\n}\n.dv-active-ring-chart .active-ring-chart-container {\n  width: 100%;\n  height: 100%;\n}\n.dv-active-ring-chart .active-ring-info {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0px;\n  top: 0px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n.dv-active-ring-chart .active-ring-info .dv-digital-flop {\n  width: 100px;\n  height: 30px;\n}\n.dv-active-ring-chart .active-ring-info .active-ring-name {\n  width: 100px;\n  height: 30px;\n  color: #fff;\n  text-align: center;\n  vertical-align: middle;\n  text-overflow: ellipsis;\n  overflow: hidden;\n  white-space: nowrap;\n}\n"]}, media: undefined });
+      inject("data-v-5572f08e_0", { source: ".dv-active-ring-chart {\n  position: relative;\n}\n.dv-active-ring-chart .active-ring-chart-container {\n  width: 100%;\n  height: 100%;\n}\n.dv-active-ring-chart .active-ring-info {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0px;\n  top: 0px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n.dv-active-ring-chart .active-ring-info .dv-digital-flop {\n  width: 100px;\n  height: 30px;\n}\n.dv-active-ring-chart .active-ring-info .active-ring-name {\n  width: 100px;\n  height: 30px;\n  color: #fff;\n  text-align: center;\n  vertical-align: middle;\n  text-overflow: ellipsis;\n  overflow: hidden;\n  white-space: nowrap;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;AACpB;AACA;EACE,WAAW;EACX,YAAY;AACd;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,SAAS;EACT,QAAQ;EACR,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;AACrB;AACA;EACE,YAAY;EACZ,YAAY;AACd;AACA;EACE,YAAY;EACZ,YAAY;EACZ,WAAW;EACX,kBAAkB;EAClB,sBAAsB;EACtB,uBAAuB;EACvB,gBAAgB;EAChB,mBAAmB;AACrB","file":"main.vue","sourcesContent":[".dv-active-ring-chart {\n  position: relative;\n}\n.dv-active-ring-chart .active-ring-chart-container {\n  width: 100%;\n  height: 100%;\n}\n.dv-active-ring-chart .active-ring-info {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0px;\n  top: 0px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n.dv-active-ring-chart .active-ring-info .dv-digital-flop {\n  width: 100px;\n  height: 30px;\n}\n.dv-active-ring-chart .active-ring-info .active-ring-name {\n  width: 100px;\n  height: 30px;\n  color: #fff;\n  text-align: center;\n  vertical-align: middle;\n  text-overflow: ellipsis;\n  overflow: hidden;\n  white-space: nowrap;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$t = undefined;
+    const __vue_scope_id__$8 = undefined;
     /* module identifier */
-    const __vue_module_identifier__$t = undefined;
+    const __vue_module_identifier__$8 = undefined;
     /* functional template */
-    const __vue_is_functional_template__$t = false;
+    const __vue_is_functional_template__$8 = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$t = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$t, staticRenderFns: __vue_staticRenderFns__$t },
-      __vue_inject_styles__$t,
-      __vue_script__$t,
-      __vue_scope_id__$t,
-      __vue_is_functional_template__$t,
-      __vue_module_identifier__$t,
+    const __vue_component__$8 = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$8, staticRenderFns: __vue_staticRenderFns__$8 },
+      __vue_inject_styles__$8,
+      __vue_script__$8,
+      __vue_scope_id__$8,
+      __vue_is_functional_template__$8,
+      __vue_module_identifier__$8,
       false,
       createInjector,
       undefined,
@@ -20486,11 +20181,11 @@
     );
 
   function activeRingChart (Vue) {
-    Vue.component(__vue_component__$t.name, __vue_component__$t);
+    Vue.component(__vue_component__$8.name, __vue_component__$8);
   }
 
   //
-  var script$u = {
+  var script$7 = {
     name: 'DvCapsuleChart',
     props: {
       config: {
@@ -20564,7 +20259,7 @@
           config,
           defaultConfig
         } = this;
-        this.mergedConfig = util_2$1(util_1(defaultConfig, true), config || {});
+        this.mergedConfig = util_2(util_1(defaultConfig, true), config || {});
       },
 
       calcCapsuleLengthAndLabelData() {
@@ -20596,10 +20291,10 @@
   };
 
   /* script */
-  const __vue_script__$u = script$u;
+  const __vue_script__$7 = script$7;
 
   /* template */
-  var __vue_render__$u = function() {
+  var __vue_render__$7 = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -20613,13 +20308,13 @@
                 "div",
                 { staticClass: "label-column" },
                 [
-                  _vm._l(_vm.mergedConfig.data, function(item) {
+                  _vm._l(_vm.mergedConfig.data, function (item) {
                     return _c("div", { key: item.name }, [
-                      _vm._v(_vm._s(item.name))
+                      _vm._v(_vm._s(item.name)),
                     ])
                   }),
                   _vm._v(" "),
-                  _c("div", [_vm._v(" ")])
+                  _c("div", [_vm._v(" ")]),
                 ],
                 2
               ),
@@ -20628,7 +20323,7 @@
                 "div",
                 { staticClass: "capsule-container" },
                 [
-                  _vm._l(_vm.capsuleLength, function(capsule, index) {
+                  _vm._l(_vm.capsuleLength, function (capsule, index) {
                     return _c(
                       "div",
                       { key: index, staticClass: "capsule-item" },
@@ -20644,16 +20339,16 @@
                               _vm.mergedConfig.colors[
                                 index % _vm.mergedConfig.colors.length
                               ] +
-                              ";"
+                              ";",
                           },
                           [
                             _vm.mergedConfig.showValue
                               ? _c("div", { staticClass: "capsule-item-value" }, [
-                                  _vm._v(_vm._s(_vm.capsuleValue[index]))
+                                  _vm._v(_vm._s(_vm.capsuleValue[index])),
                                 ])
-                              : _vm._e()
+                              : _vm._e(),
                           ]
-                        )
+                        ),
                       ]
                     )
                   }),
@@ -20661,56 +20356,56 @@
                   _c(
                     "div",
                     { staticClass: "unit-label" },
-                    _vm._l(_vm.labelData, function(label, index) {
+                    _vm._l(_vm.labelData, function (label, index) {
                       return _c("div", { key: label + index }, [
-                        _vm._v(_vm._s(label))
+                        _vm._v(_vm._s(label)),
                       ])
                     }),
                     0
-                  )
+                  ),
                 ],
                 2
               ),
               _vm._v(" "),
               _vm.mergedConfig.unit
                 ? _c("div", { staticClass: "unit-text" }, [
-                    _vm._v(_vm._s(_vm.mergedConfig.unit))
+                    _vm._v(_vm._s(_vm.mergedConfig.unit)),
                   ])
-                : _vm._e()
+                : _vm._e(),
             ]
-          : _vm._e()
+          : _vm._e(),
       ],
       2
     )
   };
-  var __vue_staticRenderFns__$u = [];
-  __vue_render__$u._withStripped = true;
+  var __vue_staticRenderFns__$7 = [];
+  __vue_render__$7._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$u = function (inject) {
+    const __vue_inject_styles__$7 = function (inject) {
       if (!inject) return
-      inject("data-v-6f678c1a_0", { source: ".dv-capsule-chart {\n  position: relative;\n  display: flex;\n  flex-direction: row;\n  box-sizing: border-box;\n  padding: 10px;\n  color: #fff;\n}\n.dv-capsule-chart .label-column {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  box-sizing: border-box;\n  padding-right: 10px;\n  text-align: right;\n  font-size: 12px;\n}\n.dv-capsule-chart .label-column div {\n  height: 20px;\n  line-height: 20px;\n}\n.dv-capsule-chart .capsule-container {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n}\n.dv-capsule-chart .capsule-item {\n  box-shadow: 0 0 3px #999;\n  height: 10px;\n  margin: 5px 0px;\n  border-radius: 5px;\n}\n.dv-capsule-chart .capsule-item .capsule-item-column {\n  position: relative;\n  height: 8px;\n  margin-top: 1px;\n  border-radius: 5px;\n  transition: all 0.3s;\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n}\n.dv-capsule-chart .capsule-item .capsule-item-column .capsule-item-value {\n  font-size: 12px;\n  transform: translateX(100%);\n}\n.dv-capsule-chart .unit-label {\n  height: 20px;\n  font-size: 12px;\n  position: relative;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n.dv-capsule-chart .unit-text {\n  text-align: right;\n  display: flex;\n  align-items: flex-end;\n  font-size: 12px;\n  line-height: 20px;\n  margin-left: 10px;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,aAAa;EACb,mBAAmB;EACnB,sBAAsB;EACtB,aAAa;EACb,WAAW;AACb;AACA;EACE,aAAa;EACb,sBAAsB;EACtB,8BAA8B;EAC9B,sBAAsB;EACtB,mBAAmB;EACnB,iBAAiB;EACjB,eAAe;AACjB;AACA;EACE,YAAY;EACZ,iBAAiB;AACnB;AACA;EACE,OAAO;EACP,aAAa;EACb,sBAAsB;EACtB,8BAA8B;AAChC;AACA;EACE,wBAAwB;EACxB,YAAY;EACZ,eAAe;EACf,kBAAkB;AACpB;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,eAAe;EACf,kBAAkB;EAClB,oBAAoB;EACpB,aAAa;EACb,yBAAyB;EACzB,mBAAmB;AACrB;AACA;EACE,eAAe;EACf,2BAA2B;AAC7B;AACA;EACE,YAAY;EACZ,eAAe;EACf,kBAAkB;EAClB,aAAa;EACb,8BAA8B;EAC9B,mBAAmB;AACrB;AACA;EACE,iBAAiB;EACjB,aAAa;EACb,qBAAqB;EACrB,eAAe;EACf,iBAAiB;EACjB,iBAAiB;AACnB","file":"main.vue","sourcesContent":[".dv-capsule-chart {\n  position: relative;\n  display: flex;\n  flex-direction: row;\n  box-sizing: border-box;\n  padding: 10px;\n  color: #fff;\n}\n.dv-capsule-chart .label-column {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  box-sizing: border-box;\n  padding-right: 10px;\n  text-align: right;\n  font-size: 12px;\n}\n.dv-capsule-chart .label-column div {\n  height: 20px;\n  line-height: 20px;\n}\n.dv-capsule-chart .capsule-container {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n}\n.dv-capsule-chart .capsule-item {\n  box-shadow: 0 0 3px #999;\n  height: 10px;\n  margin: 5px 0px;\n  border-radius: 5px;\n}\n.dv-capsule-chart .capsule-item .capsule-item-column {\n  position: relative;\n  height: 8px;\n  margin-top: 1px;\n  border-radius: 5px;\n  transition: all 0.3s;\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n}\n.dv-capsule-chart .capsule-item .capsule-item-column .capsule-item-value {\n  font-size: 12px;\n  transform: translateX(100%);\n}\n.dv-capsule-chart .unit-label {\n  height: 20px;\n  font-size: 12px;\n  position: relative;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n.dv-capsule-chart .unit-text {\n  text-align: right;\n  display: flex;\n  align-items: flex-end;\n  font-size: 12px;\n  line-height: 20px;\n  margin-left: 10px;\n}\n"]}, media: undefined });
+      inject("data-v-f4a30be4_0", { source: ".dv-capsule-chart {\n  position: relative;\n  display: flex;\n  flex-direction: row;\n  box-sizing: border-box;\n  padding: 10px;\n  color: #fff;\n}\n.dv-capsule-chart .label-column {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  box-sizing: border-box;\n  padding-right: 10px;\n  text-align: right;\n  font-size: 12px;\n}\n.dv-capsule-chart .label-column div {\n  height: 20px;\n  line-height: 20px;\n}\n.dv-capsule-chart .capsule-container {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n}\n.dv-capsule-chart .capsule-item {\n  box-shadow: 0 0 3px #999;\n  height: 10px;\n  margin: 5px 0px;\n  border-radius: 5px;\n}\n.dv-capsule-chart .capsule-item .capsule-item-column {\n  position: relative;\n  height: 8px;\n  margin-top: 1px;\n  border-radius: 5px;\n  transition: all 0.3s;\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n}\n.dv-capsule-chart .capsule-item .capsule-item-column .capsule-item-value {\n  font-size: 12px;\n  transform: translateX(100%);\n}\n.dv-capsule-chart .unit-label {\n  height: 20px;\n  font-size: 12px;\n  position: relative;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n.dv-capsule-chart .unit-text {\n  text-align: right;\n  display: flex;\n  align-items: flex-end;\n  font-size: 12px;\n  line-height: 20px;\n  margin-left: 10px;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,aAAa;EACb,mBAAmB;EACnB,sBAAsB;EACtB,aAAa;EACb,WAAW;AACb;AACA;EACE,aAAa;EACb,sBAAsB;EACtB,8BAA8B;EAC9B,sBAAsB;EACtB,mBAAmB;EACnB,iBAAiB;EACjB,eAAe;AACjB;AACA;EACE,YAAY;EACZ,iBAAiB;AACnB;AACA;EACE,OAAO;EACP,aAAa;EACb,sBAAsB;EACtB,8BAA8B;AAChC;AACA;EACE,wBAAwB;EACxB,YAAY;EACZ,eAAe;EACf,kBAAkB;AACpB;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,eAAe;EACf,kBAAkB;EAClB,oBAAoB;EACpB,aAAa;EACb,yBAAyB;EACzB,mBAAmB;AACrB;AACA;EACE,eAAe;EACf,2BAA2B;AAC7B;AACA;EACE,YAAY;EACZ,eAAe;EACf,kBAAkB;EAClB,aAAa;EACb,8BAA8B;EAC9B,mBAAmB;AACrB;AACA;EACE,iBAAiB;EACjB,aAAa;EACb,qBAAqB;EACrB,eAAe;EACf,iBAAiB;EACjB,iBAAiB;AACnB","file":"main.vue","sourcesContent":[".dv-capsule-chart {\n  position: relative;\n  display: flex;\n  flex-direction: row;\n  box-sizing: border-box;\n  padding: 10px;\n  color: #fff;\n}\n.dv-capsule-chart .label-column {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  box-sizing: border-box;\n  padding-right: 10px;\n  text-align: right;\n  font-size: 12px;\n}\n.dv-capsule-chart .label-column div {\n  height: 20px;\n  line-height: 20px;\n}\n.dv-capsule-chart .capsule-container {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n}\n.dv-capsule-chart .capsule-item {\n  box-shadow: 0 0 3px #999;\n  height: 10px;\n  margin: 5px 0px;\n  border-radius: 5px;\n}\n.dv-capsule-chart .capsule-item .capsule-item-column {\n  position: relative;\n  height: 8px;\n  margin-top: 1px;\n  border-radius: 5px;\n  transition: all 0.3s;\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n}\n.dv-capsule-chart .capsule-item .capsule-item-column .capsule-item-value {\n  font-size: 12px;\n  transform: translateX(100%);\n}\n.dv-capsule-chart .unit-label {\n  height: 20px;\n  font-size: 12px;\n  position: relative;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n.dv-capsule-chart .unit-text {\n  text-align: right;\n  display: flex;\n  align-items: flex-end;\n  font-size: 12px;\n  line-height: 20px;\n  margin-left: 10px;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$u = undefined;
+    const __vue_scope_id__$7 = undefined;
     /* module identifier */
-    const __vue_module_identifier__$u = undefined;
+    const __vue_module_identifier__$7 = undefined;
     /* functional template */
-    const __vue_is_functional_template__$u = false;
+    const __vue_is_functional_template__$7 = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$u = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$u, staticRenderFns: __vue_staticRenderFns__$u },
-      __vue_inject_styles__$u,
-      __vue_script__$u,
-      __vue_scope_id__$u,
-      __vue_is_functional_template__$u,
-      __vue_module_identifier__$u,
+    const __vue_component__$7 = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$7, staticRenderFns: __vue_staticRenderFns__$7 },
+      __vue_inject_styles__$7,
+      __vue_script__$7,
+      __vue_scope_id__$7,
+      __vue_is_functional_template__$7,
+      __vue_module_identifier__$7,
       false,
       createInjector,
       undefined,
@@ -20718,11 +20413,11 @@
     );
 
   function capsuleChart (Vue) {
-    Vue.component(__vue_component__$u.name, __vue_component__$u);
+    Vue.component(__vue_component__$7.name, __vue_component__$7);
   }
 
   //
-  var script$v = {
+  var script$6 = {
     name: 'DvWaterLevelPond',
     props: {
       config: Object,
@@ -20868,7 +20563,7 @@
           config,
           defaultConfig
         } = this;
-        this.mergedConfig = util_2$1(util_1(defaultConfig, true), config);
+        this.mergedConfig = util_2(util_1(defaultConfig, true), config);
       },
 
       calcSvgBorderGradient() {
@@ -21021,10 +20716,10 @@
   };
 
   /* script */
-  const __vue_script__$v = script$v;
+  const __vue_script__$6 = script$6;
 
   /* template */
-  var __vue_render__$v = function() {
+  var __vue_render__$6 = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -21042,17 +20737,17 @@
                       x1: "0%",
                       y1: "0%",
                       x2: "0%",
-                      y2: "100%"
-                    }
+                      y2: "100%",
+                    },
                   },
-                  _vm._l(_vm.svgBorderGradient, function(lc) {
+                  _vm._l(_vm.svgBorderGradient, function (lc) {
                     return _c("stop", {
                       key: lc[0],
-                      attrs: { offset: lc[0], "stop-color": lc[1] }
+                      attrs: { offset: lc[0], "stop-color": lc[1] },
                     })
                   }),
                   1
-                )
+                ),
               ],
               1
             ),
@@ -21065,8 +20760,8 @@
                       stroke: "url(#" + _vm.gradientId + ")",
                       fill: "url(#" + _vm.gradientId + ")",
                       x: _vm.renderer.area[0] / 2 + 8,
-                      y: _vm.renderer.area[1] / 2 + 8
-                    }
+                      y: _vm.renderer.area[1] / 2 + 8,
+                    },
                   },
                   [_vm._v("\n      " + _vm._s(_vm.details) + "\n    ")]
                 )
@@ -21079,8 +20774,8 @@
                     cy: _vm.renderer.area[1] / 2 + 8,
                     rx: _vm.renderer.area[0] / 2 + 5,
                     ry: _vm.renderer.area[1] / 2 + 5,
-                    stroke: "url(#" + _vm.gradientId + ")"
-                  }
+                    stroke: "url(#" + _vm.gradientId + ")",
+                  },
                 })
               : _c("rect", {
                   attrs: {
@@ -21090,46 +20785,46 @@
                     ry: _vm.shape === "roundRect" ? 10 : 0,
                     width: _vm.renderer.area[0] + 12,
                     height: _vm.renderer.area[1] + 12,
-                    stroke: "url(#" + _vm.gradientId + ")"
-                  }
-                })
+                    stroke: "url(#" + _vm.gradientId + ")",
+                  },
+                }),
           ])
         : _vm._e(),
       _vm._v(" "),
       _c("canvas", {
         ref: "water-pond-level",
-        style: "border-radius: " + _vm.radius + ";"
-      })
+        style: "border-radius: " + _vm.radius + ";",
+      }),
     ])
   };
-  var __vue_staticRenderFns__$v = [];
-  __vue_render__$v._withStripped = true;
+  var __vue_staticRenderFns__$6 = [];
+  __vue_render__$6._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$v = function (inject) {
+    const __vue_inject_styles__$6 = function (inject) {
       if (!inject) return
-      inject("data-v-be672a2c_0", { source: ".dv-water-pond-level {\n  position: relative;\n}\n.dv-water-pond-level svg {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-water-pond-level text {\n  font-size: 25px;\n  font-weight: bold;\n  text-anchor: middle;\n  dominant-baseline: middle;\n}\n.dv-water-pond-level ellipse,\n.dv-water-pond-level rect {\n  fill: none;\n  stroke-width: 3;\n}\n.dv-water-pond-level canvas {\n  margin-top: 8px;\n  margin-left: 8px;\n  width: calc(100% - 16px);\n  height: calc(100% - 16px);\n  box-sizing: border-box;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;AACpB;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,QAAQ;EACR,SAAS;AACX;AACA;EACE,eAAe;EACf,iBAAiB;EACjB,mBAAmB;EACnB,yBAAyB;AAC3B;AACA;;EAEE,UAAU;EACV,eAAe;AACjB;AACA;EACE,eAAe;EACf,gBAAgB;EAChB,wBAAwB;EACxB,yBAAyB;EACzB,sBAAsB;AACxB","file":"main.vue","sourcesContent":[".dv-water-pond-level {\n  position: relative;\n}\n.dv-water-pond-level svg {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-water-pond-level text {\n  font-size: 25px;\n  font-weight: bold;\n  text-anchor: middle;\n  dominant-baseline: middle;\n}\n.dv-water-pond-level ellipse,\n.dv-water-pond-level rect {\n  fill: none;\n  stroke-width: 3;\n}\n.dv-water-pond-level canvas {\n  margin-top: 8px;\n  margin-left: 8px;\n  width: calc(100% - 16px);\n  height: calc(100% - 16px);\n  box-sizing: border-box;\n}\n"]}, media: undefined });
+      inject("data-v-011bf99f_0", { source: ".dv-water-pond-level {\n  position: relative;\n}\n.dv-water-pond-level svg {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-water-pond-level text {\n  font-size: 25px;\n  font-weight: bold;\n  text-anchor: middle;\n  dominant-baseline: middle;\n}\n.dv-water-pond-level ellipse,\n.dv-water-pond-level rect {\n  fill: none;\n  stroke-width: 3;\n}\n.dv-water-pond-level canvas {\n  margin-top: 8px;\n  margin-left: 8px;\n  width: calc(100% - 16px);\n  height: calc(100% - 16px);\n  box-sizing: border-box;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;AACpB;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,QAAQ;EACR,SAAS;AACX;AACA;EACE,eAAe;EACf,iBAAiB;EACjB,mBAAmB;EACnB,yBAAyB;AAC3B;AACA;;EAEE,UAAU;EACV,eAAe;AACjB;AACA;EACE,eAAe;EACf,gBAAgB;EAChB,wBAAwB;EACxB,yBAAyB;EACzB,sBAAsB;AACxB","file":"main.vue","sourcesContent":[".dv-water-pond-level {\n  position: relative;\n}\n.dv-water-pond-level svg {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n}\n.dv-water-pond-level text {\n  font-size: 25px;\n  font-weight: bold;\n  text-anchor: middle;\n  dominant-baseline: middle;\n}\n.dv-water-pond-level ellipse,\n.dv-water-pond-level rect {\n  fill: none;\n  stroke-width: 3;\n}\n.dv-water-pond-level canvas {\n  margin-top: 8px;\n  margin-left: 8px;\n  width: calc(100% - 16px);\n  height: calc(100% - 16px);\n  box-sizing: border-box;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$v = undefined;
+    const __vue_scope_id__$6 = undefined;
     /* module identifier */
-    const __vue_module_identifier__$v = undefined;
+    const __vue_module_identifier__$6 = undefined;
     /* functional template */
-    const __vue_is_functional_template__$v = false;
+    const __vue_is_functional_template__$6 = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$v = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$v, staticRenderFns: __vue_staticRenderFns__$v },
-      __vue_inject_styles__$v,
-      __vue_script__$v,
-      __vue_scope_id__$v,
-      __vue_is_functional_template__$v,
-      __vue_module_identifier__$v,
+    const __vue_component__$6 = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$6, staticRenderFns: __vue_staticRenderFns__$6 },
+      __vue_inject_styles__$6,
+      __vue_script__$6,
+      __vue_scope_id__$6,
+      __vue_is_functional_template__$6,
+      __vue_module_identifier__$6,
       false,
       createInjector,
       undefined,
@@ -21137,11 +20832,11 @@
     );
 
   function waterLevelPond (Vue) {
-    Vue.component(__vue_component__$v.name, __vue_component__$v);
+    Vue.component(__vue_component__$6.name, __vue_component__$6);
   }
 
   //
-  var script$w = {
+  var script$5 = {
     name: 'DvPercentPond',
     props: {
       config: {
@@ -21373,7 +21068,7 @@
           config,
           defaultConfig
         } = this;
-        this.mergedConfig = util_2$1(util_1(defaultConfig, true), config || {});
+        this.mergedConfig = util_2(util_1(defaultConfig, true), config || {});
       }
 
     },
@@ -21388,10 +21083,10 @@
   };
 
   /* script */
-  const __vue_script__$w = script$w;
+  const __vue_script__$5 = script$5;
 
   /* template */
-  var __vue_render__$w = function() {
+  var __vue_render__$5 = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -21408,13 +21103,13 @@
                   x1: "0%",
                   y1: "0%",
                   x2: "100%",
-                  y2: "0%"
-                }
+                  y2: "0%",
+                },
               },
-              _vm._l(_vm.linearGradient, function(lc) {
+              _vm._l(_vm.linearGradient, function (lc) {
                 return _c("stop", {
                   key: lc[0],
-                  attrs: { offset: lc[0] + "%", "stop-color": lc[1] }
+                  attrs: { offset: lc[0] + "%", "stop-color": lc[1] },
                 })
               }),
               1
@@ -21428,17 +21123,17 @@
                   x1: "0%",
                   y1: "0%",
                   x2: _vm.gradient2XPos,
-                  y2: "0%"
-                }
+                  y2: "0%",
+                },
               },
-              _vm._l(_vm.linearGradient, function(lc) {
+              _vm._l(_vm.linearGradient, function (lc) {
                 return _c("stop", {
                   key: lc[0],
-                  attrs: { offset: lc[0] + "%", "stop-color": lc[1] }
+                  attrs: { offset: lc[0] + "%", "stop-color": lc[1] },
                 })
               }),
               1
-            )
+            ),
           ],
           1
         ),
@@ -21453,8 +21148,8 @@
             "stroke-width": _vm.mergedConfig ? _vm.mergedConfig.borderWidth : "0",
             stroke: "url(#" + _vm.gradientId1 + ")",
             width: _vm.rectWidth > 0 ? _vm.rectWidth : 0,
-            height: _vm.rectHeight > 0 ? _vm.rectHeight : 0
-          }
+            height: _vm.rectHeight > 0 ? _vm.rectHeight : 0,
+          },
         }),
         _vm._v(" "),
         _c("polyline", {
@@ -21464,8 +21159,8 @@
               ? _vm.mergedConfig.lineDash.join(",")
               : "0",
             stroke: "url(#" + _vm.polylineGradient + ")",
-            points: _vm.points
-          }
+            points: _vm.points,
+          },
         }),
         _vm._v(" "),
         _c(
@@ -21475,42 +21170,42 @@
               stroke: _vm.mergedConfig ? _vm.mergedConfig.textColor : "#fff",
               fill: _vm.mergedConfig ? _vm.mergedConfig.textColor : "#fff",
               x: _vm.width / 2,
-              y: _vm.height / 2
-            }
+              y: _vm.height / 2,
+            },
           },
           [_vm._v("\n      " + _vm._s(_vm.details) + "\n    ")]
-        )
-      ])
+        ),
+      ]),
     ])
   };
-  var __vue_staticRenderFns__$w = [];
-  __vue_render__$w._withStripped = true;
+  var __vue_staticRenderFns__$5 = [];
+  __vue_render__$5._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$w = function (inject) {
+    const __vue_inject_styles__$5 = function (inject) {
       if (!inject) return
-      inject("data-v-05a0166f_0", { source: ".dv-percent-pond {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n}\n.dv-percent-pond svg {\n  position: absolute;\n  left: 0px;\n  top: 0px;\n  width: 100%;\n  height: 100%;\n}\n.dv-percent-pond polyline {\n  transition: all 0.3s;\n}\n.dv-percent-pond text {\n  font-size: 25px;\n  font-weight: bold;\n  text-anchor: middle;\n  dominant-baseline: middle;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,aAAa;EACb,sBAAsB;AACxB;AACA;EACE,kBAAkB;EAClB,SAAS;EACT,QAAQ;EACR,WAAW;EACX,YAAY;AACd;AACA;EACE,oBAAoB;AACtB;AACA;EACE,eAAe;EACf,iBAAiB;EACjB,mBAAmB;EACnB,yBAAyB;AAC3B","file":"main.vue","sourcesContent":[".dv-percent-pond {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n}\n.dv-percent-pond svg {\n  position: absolute;\n  left: 0px;\n  top: 0px;\n  width: 100%;\n  height: 100%;\n}\n.dv-percent-pond polyline {\n  transition: all 0.3s;\n}\n.dv-percent-pond text {\n  font-size: 25px;\n  font-weight: bold;\n  text-anchor: middle;\n  dominant-baseline: middle;\n}\n"]}, media: undefined });
+      inject("data-v-0355f424_0", { source: ".dv-percent-pond {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n}\n.dv-percent-pond svg {\n  position: absolute;\n  left: 0px;\n  top: 0px;\n  width: 100%;\n  height: 100%;\n}\n.dv-percent-pond polyline {\n  transition: all 0.3s;\n}\n.dv-percent-pond text {\n  font-size: 25px;\n  font-weight: bold;\n  text-anchor: middle;\n  dominant-baseline: middle;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,aAAa;EACb,sBAAsB;AACxB;AACA;EACE,kBAAkB;EAClB,SAAS;EACT,QAAQ;EACR,WAAW;EACX,YAAY;AACd;AACA;EACE,oBAAoB;AACtB;AACA;EACE,eAAe;EACf,iBAAiB;EACjB,mBAAmB;EACnB,yBAAyB;AAC3B","file":"main.vue","sourcesContent":[".dv-percent-pond {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n}\n.dv-percent-pond svg {\n  position: absolute;\n  left: 0px;\n  top: 0px;\n  width: 100%;\n  height: 100%;\n}\n.dv-percent-pond polyline {\n  transition: all 0.3s;\n}\n.dv-percent-pond text {\n  font-size: 25px;\n  font-weight: bold;\n  text-anchor: middle;\n  dominant-baseline: middle;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$w = undefined;
+    const __vue_scope_id__$5 = undefined;
     /* module identifier */
-    const __vue_module_identifier__$w = undefined;
+    const __vue_module_identifier__$5 = undefined;
     /* functional template */
-    const __vue_is_functional_template__$w = false;
+    const __vue_is_functional_template__$5 = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$w = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$w, staticRenderFns: __vue_staticRenderFns__$w },
-      __vue_inject_styles__$w,
-      __vue_script__$w,
-      __vue_scope_id__$w,
-      __vue_is_functional_template__$w,
-      __vue_module_identifier__$w,
+    const __vue_component__$5 = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$5, staticRenderFns: __vue_staticRenderFns__$5 },
+      __vue_inject_styles__$5,
+      __vue_script__$5,
+      __vue_scope_id__$5,
+      __vue_is_functional_template__$5,
+      __vue_module_identifier__$5,
       false,
       createInjector,
       undefined,
@@ -21518,11 +21213,11 @@
     );
 
   function percentPond (Vue) {
-    Vue.component(__vue_component__$w.name, __vue_component__$w);
+    Vue.component(__vue_component__$5.name, __vue_component__$5);
   }
 
   //
-  var script$x = {
+  var script$4 = {
     name: 'DvFlylineChart',
     mixins: [autoResize],
     props: {
@@ -21797,7 +21492,7 @@
           config,
           defaultConfig
         } = this;
-        const mergedConfig = util_2$1(util_1(defaultConfig, true), config || {});
+        const mergedConfig = util_2(util_1(defaultConfig, true), config || {});
         const {
           points
         } = mergedConfig;
@@ -21920,10 +21615,10 @@
   };
 
   /* script */
-  const __vue_script__$x = script$x;
+  const __vue_script__$4 = script$4;
 
   /* template */
-  var __vue_render__$x = function() {
+  var __vue_render__$4 = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -21936,7 +21631,7 @@
           "background-image: url(" +
           (_vm.mergedConfig ? _vm.mergedConfig.bgImgUrl : "") +
           ")",
-        on: { click: _vm.consoleClickPos }
+        on: { click: _vm.consoleClickPos },
       },
       [
         _vm.mergedConfig
@@ -21954,25 +21649,25 @@
                           id: _vm.gradientId,
                           cx: "50%",
                           cy: "50%",
-                          r: "50%"
-                        }
+                          r: "50%",
+                        },
                       },
                       [
                         _c("stop", {
                           attrs: {
                             offset: "0%",
                             "stop-color": "#fff",
-                            "stop-opacity": "1"
-                          }
+                            "stop-opacity": "1",
+                          },
                         }),
                         _vm._v(" "),
                         _c("stop", {
                           attrs: {
                             offset: "100%",
                             "stop-color": "#fff",
-                            "stop-opacity": "0"
-                          }
-                        })
+                            "stop-opacity": "0",
+                          },
+                        }),
                       ],
                       1
                     ),
@@ -21984,25 +21679,25 @@
                           id: _vm.gradient2Id,
                           cx: "50%",
                           cy: "50%",
-                          r: "50%"
-                        }
+                          r: "50%",
+                        },
                       },
                       [
                         _c("stop", {
                           attrs: {
                             offset: "0%",
                             "stop-color": "#fff",
-                            "stop-opacity": "0"
-                          }
+                            "stop-opacity": "0",
+                          },
                         }),
                         _vm._v(" "),
                         _c("stop", {
                           attrs: {
                             offset: "100%",
                             "stop-color": "#fff",
-                            "stop-opacity": "1"
-                          }
-                        })
+                            "stop-opacity": "1",
+                          },
+                        }),
                       ],
                       1
                     ),
@@ -22014,8 +21709,8 @@
                             attrs: {
                               id: "circle" + _vm.paths[0].toString(),
                               cx: _vm.paths[0][2][0],
-                              cy: _vm.paths[0][2][1]
-                            }
+                              cy: _vm.paths[0][2][1],
+                            },
                           },
                           [
                             _c("animate", {
@@ -22023,8 +21718,8 @@
                                 attributeName: "r",
                                 values: "1;" + _vm.mergedConfig.halo.radius,
                                 dur: _vm.mergedConfig.halo.duration / 10 + "s",
-                                repeatCount: "indefinite"
-                              }
+                                repeatCount: "indefinite",
+                              },
                             }),
                             _vm._v(" "),
                             _c("animate", {
@@ -22032,12 +21727,12 @@
                                 attributeName: "opacity",
                                 values: "1;0",
                                 dur: _vm.mergedConfig.halo.duration / 10 + "s",
-                                repeatCount: "indefinite"
-                              }
-                            })
+                                repeatCount: "indefinite",
+                              },
+                            }),
                           ]
                         )
-                      : _vm._e()
+                      : _vm._e(),
                   ],
                   1
                 ),
@@ -22053,8 +21748,8 @@
                           _vm.mergedConfig.centerPointImg.width / 2,
                         y:
                           _vm.paths[0][2][1] -
-                          _vm.mergedConfig.centerPointImg.height / 2
-                      }
+                          _vm.mergedConfig.centerPointImg.height / 2,
+                      },
                     })
                   : _vm._e(),
                 _vm._v(" "),
@@ -22066,10 +21761,10 @@
                       ? _c("use", {
                           attrs: {
                             "xlink:href": "#circle" + _vm.paths[0].toString(),
-                            fill: "url(#" + _vm.gradient2Id + ")"
-                          }
+                            fill: "url(#" + _vm.gradient2Id + ")",
+                          },
                         })
-                      : _vm._e()
+                      : _vm._e(),
                   ]
                 ),
                 _vm._v(" "),
@@ -22078,12 +21773,12 @@
                       attrs: {
                         "xlink:href": "#circle" + _vm.paths[0].toString(),
                         fill: _vm.mergedConfig.halo.color,
-                        mask: "url(#maskhalo" + _vm.paths[0].toString() + ")"
-                      }
+                        mask: "url(#maskhalo" + _vm.paths[0].toString() + ")",
+                      },
                     })
                   : _vm._e(),
                 _vm._v(" "),
-                _vm._l(_vm.paths, function(path, i) {
+                _vm._l(_vm.paths, function (path, i) {
                   return _c("g", { key: i }, [
                     _c("defs", [
                       _c("path", {
@@ -22098,17 +21793,17 @@
                             path[1].toString() +
                             " " +
                             path[2].toString(),
-                          fill: "transparent"
-                        }
-                      })
+                          fill: "transparent",
+                        },
+                      }),
                     ]),
                     _vm._v(" "),
                     _c("use", {
                       attrs: {
                         "xlink:href": "#path" + path.toString(),
                         "stroke-width": _vm.mergedConfig.lineWidth,
-                        stroke: _vm.mergedConfig.orbitColor
-                      }
+                        stroke: _vm.mergedConfig.orbitColor,
+                      },
                     }),
                     _vm._v(" "),
                     _vm.lengths[i]
@@ -22120,8 +21815,8 @@
                               "stroke-width": _vm.mergedConfig.lineWidth,
                               stroke: _vm.mergedConfig.flylineColor,
                               mask:
-                                "url(#mask" + _vm.unique + path.toString() + ")"
-                            }
+                                "url(#mask" + _vm.unique + path.toString() + ")",
+                            },
                           },
                           [
                             _c("animate", {
@@ -22130,9 +21825,9 @@
                                 from: "0, " + _vm.lengths[i],
                                 to: _vm.lengths[i] + ", 0",
                                 dur: _vm.times[i] || 0,
-                                repeatCount: "indefinite"
-                              }
-                            })
+                                repeatCount: "indefinite",
+                              },
+                            }),
                           ]
                         )
                       : _vm._e(),
@@ -22148,8 +21843,8 @@
                               cx: "0",
                               cy: "0",
                               r: _vm.mergedConfig.flylineRadius,
-                              fill: "url(#" + _vm.gradientId + ")"
-                            }
+                              fill: "url(#" + _vm.gradientId + ")",
+                            },
                           },
                           [
                             _c("animateMotion", {
@@ -22163,12 +21858,12 @@
                                   " " +
                                   path[2].toString(),
                                 rotate: "auto",
-                                repeatCount: "indefinite"
-                              }
-                            })
+                                repeatCount: "indefinite",
+                              },
+                            }),
                           ],
                           1
-                        )
+                        ),
                       ]
                     ),
                     _vm._v(" "),
@@ -22178,8 +21873,8 @@
                         width: _vm.mergedConfig.pointsImg.width,
                         height: _vm.mergedConfig.pointsImg.height,
                         x: path[0][0] - _vm.mergedConfig.pointsImg.width / 2,
-                        y: path[0][1] - _vm.mergedConfig.pointsImg.height / 2
-                      }
+                        y: path[0][1] - _vm.mergedConfig.pointsImg.height / 2,
+                      },
                     }),
                     _vm._v(" "),
                     _c(
@@ -22190,48 +21885,48 @@
                         attrs: {
                           fill: _vm.mergedConfig.text.color,
                           x: path[0][0] + _vm.mergedConfig.text.offset[0],
-                          y: path[0][1] + _vm.mergedConfig.text.offset[1]
-                        }
+                          y: path[0][1] + _vm.mergedConfig.text.offset[1],
+                        },
                       },
                       [_vm._v("\n        " + _vm._s(_vm.texts[i]) + "\n      ")]
-                    )
+                    ),
                   ])
-                })
+                }),
               ],
               2
             )
-          : _vm._e()
+          : _vm._e(),
       ]
     )
   };
-  var __vue_staticRenderFns__$x = [];
-  __vue_render__$x._withStripped = true;
+  var __vue_staticRenderFns__$4 = [];
+  __vue_render__$4._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$x = function (inject) {
+    const __vue_inject_styles__$4 = function (inject) {
       if (!inject) return
-      inject("data-v-1edfcf29_0", { source: ".dv-flyline-chart {\n  display: flex;\n  flex-direction: column;\n  background-size: 100% 100%;\n}\n.dv-flyline-chart polyline {\n  transition: all 0.3s;\n}\n.dv-flyline-chart text {\n  text-anchor: middle;\n  dominant-baseline: middle;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,sBAAsB;EACtB,0BAA0B;AAC5B;AACA;EACE,oBAAoB;AACtB;AACA;EACE,mBAAmB;EACnB,yBAAyB;AAC3B","file":"main.vue","sourcesContent":[".dv-flyline-chart {\n  display: flex;\n  flex-direction: column;\n  background-size: 100% 100%;\n}\n.dv-flyline-chart polyline {\n  transition: all 0.3s;\n}\n.dv-flyline-chart text {\n  text-anchor: middle;\n  dominant-baseline: middle;\n}\n"]}, media: undefined });
+      inject("data-v-45d8cf11_0", { source: ".dv-flyline-chart {\n  display: flex;\n  flex-direction: column;\n  background-size: 100% 100%;\n}\n.dv-flyline-chart polyline {\n  transition: all 0.3s;\n}\n.dv-flyline-chart text {\n  text-anchor: middle;\n  dominant-baseline: middle;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,sBAAsB;EACtB,0BAA0B;AAC5B;AACA;EACE,oBAAoB;AACtB;AACA;EACE,mBAAmB;EACnB,yBAAyB;AAC3B","file":"main.vue","sourcesContent":[".dv-flyline-chart {\n  display: flex;\n  flex-direction: column;\n  background-size: 100% 100%;\n}\n.dv-flyline-chart polyline {\n  transition: all 0.3s;\n}\n.dv-flyline-chart text {\n  text-anchor: middle;\n  dominant-baseline: middle;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$x = undefined;
+    const __vue_scope_id__$4 = undefined;
     /* module identifier */
-    const __vue_module_identifier__$x = undefined;
+    const __vue_module_identifier__$4 = undefined;
     /* functional template */
-    const __vue_is_functional_template__$x = false;
+    const __vue_is_functional_template__$4 = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$x = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$x, staticRenderFns: __vue_staticRenderFns__$x },
-      __vue_inject_styles__$x,
-      __vue_script__$x,
-      __vue_scope_id__$x,
-      __vue_is_functional_template__$x,
-      __vue_module_identifier__$x,
+    const __vue_component__$4 = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$4, staticRenderFns: __vue_staticRenderFns__$4 },
+      __vue_inject_styles__$4,
+      __vue_script__$4,
+      __vue_scope_id__$4,
+      __vue_is_functional_template__$4,
+      __vue_module_identifier__$4,
       false,
       createInjector,
       undefined,
@@ -22239,11 +21934,11 @@
     );
 
   function flylineChart (Vue) {
-    Vue.component(__vue_component__$x.name, __vue_component__$x);
+    Vue.component(__vue_component__$4.name, __vue_component__$4);
   }
 
   //
-  var script$y = {
+  var script$3 = {
     name: 'DvFlylineChartEnhanced',
     mixins: [autoResize],
     props: {
@@ -22570,7 +22265,7 @@
           config,
           defaultConfig
         } = this;
-        const mergedConfig = util_2$1(util_1(defaultConfig, true), config || {});
+        const mergedConfig = util_2(util_1(defaultConfig, true), config || {});
         const {
           points,
           lines,
@@ -22580,13 +22275,13 @@
           line
         } = mergedConfig;
         mergedConfig.points = points.map(item => {
-          item.halo = util_2$1(util_1(halo, true), item.halo || {});
-          item.text = util_2$1(util_1(text, true), item.text || {});
-          item.icon = util_2$1(util_1(icon, true), item.icon || {});
+          item.halo = util_2(util_1(halo, true), item.halo || {});
+          item.text = util_2(util_1(text, true), item.text || {});
+          item.icon = util_2(util_1(icon, true), item.icon || {});
           return item;
         });
         mergedConfig.lines = lines.map(item => {
-          return util_2$1(util_1(line, true), item);
+          return util_2(util_1(line, true), item);
         });
         this.mergedConfig = mergedConfig;
       },
@@ -22725,10 +22420,10 @@
   };
 
   /* script */
-  const __vue_script__$y = script$y;
+  const __vue_script__$3 = script$3;
 
   /* template */
-  var __vue_render__$y = function() {
+  var __vue_render__$3 = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -22741,7 +22436,7 @@
           "background-image: url(" +
           (_vm.mergedConfig ? _vm.mergedConfig.bgImgSrc : "") +
           ")",
-        on: { click: _vm.consoleClickPos }
+        on: { click: _vm.consoleClickPos },
       },
       [
         _vm.flylines.length
@@ -22759,25 +22454,25 @@
                           id: _vm.flylineGradientId,
                           cx: "50%",
                           cy: "50%",
-                          r: "50%"
-                        }
+                          r: "50%",
+                        },
                       },
                       [
                         _c("stop", {
                           attrs: {
                             offset: "0%",
                             "stop-color": "#fff",
-                            "stop-opacity": "1"
-                          }
+                            "stop-opacity": "1",
+                          },
                         }),
                         _vm._v(" "),
                         _c("stop", {
                           attrs: {
                             offset: "100%",
                             "stop-color": "#fff",
-                            "stop-opacity": "0"
-                          }
-                        })
+                            "stop-opacity": "0",
+                          },
+                        }),
                       ],
                       1
                     ),
@@ -22789,33 +22484,33 @@
                           id: _vm.haloGradientId,
                           cx: "50%",
                           cy: "50%",
-                          r: "50%"
-                        }
+                          r: "50%",
+                        },
                       },
                       [
                         _c("stop", {
                           attrs: {
                             offset: "0%",
                             "stop-color": "#fff",
-                            "stop-opacity": "0"
-                          }
+                            "stop-opacity": "0",
+                          },
                         }),
                         _vm._v(" "),
                         _c("stop", {
                           attrs: {
                             offset: "100%",
                             "stop-color": "#fff",
-                            "stop-opacity": "1"
-                          }
-                        })
+                            "stop-opacity": "1",
+                          },
+                        }),
                       ],
                       1
-                    )
+                    ),
                   ],
                   1
                 ),
                 _vm._v(" "),
-                _vm._l(_vm.flylinePoints, function(point) {
+                _vm._l(_vm.flylinePoints, function (point) {
                   return _c("g", { key: point.key + Math.random() }, [
                     _c("defs", [
                       point.halo.show
@@ -22825,8 +22520,8 @@
                               attrs: {
                                 id: "halo" + _vm.unique + point.key,
                                 cx: point.coordinate[0],
-                                cy: point.coordinate[1]
-                              }
+                                cy: point.coordinate[1],
+                              },
                             },
                             [
                               _c("animate", {
@@ -22834,8 +22529,8 @@
                                   attributeName: "r",
                                   values: "1;" + point.halo.radius,
                                   dur: point.halo.time + "s",
-                                  repeatCount: "indefinite"
-                                }
+                                  repeatCount: "indefinite",
+                                },
                               }),
                               _vm._v(" "),
                               _c("animate", {
@@ -22843,12 +22538,12 @@
                                   attributeName: "opacity",
                                   values: "1;0",
                                   dur: point.halo.time + "s",
-                                  repeatCount: "indefinite"
-                                }
-                              })
+                                  repeatCount: "indefinite",
+                                },
+                              }),
                             ]
                           )
-                        : _vm._e()
+                        : _vm._e(),
                     ]),
                     _vm._v(" "),
                     _c(
@@ -22859,10 +22554,10 @@
                           ? _c("use", {
                               attrs: {
                                 "xlink:href": "#halo" + _vm.unique + point.key,
-                                fill: "url(#" + _vm.haloGradientId + ")"
-                              }
+                                fill: "url(#" + _vm.haloGradientId + ")",
+                              },
                             })
-                          : _vm._e()
+                          : _vm._e(),
                       ]
                     ),
                     _vm._v(" "),
@@ -22871,8 +22566,8 @@
                           attrs: {
                             "xlink:href": "#halo" + _vm.unique + point.key,
                             fill: point.halo.color,
-                            mask: "url(#mask" + _vm.unique + point.key + ")"
-                          }
+                            mask: "url(#mask" + _vm.unique + point.key + ")",
+                          },
                         })
                       : _vm._e(),
                     _vm._v(" "),
@@ -22883,8 +22578,8 @@
                             width: point.icon.width,
                             height: point.icon.height,
                             x: point.icon.x,
-                            y: point.icon.y
-                          }
+                            y: point.icon.y,
+                          },
                         })
                       : _vm._e(),
                     _vm._v(" "),
@@ -22900,31 +22595,31 @@
                             attrs: {
                               fill: point.text.color,
                               x: point.text.x,
-                              y: point.text.y
-                            }
+                              y: point.text.y,
+                            },
                           },
                           [_vm._v("\n        " + _vm._s(point.name) + "\n      ")]
                         )
-                      : _vm._e()
+                      : _vm._e(),
                   ])
                 }),
                 _vm._v(" "),
-                _vm._l(_vm.flylines, function(line, i) {
+                _vm._l(_vm.flylines, function (line, i) {
                   return _c("g", { key: line.key + Math.random() }, [
                     _c("defs", [
                       _c("path", {
                         ref: line.key,
                         refInFor: true,
-                        attrs: { id: line.key, d: line.d, fill: "transparent" }
-                      })
+                        attrs: { id: line.key, d: line.d, fill: "transparent" },
+                      }),
                     ]),
                     _vm._v(" "),
                     _c("use", {
                       attrs: {
                         "xlink:href": "#" + line.key,
                         "stroke-width": line.width,
-                        stroke: line.orbitColor
-                      }
+                        stroke: line.orbitColor,
+                      },
                     }),
                     _vm._v(" "),
                     _c(
@@ -22938,8 +22633,8 @@
                               cx: "0",
                               cy: "0",
                               r: line.radius,
-                              fill: "url(#" + _vm.flylineGradientId + ")"
-                            }
+                              fill: "url(#" + _vm.flylineGradientId + ")",
+                            },
                           },
                           [
                             _c("animateMotion", {
@@ -22947,12 +22642,12 @@
                                 dur: line.time,
                                 path: line.d,
                                 rotate: "auto",
-                                repeatCount: "indefinite"
-                              }
-                            })
+                                repeatCount: "indefinite",
+                              },
+                            }),
                           ],
                           1
-                        )
+                        ),
                       ]
                     ),
                     _vm._v(" "),
@@ -22964,8 +22659,8 @@
                               "xlink:href": "#" + line.key,
                               "stroke-width": line.width,
                               stroke: line.color,
-                              mask: "url(#mask" + _vm.unique + line.key + ")"
-                            }
+                              mask: "url(#mask" + _vm.unique + line.key + ")",
+                            },
                           },
                           [
                             _c("animate", {
@@ -22974,49 +22669,49 @@
                                 from: "0, " + _vm.flylineLengths[i],
                                 to: _vm.flylineLengths[i] + ", 0",
                                 dur: line.time,
-                                repeatCount: "indefinite"
-                              }
-                            })
+                                repeatCount: "indefinite",
+                              },
+                            }),
                           ]
                         )
-                      : _vm._e()
+                      : _vm._e(),
                   ])
-                })
+                }),
               ],
               2
             )
-          : _vm._e()
+          : _vm._e(),
       ]
     )
   };
-  var __vue_staticRenderFns__$y = [];
-  __vue_render__$y._withStripped = true;
+  var __vue_staticRenderFns__$3 = [];
+  __vue_render__$3._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$y = function (inject) {
+    const __vue_inject_styles__$3 = function (inject) {
       if (!inject) return
-      inject("data-v-a7b8c35c_0", { source: ".dv-flyline-chart-enhanced {\n  display: flex;\n  flex-direction: column;\n  background-size: 100% 100%;\n}\n.dv-flyline-chart-enhanced text {\n  text-anchor: middle;\n  dominant-baseline: middle;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,sBAAsB;EACtB,0BAA0B;AAC5B;AACA;EACE,mBAAmB;EACnB,yBAAyB;AAC3B","file":"main.vue","sourcesContent":[".dv-flyline-chart-enhanced {\n  display: flex;\n  flex-direction: column;\n  background-size: 100% 100%;\n}\n.dv-flyline-chart-enhanced text {\n  text-anchor: middle;\n  dominant-baseline: middle;\n}\n"]}, media: undefined });
+      inject("data-v-8ffe9ebe_0", { source: ".dv-flyline-chart-enhanced {\n  display: flex;\n  flex-direction: column;\n  background-size: 100% 100%;\n}\n.dv-flyline-chart-enhanced text {\n  text-anchor: middle;\n  dominant-baseline: middle;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,sBAAsB;EACtB,0BAA0B;AAC5B;AACA;EACE,mBAAmB;EACnB,yBAAyB;AAC3B","file":"main.vue","sourcesContent":[".dv-flyline-chart-enhanced {\n  display: flex;\n  flex-direction: column;\n  background-size: 100% 100%;\n}\n.dv-flyline-chart-enhanced text {\n  text-anchor: middle;\n  dominant-baseline: middle;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$y = undefined;
+    const __vue_scope_id__$3 = undefined;
     /* module identifier */
-    const __vue_module_identifier__$y = undefined;
+    const __vue_module_identifier__$3 = undefined;
     /* functional template */
-    const __vue_is_functional_template__$y = false;
+    const __vue_is_functional_template__$3 = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$y = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$y, staticRenderFns: __vue_staticRenderFns__$y },
-      __vue_inject_styles__$y,
-      __vue_script__$y,
-      __vue_scope_id__$y,
-      __vue_is_functional_template__$y,
-      __vue_module_identifier__$y,
+    const __vue_component__$3 = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$3, staticRenderFns: __vue_staticRenderFns__$3 },
+      __vue_inject_styles__$3,
+      __vue_script__$3,
+      __vue_scope_id__$3,
+      __vue_is_functional_template__$3,
+      __vue_module_identifier__$3,
       false,
       createInjector,
       undefined,
@@ -23024,11 +22719,11 @@
     );
 
   function flylineChartEnhanced (Vue) {
-    Vue.component(__vue_component__$y.name, __vue_component__$y);
+    Vue.component(__vue_component__$3.name, __vue_component__$3);
   }
 
   //
-  var script$z = {
+  var script$2 = {
     name: 'DvConicalColumnChart',
     mixins: [autoResize],
     props: {
@@ -23136,7 +22831,7 @@
           defaultConfig,
           config
         } = this;
-        this.mergedConfig = util_2$1(util_1(defaultConfig, true), config || {});
+        this.mergedConfig = util_2(util_1(defaultConfig, true), config || {});
       },
 
       initData() {
@@ -23209,10 +22904,10 @@
   };
 
   /* script */
-  const __vue_script__$z = script$z;
+  const __vue_script__$2 = script$2;
 
   /* template */
-  var __vue_render__$z = function() {
+  var __vue_render__$2 = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -23220,10 +22915,10 @@
       _c(
         "svg",
         { attrs: { width: _vm.width, height: _vm.height } },
-        _vm._l(_vm.column, function(item, i) {
+        _vm._l(_vm.column, function (item, i) {
           return _c("g", { key: i }, [
             _c("path", {
-              attrs: { d: item.d, fill: _vm.mergedConfig.columnColor }
+              attrs: { d: item.d, fill: _vm.mergedConfig.columnColor },
             }),
             _vm._v(" "),
             _c(
@@ -23233,8 +22928,8 @@
                 attrs: {
                   fill: _vm.mergedConfig.textColor,
                   x: item.x,
-                  y: _vm.height - 4
-                }
+                  y: _vm.height - 4,
+                },
               },
               [_vm._v("\n        " + _vm._s(item.name) + "\n      ")]
             ),
@@ -23247,8 +22942,8 @@
                     width: _vm.mergedConfig.imgSideLength,
                     height: _vm.mergedConfig.imgSideLength,
                     x: item.x - _vm.mergedConfig.imgSideLength / 2,
-                    y: item.y - _vm.mergedConfig.imgSideLength
-                  }
+                    y: item.y - _vm.mergedConfig.imgSideLength,
+                  },
                 })
               : _vm._e(),
             _vm._v(" "),
@@ -23260,46 +22955,46 @@
                     attrs: {
                       fill: _vm.mergedConfig.textColor,
                       x: item.x,
-                      y: item.textY
-                    }
+                      y: item.textY,
+                    },
                   },
                   [_vm._v("\n        " + _vm._s(item.value) + "\n      ")]
                 )
-              : _vm._e()
+              : _vm._e(),
           ])
         }),
         0
-      )
+      ),
     ])
   };
-  var __vue_staticRenderFns__$z = [];
-  __vue_render__$z._withStripped = true;
+  var __vue_staticRenderFns__$2 = [];
+  __vue_render__$2._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$z = function (inject) {
+    const __vue_inject_styles__$2 = function (inject) {
       if (!inject) return
-      inject("data-v-382f06c7_0", { source: ".dv-conical-column-chart {\n  width: 100%;\n  height: 100%;\n}\n.dv-conical-column-chart text {\n  text-anchor: middle;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;AACd;AACA;EACE,mBAAmB;AACrB","file":"main.vue","sourcesContent":[".dv-conical-column-chart {\n  width: 100%;\n  height: 100%;\n}\n.dv-conical-column-chart text {\n  text-anchor: middle;\n}\n"]}, media: undefined });
+      inject("data-v-7f4ead9c_0", { source: ".dv-conical-column-chart {\n  width: 100%;\n  height: 100%;\n}\n.dv-conical-column-chart text {\n  text-anchor: middle;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;AACd;AACA;EACE,mBAAmB;AACrB","file":"main.vue","sourcesContent":[".dv-conical-column-chart {\n  width: 100%;\n  height: 100%;\n}\n.dv-conical-column-chart text {\n  text-anchor: middle;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$z = undefined;
+    const __vue_scope_id__$2 = undefined;
     /* module identifier */
-    const __vue_module_identifier__$z = undefined;
+    const __vue_module_identifier__$2 = undefined;
     /* functional template */
-    const __vue_is_functional_template__$z = false;
+    const __vue_is_functional_template__$2 = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$z = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$z, staticRenderFns: __vue_staticRenderFns__$z },
-      __vue_inject_styles__$z,
-      __vue_script__$z,
-      __vue_scope_id__$z,
-      __vue_is_functional_template__$z,
-      __vue_module_identifier__$z,
+    const __vue_component__$2 = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$2, staticRenderFns: __vue_staticRenderFns__$2 },
+      __vue_inject_styles__$2,
+      __vue_script__$2,
+      __vue_scope_id__$2,
+      __vue_is_functional_template__$2,
+      __vue_module_identifier__$2,
       false,
       createInjector,
       undefined,
@@ -23307,15 +23002,15 @@
     );
 
   function conicalColumnChart (Vue) {
-    Vue.component(__vue_component__$z.name, __vue_component__$z);
+    Vue.component(__vue_component__$2.name, __vue_component__$2);
   }
 
   function digitalFlop (Vue) {
-    Vue.component(__vue_component__$s.name, __vue_component__$s);
+    Vue.component(__vue_component__$9.name, __vue_component__$9);
   }
 
   //
-  var script$A = {
+  var script$1 = {
     name: 'DvScrollBoard',
     mixins: [autoResize],
     props: {
@@ -23522,7 +23217,7 @@
           config,
           defaultConfig
         } = this;
-        this.mergedConfig = util_2$1(util_1(defaultConfig, true), config || {});
+        this.mergedConfig = util_2(util_1(defaultConfig, true), config || {});
       },
 
       calcHeaderData() {
@@ -23597,7 +23292,7 @@
 
         const avgWidth = (width - usedWidth) / (columnNum - columnWidth.length);
         const widths = new Array(columnNum).fill(avgWidth);
-        this.widths = util_2$1(widths, columnWidth);
+        this.widths = util_2(widths, columnWidth);
       },
 
       calcHeights(onresize = false) {
@@ -23628,7 +23323,7 @@
         const {
           align
         } = mergedConfig;
-        this.aligns = util_2$1(aligns, align);
+        this.aligns = util_2(aligns, align);
       },
 
       async animation(start = false) {
@@ -23729,10 +23424,10 @@
   };
 
   /* script */
-  const __vue_script__$A = script$A;
+  const __vue_script__$1 = script$1;
 
   /* template */
-  var __vue_render__$A = function() {
+  var __vue_render__$1 = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
@@ -23742,9 +23437,9 @@
             "div",
             {
               staticClass: "header",
-              style: "background-color: " + _vm.mergedConfig.headerBGC + ";"
+              style: "background-color: " + _vm.mergedConfig.headerBGC + ";",
             },
-            _vm._l(_vm.header, function(headerItem, i) {
+            _vm._l(_vm.header, function (headerItem, i) {
               return _c("div", {
                 key: "" + headerItem + i,
                 staticClass: "header-item",
@@ -23757,7 +23452,7 @@
                   _vm.widths[i] +
                   "px;\n      ",
                 attrs: { align: _vm.aligns[i] },
-                domProps: { innerHTML: _vm._s(headerItem) }
+                domProps: { innerHTML: _vm._s(headerItem) },
               })
             }),
             0
@@ -23773,9 +23468,9 @@
                 "height: " +
                 (_vm.height -
                   (_vm.header.length ? _vm.mergedConfig.headerHeight : 0)) +
-                "px;"
+                "px;",
             },
-            _vm._l(_vm.rows, function(row, ri) {
+            _vm._l(_vm.rows, function (row, ri) {
               return _c(
                 "div",
                 {
@@ -23790,9 +23485,9 @@
                     _vm.mergedConfig[
                       row.rowIndex % 2 === 0 ? "evenRowBGC" : "oddRowBGC"
                     ] +
-                    ";\n      "
+                    ";\n      ",
                 },
-                _vm._l(row.ceils, function(ceil, ci) {
+                _vm._l(row.ceils, function (ceil, ci) {
                   return _c("div", {
                     key: "" + ceil + ri + ci,
                     staticClass: "ceil",
@@ -23800,16 +23495,16 @@
                     attrs: { align: _vm.aligns[ci] },
                     domProps: { innerHTML: _vm._s(ceil) },
                     on: {
-                      click: function($event) {
+                      click: function ($event) {
                         return _vm.emitEvent("click", ri, ci, row, ceil)
                       },
-                      mouseenter: function($event) {
+                      mouseenter: function ($event) {
                         return _vm.handleHover(true, ri, ci, row, ceil)
                       },
-                      mouseleave: function($event) {
+                      mouseleave: function ($event) {
                         return _vm.handleHover(false)
-                      }
-                    }
+                      },
+                    },
                   })
                 }),
                 0
@@ -23817,37 +23512,37 @@
             }),
             0
           )
-        : _vm._e()
+        : _vm._e(),
     ])
   };
-  var __vue_staticRenderFns__$A = [];
-  __vue_render__$A._withStripped = true;
+  var __vue_staticRenderFns__$1 = [];
+  __vue_render__$1._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$A = function (inject) {
+    const __vue_inject_styles__$1 = function (inject) {
       if (!inject) return
-      inject("data-v-26e19f4c_0", { source: ".dv-scroll-board {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  color: #fff;\n}\n.dv-scroll-board .text {\n  padding: 0 10px;\n  box-sizing: border-box;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.dv-scroll-board .header {\n  display: flex;\n  flex-direction: row;\n  font-size: 15px;\n}\n.dv-scroll-board .header .header-item {\n  padding: 0 10px;\n  box-sizing: border-box;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  transition: all 0.3s;\n}\n.dv-scroll-board .rows {\n  overflow: hidden;\n}\n.dv-scroll-board .rows .row-item {\n  display: flex;\n  font-size: 14px;\n  transition: all 0.3s;\n}\n.dv-scroll-board .rows .ceil {\n  padding: 0 10px;\n  box-sizing: border-box;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.dv-scroll-board .rows .index {\n  border-radius: 3px;\n  padding: 0px 3px;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,WAAW;AACb;AACA;EACE,eAAe;EACf,sBAAsB;EACtB,mBAAmB;EACnB,gBAAgB;EAChB,uBAAuB;AACzB;AACA;EACE,aAAa;EACb,mBAAmB;EACnB,eAAe;AACjB;AACA;EACE,eAAe;EACf,sBAAsB;EACtB,mBAAmB;EACnB,gBAAgB;EAChB,uBAAuB;EACvB,oBAAoB;AACtB;AACA;EACE,gBAAgB;AAClB;AACA;EACE,aAAa;EACb,eAAe;EACf,oBAAoB;AACtB;AACA;EACE,eAAe;EACf,sBAAsB;EACtB,mBAAmB;EACnB,gBAAgB;EAChB,uBAAuB;AACzB;AACA;EACE,kBAAkB;EAClB,gBAAgB;AAClB","file":"main.vue","sourcesContent":[".dv-scroll-board {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  color: #fff;\n}\n.dv-scroll-board .text {\n  padding: 0 10px;\n  box-sizing: border-box;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.dv-scroll-board .header {\n  display: flex;\n  flex-direction: row;\n  font-size: 15px;\n}\n.dv-scroll-board .header .header-item {\n  padding: 0 10px;\n  box-sizing: border-box;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  transition: all 0.3s;\n}\n.dv-scroll-board .rows {\n  overflow: hidden;\n}\n.dv-scroll-board .rows .row-item {\n  display: flex;\n  font-size: 14px;\n  transition: all 0.3s;\n}\n.dv-scroll-board .rows .ceil {\n  padding: 0 10px;\n  box-sizing: border-box;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.dv-scroll-board .rows .index {\n  border-radius: 3px;\n  padding: 0px 3px;\n}\n"]}, media: undefined });
+      inject("data-v-33e95870_0", { source: ".dv-scroll-board {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  color: #fff;\n}\n.dv-scroll-board .text {\n  padding: 0 10px;\n  box-sizing: border-box;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.dv-scroll-board .header {\n  display: flex;\n  flex-direction: row;\n  font-size: 15px;\n}\n.dv-scroll-board .header .header-item {\n  padding: 0 10px;\n  box-sizing: border-box;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  transition: all 0.3s;\n}\n.dv-scroll-board .rows {\n  overflow: hidden;\n}\n.dv-scroll-board .rows .row-item {\n  display: flex;\n  font-size: 14px;\n  transition: all 0.3s;\n}\n.dv-scroll-board .rows .ceil {\n  padding: 0 10px;\n  box-sizing: border-box;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.dv-scroll-board .rows .index {\n  border-radius: 3px;\n  padding: 0px 3px;\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,WAAW;AACb;AACA;EACE,eAAe;EACf,sBAAsB;EACtB,mBAAmB;EACnB,gBAAgB;EAChB,uBAAuB;AACzB;AACA;EACE,aAAa;EACb,mBAAmB;EACnB,eAAe;AACjB;AACA;EACE,eAAe;EACf,sBAAsB;EACtB,mBAAmB;EACnB,gBAAgB;EAChB,uBAAuB;EACvB,oBAAoB;AACtB;AACA;EACE,gBAAgB;AAClB;AACA;EACE,aAAa;EACb,eAAe;EACf,oBAAoB;AACtB;AACA;EACE,eAAe;EACf,sBAAsB;EACtB,mBAAmB;EACnB,gBAAgB;EAChB,uBAAuB;AACzB;AACA;EACE,kBAAkB;EAClB,gBAAgB;AAClB","file":"main.vue","sourcesContent":[".dv-scroll-board {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  color: #fff;\n}\n.dv-scroll-board .text {\n  padding: 0 10px;\n  box-sizing: border-box;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.dv-scroll-board .header {\n  display: flex;\n  flex-direction: row;\n  font-size: 15px;\n}\n.dv-scroll-board .header .header-item {\n  padding: 0 10px;\n  box-sizing: border-box;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  transition: all 0.3s;\n}\n.dv-scroll-board .rows {\n  overflow: hidden;\n}\n.dv-scroll-board .rows .row-item {\n  display: flex;\n  font-size: 14px;\n  transition: all 0.3s;\n}\n.dv-scroll-board .rows .ceil {\n  padding: 0 10px;\n  box-sizing: border-box;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.dv-scroll-board .rows .index {\n  border-radius: 3px;\n  padding: 0px 3px;\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$A = undefined;
+    const __vue_scope_id__$1 = undefined;
     /* module identifier */
-    const __vue_module_identifier__$A = undefined;
+    const __vue_module_identifier__$1 = undefined;
     /* functional template */
-    const __vue_is_functional_template__$A = false;
+    const __vue_is_functional_template__$1 = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$A = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$A, staticRenderFns: __vue_staticRenderFns__$A },
-      __vue_inject_styles__$A,
-      __vue_script__$A,
-      __vue_scope_id__$A,
-      __vue_is_functional_template__$A,
-      __vue_module_identifier__$A,
+    const __vue_component__$1 = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__$1, staticRenderFns: __vue_staticRenderFns__$1 },
+      __vue_inject_styles__$1,
+      __vue_script__$1,
+      __vue_scope_id__$1,
+      __vue_is_functional_template__$1,
+      __vue_module_identifier__$1,
       false,
       createInjector,
       undefined,
@@ -23855,11 +23550,11 @@
     );
 
   function scrollBoard (Vue) {
-    Vue.component(__vue_component__$A.name, __vue_component__$A);
+    Vue.component(__vue_component__$1.name, __vue_component__$1);
   }
 
   //
-  var script$B = {
+  var script = {
     name: 'DvScrollRankingBoard',
     mixins: [autoResize],
     props: {
@@ -23984,7 +23679,7 @@
           config,
           defaultConfig
         } = this;
-        this.mergedConfig = util_2$1(util_1(defaultConfig, true), config || {});
+        this.mergedConfig = util_2(util_1(defaultConfig, true), config || {});
       },
 
       calcRowsData() {
@@ -24012,7 +23707,8 @@
         const total = max + minAbs;
         data = data.map((row, i) => ({ ...row,
           ranking: i + 1,
-          percent: (row.value + minAbs) / total * 100
+          percent: (row.value + minAbs) / total * 100,
+          color: row.color ? row.color : '#1370fb'
         }));
         const rowLength = data.length;
 
@@ -24100,33 +23796,33 @@
   };
 
   /* script */
-  const __vue_script__$B = script$B;
+  const __vue_script__ = script;
 
   /* template */
-  var __vue_render__$B = function() {
+  var __vue_render__ = function () {
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
     return _c(
       "div",
       { ref: _vm.ref, staticClass: "dv-scroll-ranking-board" },
-      _vm._l(_vm.rows, function(item, i) {
+      _vm._l(_vm.rows, function (item, i) {
         return _c(
           "div",
           {
             key: item.toString() + item.scroll,
             staticClass: "row-item",
-            style: "height: " + _vm.heights[i] + "px;"
+            style: "height: " + _vm.heights[i] + "px;",
           },
           [
             _c("div", { staticClass: "ranking-info" }, [
               _c("div", { staticClass: "rank" }, [
-                _vm._v("No." + _vm._s(item.ranking))
+                _vm._v("No." + _vm._s(item.ranking)),
               ]),
               _vm._v(" "),
               _c("div", {
                 staticClass: "info-name",
-                domProps: { innerHTML: _vm._s(item.name) }
+                domProps: { innerHTML: _vm._s(item.name) },
               }),
               _vm._v(" "),
               _c("div", { staticClass: "ranking-value" }, [
@@ -24136,8 +23832,8 @@
                       ? _vm.mergedConfig.valueFormatter(item)
                       : item.value + _vm.mergedConfig.unit
                   )
-                )
-              ])
+                ),
+              ]),
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "ranking-column" }, [
@@ -24145,45 +23841,50 @@
                 "div",
                 {
                   staticClass: "inside-column",
-                  style: "width: " + item.percent + "%;"
+                  style:
+                    "width: " +
+                    item.percent +
+                    "%; background-color: " +
+                    item.color +
+                    ";",
                 },
                 [_c("div", { staticClass: "shine" })]
-              )
-            ])
+              ),
+            ]),
           ]
         )
       }),
       0
     )
   };
-  var __vue_staticRenderFns__$B = [];
-  __vue_render__$B._withStripped = true;
+  var __vue_staticRenderFns__ = [];
+  __vue_render__._withStripped = true;
 
     /* style */
-    const __vue_inject_styles__$B = function (inject) {
+    const __vue_inject_styles__ = function (inject) {
       if (!inject) return
-      inject("data-v-f297519a_0", { source: ".dv-scroll-ranking-board {\n  width: 100%;\n  height: 100%;\n  color: #fff;\n  overflow: hidden;\n}\n.dv-scroll-ranking-board .row-item {\n  transition: all 0.3s;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  overflow: hidden;\n}\n.dv-scroll-ranking-board .ranking-info {\n  display: flex;\n  width: 100%;\n  font-size: 13px;\n}\n.dv-scroll-ranking-board .ranking-info .rank {\n  width: 40px;\n  color: #1370fb;\n}\n.dv-scroll-ranking-board .ranking-info .info-name {\n  flex: 1;\n}\n.dv-scroll-ranking-board .ranking-column {\n  border-bottom: 2px solid rgba(19, 112, 251, 0.5);\n  margin-top: 5px;\n}\n.dv-scroll-ranking-board .ranking-column .inside-column {\n  position: relative;\n  height: 6px;\n  background-color: #1370fb;\n  margin-bottom: 2px;\n  border-radius: 1px;\n  overflow: hidden;\n}\n.dv-scroll-ranking-board .ranking-column .shine {\n  position: absolute;\n  left: 0%;\n  top: 2px;\n  height: 2px;\n  width: 50px;\n  transform: translateX(-100%);\n  background: radial-gradient(#28f8ff 5%, transparent 80%);\n  animation: shine 3s ease-in-out infinite alternate;\n}\n@keyframes shine {\n80% {\n    left: 0%;\n    transform: translateX(-100%);\n}\n100% {\n    left: 100%;\n    transform: translateX(0%);\n}\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;EACZ,WAAW;EACX,gBAAgB;AAClB;AACA;EACE,oBAAoB;EACpB,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,gBAAgB;AAClB;AACA;EACE,aAAa;EACb,WAAW;EACX,eAAe;AACjB;AACA;EACE,WAAW;EACX,cAAc;AAChB;AACA;EACE,OAAO;AACT;AACA;EACE,gDAAgD;EAChD,eAAe;AACjB;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,yBAAyB;EACzB,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;AAClB;AACA;EACE,kBAAkB;EAClB,QAAQ;EACR,QAAQ;EACR,WAAW;EACX,WAAW;EACX,4BAA4B;EAC5B,wDAAwD;EACxD,kDAAkD;AACpD;AACA;AACE;IACE,QAAQ;IACR,4BAA4B;AAC9B;AACA;IACE,UAAU;IACV,yBAAyB;AAC3B;AACF","file":"main.vue","sourcesContent":[".dv-scroll-ranking-board {\n  width: 100%;\n  height: 100%;\n  color: #fff;\n  overflow: hidden;\n}\n.dv-scroll-ranking-board .row-item {\n  transition: all 0.3s;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  overflow: hidden;\n}\n.dv-scroll-ranking-board .ranking-info {\n  display: flex;\n  width: 100%;\n  font-size: 13px;\n}\n.dv-scroll-ranking-board .ranking-info .rank {\n  width: 40px;\n  color: #1370fb;\n}\n.dv-scroll-ranking-board .ranking-info .info-name {\n  flex: 1;\n}\n.dv-scroll-ranking-board .ranking-column {\n  border-bottom: 2px solid rgba(19, 112, 251, 0.5);\n  margin-top: 5px;\n}\n.dv-scroll-ranking-board .ranking-column .inside-column {\n  position: relative;\n  height: 6px;\n  background-color: #1370fb;\n  margin-bottom: 2px;\n  border-radius: 1px;\n  overflow: hidden;\n}\n.dv-scroll-ranking-board .ranking-column .shine {\n  position: absolute;\n  left: 0%;\n  top: 2px;\n  height: 2px;\n  width: 50px;\n  transform: translateX(-100%);\n  background: radial-gradient(#28f8ff 5%, transparent 80%);\n  animation: shine 3s ease-in-out infinite alternate;\n}\n@keyframes shine {\n  80% {\n    left: 0%;\n    transform: translateX(-100%);\n  }\n  100% {\n    left: 100%;\n    transform: translateX(0%);\n  }\n}\n"]}, media: undefined });
+      inject("data-v-96df4c18_0", { source: ".dv-scroll-ranking-board {\n  width: 100%;\n  height: 100%;\n  color: #fff;\n  overflow: hidden;\n}\n.dv-scroll-ranking-board .row-item {\n  transition: all 0.3s;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  overflow: hidden;\n}\n.dv-scroll-ranking-board .ranking-info {\n  display: flex;\n  width: 100%;\n  font-size: 13px;\n}\n.dv-scroll-ranking-board .ranking-info .rank {\n  width: 40px;\n  color: #1370fb;\n}\n.dv-scroll-ranking-board .ranking-info .info-name {\n  flex: 1;\n}\n.dv-scroll-ranking-board .ranking-column {\n  border-bottom: 2px solid rgba(19, 112, 251, 0.5);\n  margin-top: 5px;\n}\n.dv-scroll-ranking-board .ranking-column .inside-column {\n  position: relative;\n  height: 6px;\n  background-color: #1370fb;\n  margin-bottom: 2px;\n  border-radius: 1px;\n  overflow: hidden;\n}\n.dv-scroll-ranking-board .ranking-column .shine {\n  position: absolute;\n  left: 0%;\n  top: 2px;\n  height: 2px;\n  width: 50px;\n  transform: translateX(-100%);\n  background: radial-gradient(#28f8ff 5%, transparent 80%);\n  animation: shine 3s ease-in-out infinite alternate;\n}\n@keyframes shine {\n80% {\n    left: 0%;\n    transform: translateX(-100%);\n}\n100% {\n    left: 100%;\n    transform: translateX(0%);\n}\n}\n", map: {"version":3,"sources":["main.vue"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;EACZ,WAAW;EACX,gBAAgB;AAClB;AACA;EACE,oBAAoB;EACpB,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,gBAAgB;AAClB;AACA;EACE,aAAa;EACb,WAAW;EACX,eAAe;AACjB;AACA;EACE,WAAW;EACX,cAAc;AAChB;AACA;EACE,OAAO;AACT;AACA;EACE,gDAAgD;EAChD,eAAe;AACjB;AACA;EACE,kBAAkB;EAClB,WAAW;EACX,yBAAyB;EACzB,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;AAClB;AACA;EACE,kBAAkB;EAClB,QAAQ;EACR,QAAQ;EACR,WAAW;EACX,WAAW;EACX,4BAA4B;EAC5B,wDAAwD;EACxD,kDAAkD;AACpD;AACA;AACE;IACE,QAAQ;IACR,4BAA4B;AAC9B;AACA;IACE,UAAU;IACV,yBAAyB;AAC3B;AACF","file":"main.vue","sourcesContent":[".dv-scroll-ranking-board {\n  width: 100%;\n  height: 100%;\n  color: #fff;\n  overflow: hidden;\n}\n.dv-scroll-ranking-board .row-item {\n  transition: all 0.3s;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  overflow: hidden;\n}\n.dv-scroll-ranking-board .ranking-info {\n  display: flex;\n  width: 100%;\n  font-size: 13px;\n}\n.dv-scroll-ranking-board .ranking-info .rank {\n  width: 40px;\n  color: #1370fb;\n}\n.dv-scroll-ranking-board .ranking-info .info-name {\n  flex: 1;\n}\n.dv-scroll-ranking-board .ranking-column {\n  border-bottom: 2px solid rgba(19, 112, 251, 0.5);\n  margin-top: 5px;\n}\n.dv-scroll-ranking-board .ranking-column .inside-column {\n  position: relative;\n  height: 6px;\n  background-color: #1370fb;\n  margin-bottom: 2px;\n  border-radius: 1px;\n  overflow: hidden;\n}\n.dv-scroll-ranking-board .ranking-column .shine {\n  position: absolute;\n  left: 0%;\n  top: 2px;\n  height: 2px;\n  width: 50px;\n  transform: translateX(-100%);\n  background: radial-gradient(#28f8ff 5%, transparent 80%);\n  animation: shine 3s ease-in-out infinite alternate;\n}\n@keyframes shine {\n  80% {\n    left: 0%;\n    transform: translateX(-100%);\n  }\n  100% {\n    left: 100%;\n    transform: translateX(0%);\n  }\n}\n"]}, media: undefined });
 
     };
     /* scoped */
-    const __vue_scope_id__$B = undefined;
+    const __vue_scope_id__ = undefined;
     /* module identifier */
-    const __vue_module_identifier__$B = undefined;
+    const __vue_module_identifier__ = undefined;
     /* functional template */
-    const __vue_is_functional_template__$B = false;
+    const __vue_is_functional_template__ = false;
     /* style inject SSR */
     
     /* style inject shadow dom */
     
 
     
-    const __vue_component__$B = /*#__PURE__*/normalizeComponent(
-      { render: __vue_render__$B, staticRenderFns: __vue_staticRenderFns__$B },
-      __vue_inject_styles__$B,
-      __vue_script__$B,
-      __vue_scope_id__$B,
-      __vue_is_functional_template__$B,
-      __vue_module_identifier__$B,
+    const __vue_component__ = /*#__PURE__*/normalizeComponent(
+      { render: __vue_render__, staticRenderFns: __vue_staticRenderFns__ },
+      __vue_inject_styles__,
+      __vue_script__,
+      __vue_scope_id__,
+      __vue_is_functional_template__,
+      __vue_module_identifier__,
       false,
       createInjector,
       undefined,
@@ -24191,7 +23892,7 @@
     );
 
   function scrollRankingBoard (Vue) {
-    Vue.component(__vue_component__$B.name, __vue_component__$B);
+    Vue.component(__vue_component__.name, __vue_component__);
   }
 
   /**
@@ -24245,6 +23946,6 @@
     Vue.use(scrollRankingBoard);
   }
 
-  Vue.use(datav);
+  Vue__default["default"].use(datav);
 
-})));
+}));
